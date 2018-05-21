@@ -1,0 +1,27 @@
+//This is the changelog for the files hosted on this workspace!
+
+//Simply sign your name and the document(s) changed, and they will be reviewed
+//for upload.
+
+//*****************   EX   ****************
+//  Jose        - index.html        - fixed the resizing of carousel on new img
+//              - calendar.html     - updated the footer to reflect the rest of the website
+//  Albert      - history.html      - started building new page for scolling history
+//  Jose        - History           - looked up and added to shpe ucr from 1998-1999
+//
+//*****************   EX   ****************
+    Jose        - all               - updated social-share links to open in new window
+                - history.html      - header and footer reflect the rest of the website
+                - /images           - updated current eboard photos
+                - members.html      - updated position titles
+    Jesus       - history.html      - I tried adding a dropdown menu for years at top of page, still need to finish
+    Jose        - members.html      - updated to reflect board/members
+                                    - added members to page
+                - all               - removed "graduate" button from all pages until further notice!
+                - main.css          - removed class "national" in place for "members"
+                - members.html      - added ~30 members
+                                    - created classes within members: "national" and "current" (recognized by icon)
+                                    
+                                    
+
+

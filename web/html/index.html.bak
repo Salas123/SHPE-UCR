@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Society of Hispanic Professional Engineers @ UCR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The UCR chapter website for theSociety of Hispanic Professional Engineers.">
+    <meta name="author" content="Sergio Morales, Marco Tobon, and Ivan Lopez">
+	
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    
+    <!-- main SHPE CSS -->
+    <link href="css/shpe_bootstrap.css" rel="stylesheet">
+    
+    <!-- main SHPE JS -->
+    <script src="js/main.js"></script>
+    
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+</head><!--/head-->
+
+<body class="homepage">
+    <header id="header">
+        <div class="top-bar top-bar-shpe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <ul class="social-share">
+                            <li style="color:white;">Society of Hispanic Professional Engineers</li>
+                        </ul>   
+                        <div class="top-number"><p><i class="shpe_fa shpe_fa-phone-square"></i></p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+
+                                <li><a href="https://www.facebook.com/shpe.ucr"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/shpeucr"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/pub/shpe-at-ucr/75/51a/990"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="https://www.instagram.com/shpeucr/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                           
+                            <!-- ######### TODO: Add search functionality ########### -->
+                            <!-- search 
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div> -->
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse navbar-shpe" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="./images/logo.jpg" width="auto" height="40px" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav navbar-nav-shpe">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="our_mission.html">Our Mission</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>                        
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="graduates.html">Graduates</a></li>
+                        <li><a href="opportunities.html">Opportunities</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="history.html">History</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    
+    
+    <!--
+          ######################################################################
+          #####################       Main Slider         ######################
+          ###################################################################### 
+    -->
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <!--
+                    ###
+                    Carousel Circular Butons
+                    ###
+            -->
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            
+            
+            <div class="carousel-inner">
+                <!--
+                        ###
+                        First Carousel Item
+                        ###
+                -->
+                <!-- images/slider/bg1.jpg -->
+                <div class="item active" style="background-image: url(./images/slider/Best_SHPE.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content carousel-content-shpe">
+                                    <h1 class="animation animated-item-1">Society of Hispanic Professional Engineers @ University of California, Riverside
+                                    <h2 class="animation animated-item-2">Brought together by heritage, social responsibility and desire to improve the equality of all people through the use of science and technology</h2>
+                                    <a class="btn-slide animation animated-item-3" href="our_mission.html">Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <!--<img src="./images/slider/img1.png" class="img-responsive">-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(images/slider/12973541_1295820590434268_4541791531700582219_o.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <!--
+                                    <h1 class="animation animated-item-1">Carousel Slide #2</h1>
+                                    <h2 class="animation animated-item-2">Carousel Slide #2 Description</h2>
+                                    <a class="btn-slide animation animated-item-3" href="#">Button</a> -->
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <!--<img src="images/slider/img3.png" class="img-responsive">-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(images/slider/12998344_1297825016900492_2791461380816372764_o.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <!--
+                                    <h1 class="animation animated-item-1">Carousel Slide #3</h1>
+                                    <h2 class="animation animated-item-2">Carousel Slide #3 Description</h2>
+                                    <a class="btn-slide animation animated-item-3" href="#">Button</a>-->
+                                </div>
+                            </div>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    
+                                    <!--<img src="images/slider/img3.png" class="img-responsive">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+
+    
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <!--
+                     ######################################################################
+                     #####################       Switching Tabs 2      ######################
+                     ###################################################################### 
+                -->
+                <div class="col-xs-12 col-sm-8 wow fadeInDown">
+                   <div class="tab-wrap"> 
+                        <div class="media">
+                            <div class="parrent pull-left">
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li class=""><a href="#tab1" data-toggle="tab" class="analistic-01">Our Values</a></li>
+                                    <li class="active"><a href="#tab2" data-toggle="tab" class="analistic-02">Our Function</a></li>
+                                    <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Our Fulfillments</a></li>
+
+                                </ul>
+                            </div>
+                            
+                            <div class="parrent media-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade" id="tab1">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                 <h2>Excellence in...</h2>
+                                                 <p>We value excellence in education, professional pursuits and leadership. We obtain excellence through integrity, empowerment, achievement, diversity and continuous improvement. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="tab-pane fade active in" id="tab2">
+                                        <div class="media">
+
+                                            <div class="media-body">
+                                                 <h2>We serve to...</h2>
+                                                 <p>SHPE serves to lead as a social-technical organization whose primary function is to enhance and achieve the potential of Hispanics in engineering, math and science. 
+                                                 </p>
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                     <div class="tab-pane fade" id="tab3">
+                                         <div class="media">
+ 
+                                             <div class="media-body">
+                                                 <h2>We strive to...</h2>
+                                                 <p>We strive to fulfill our mission by increasing educational opportunities, promoting professional and personal growth, carry out our social responsibility to be involved in education, business and government issues and enhancing pride within our organization and reinforcing our reputation as a vital Hispanic organization.</p>
+                                            </div>
+                                         </div>
+                                     </div>
+                                    
+                                </div> <!--/.tab-content-->  
+                            </div> <!--/.media-body--> 
+                        </div> <!--/.media-->     
+                    </div><!--/.tab-wrap-->               
+                </div><!--/.col-sm-6-->
+
+                
+                
+                
+                <!--
+                     ######################################################################
+                     ##################### Testimonials (Right side) ######################
+                     ###################################################################### 
+                -->
+                <div class="col-xs-12 col-sm-4 wow fadeInDown">
+                    <div class="testimonial">
+                        <h2>Testimonials</h2>
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" width="100px" height="100px" src="images/testimonials/testimonials1.jpg">
+                            </div>
+                            <div class="media-body">
+                                <p>SHPE at UCR has given me the resources and opportunities necessary to be able to not only excel at UCR, but to become readily prepared for when I entered the industry.</p>
+                                <span><strong>-<a href="http://www.sergiomorales.me/">Sergio Morales</a>/</strong> Alumni, Class of 2015</span>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#content-->
+
+    
+    
+    <!--
+         ######################################################################
+         #####################   Common Footer       ##########################
+         ###################################################################### 
+    -->
+    <footer id="footer" class="midnight-blue-shpe">
+        <div class="container container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="row">
+                <div class="col-sm-8">
+                    &copy; 2016 Society of Hispanic Professional Engineers, at University of California, Riverside. 
+                    <br>
+                    <a href="http://www.ucr.edu/" ><img src="images/72867278.little_ucr.jpg"/></a>
+				</div>
+                <div class="col-sm-4">
+                    <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a><br>
+                    <a href="http://shpe.org/" style="color:gold">SHPE National</a><br>
+                    Contact us at shpe@engr.ucr.edu
+                </div>
+            </div>
+            <div class="row">
+                <div class="pull-left">
+
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+        
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/vendor/2f9e67a5.jquery.min.js"><\/script>')</script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        var _gaq=[['_setAccount','UA-39500870-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- / common footer -->
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>
