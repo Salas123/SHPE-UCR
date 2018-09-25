@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
+   <title>Contact Us - Society of Hispanic Professional Engineers @ UCR</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="SHPE @ UCR">
+   <meta name="apple-mobile-web-app-title" content="SHPE @ UCR">
+   <meta name="application-name" content="SHPE @ UCR">
+   <!-- core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/animate.min.css" rel="stylesheet">
+   <link href="css/prettyPhoto.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+   <script src="js/respond.min.js"></script>
+   <![endif]-->
+   <!-- main SHPE JS -->
+   <script src="js/main.js"></script>
+   <link rel="shortcut icon" href="favicon.ico">
+   <!-- For the three people that still use these
+   	  Default / Android -->
+   <link rel="icon" sizes="192x192" href="icon.png">
+   <!-- Apple iPhone, iOS 8+ -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+   <!-- Apple iPad, 2014 and newer -->
+   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+   <!-- Apple iPhone, iOS 6+ -->
+   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+   <!-- Apple iPhone, iOS 2.1+ -->
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+   <!-- Apple iPhone, legacy -->
+   <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+   <div class="top-bar top-bar-shpe">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-xs-4">
+               <ul class="social-share">
+                  <li class="social-share" id="desktop">Society of Hispanic Professional Engineers</li>
+                  <li class="social-share" id="mobile">SHPE @ UCR</li>
+               </ul>
+               <div class="top-number">
+               	<p><i></i></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+               <div class="social">
+                  <ul class="social-share">
+                     <li title="Connect with us on LinkedIn"><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li title="Follow us on Facebook"><a href="https://www.facebook.com/shpe.ucr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li title="See our story on Instagram"><a href="https://www.instagram.com/shpeucr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li title="Join our mailing list!"><a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                     <li title="Keep up with our Twitter"><a href="https://twitter.com/shpeucr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li title="Check out our YouTube channel"><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.container-->
+   </div>
+   <!--/.top-bar-->
+   <nav class="navbar navbar-inverse" role="banner">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	<span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span><span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+            	<a href="index.html" title="Society of Hispanic Professional Engineers @ UCR"><img src="images/logo.png" width="70px" height="auto" alt="SHPE @ UCR"/></a>
+            </div>
+         </div>
+         <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav navbar-nav-shpe">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mission.html">Our Mission</a></li>
+               <li><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
+               <!--<li><a href="graduates.html">Graduates</a></li>-->
+               <li><a href="opportunities.html">Opportunities</a></li>
+                              <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li class="active"><a href="contact.html">Contact Us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+         </div>
+      </div>
+      <!--/.container-->
+   </nav>
+   <!--/nav-->
+</header>
+<!--/header-->
+<!-- TODO: More professioanl photos, preferably all using the same or similar backgrounds -->
+<section id="content">
+   <div class="container center">
+      <h2>Contact Information</h2>
+      <p>Please contact us at: <a href="mailto:shpe@engr.ucr.edu">shpe@engr.ucr.edu</a> or contact our current board members directly!</p>
+      <div class="row wow fadeIn">
+         <!-- President -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/eboard/2017-18/Albert_Fernandez.jpg"></img></div>
+            <div class="contact"> President <br>
+               Albert Fernandez <br>
+               Department of Chemical Engineering <br>
+               <a href="mailto:afern017@ucr.edu" style="color:blue;">afern017@ucr.edu</a>
+            </div>
+         </div>
+         <!-- Vice President -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/eboard/2017-18/Evelyn_Hernandez.jpg"></img> </div>
+            <div class="contact">Vice President <br>
+               Evelyn Hernandez<br>
+               Department of Environmental Sciences<br>
+               <a href="mailto:ehern048@ucr.edu" style="color:blue;">ehern048@ucr.edu</a> <br>
+            </div>
+         </div>
+     	</div>
+     	<!-- Internal Affairs -->
+      <div class="row wow fadeInLeft" data-wow-delay="300ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/eboard/2017-18/Jessica_Leon.jpg"></img> </div>
+            <div class="contact"> Internal Affairs<br>
+               Jessica Leon<br>
+               Department of Bioengineering <br>
+               <a href="mailto:jleon015@ucr.edu" style="color:blue;">jleon015@ucr.edu</a><br>
+            </div>
+         </div>
+         <!-- External Affairs -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/2017-18/Crysthal_Alvarez.jpg"></img> </div>
+            <div class="contact"> External Affairs <br>
+               Crysthal Alvarez <br>
+               Department of Mechanical Engineering <br>
+               <a href="mailto:calva021@ucr.edu" style="color:blue;">calva021@ucr.edu</a><br>
+            </div>
+         </div>
+  		</div>
+  		<!-- Chapter Representative -->
+      <div class="row wow fadeInRight" data-wow-delay="600ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/male.jpg"></img> </div>
+            <div class="contact"> Chapter Representative <br>
+               Brian Guadarrama <br>
+               Department of Mechanical Engineering <br>
+               <a href="mailto:bguad001@ucr.edu" style="color:blue;">bguad001@ucr.edu</a><br>
+            </div>
+         </div>
+         <!-- Secretary -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/2017-18/Reyna_Gaytan.JPG"></img> </div>
+            <div class="contact"> Secretary <br>
+               Reyna Gaytan <br>
+               Department of Biochemistry <br>
+               <a href="mailto:rgayt001@ucr.edu" style="color:blue;">rgayt001@ucr.edu</a><br>
+            </div>
+         </div>
+   	</div>
+   	<!-- Treasurer -->
+      <div class="row wow fadeInLeft" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/2017-18/Miguel_Villegas.JPG"></img> </div>
+            <div class="contact"> Treasurer<br>
+               Miguel Villegas <br>
+               Department of Electrical Engineering <br>
+               <a href="mailto:mvill044@ucr.edu" style="color:blue;">mvill044@ucr.edu</a><br>
+            </div>
+         </div>
+         <!-- Outreach Coordinator -->
+         <!--<div class="col-md-6 col-sm-12 col-xs-12">-->
+         <!--   <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/2017-18/Jose_B_Gutierrez.jpg"></img> </div>-->
+            <!--<div class="contact"> Outreach Coordinator <br>-->
+         <!--      Jose Gutierrez <br>-->
+         <!--      Department of Computer Engineering <br>-->
+         <!--      <a href="mailto:jguti046@ucr.edu" style="color:blue;">jguti046@ucr.edu</a><br>-->
+         <!--   </div>-->
+         <!--</div>-->
+      </div>
+      <!-- Graduate Representative Co-Chair -->
+      <div class="row wow fadeInRight" data-wow-delay="1200ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/eboard/graduates/Christian_Alcaraz.jpg"></img></div>
+            <div class="contact"> Graduate Representative Co-Chair <br>
+               Christian Alcaraz <br>
+               M.S.<br>
+               Ph.D<br>
+               Department of Chemical Engineering <br>
+               <a href="mailto:calca005@ucr.edu" style="color:blue;">calca005@ucr.edu</a>
+            </div>
+         </div>
+         <!-- Graduate Representative Co-Chair -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/eboard/graduates/Jeanette_Cobian.jpg"></img> </div>
+            <div class="contact">Graduate Representative Co-Chair<br>
+               Jeannette Cobain<br>
+               M.S.<br>
+               Ph.D<br>
+               Department of Mechanical Engineering  <br>
+               <a href="mailto:jcobi002@ucr.edu" style="color:blue;">jcobi002@ucr.edu</a> <br>
+            </div>
+         </div>
+     	</div>
+      <!-- Professional Development Director -->
+      <div class="row wow fadeInLeft" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/eboard/2017-18/Angelica_Franco.jpg"></img></div>
+            <div class="contact"> Professional Development Director <br>
+               Angelica Franco <br>
+               Department of Chemical Engineering <br>
+               <a href="mailto:afran022@ucr.edu" style="color:blue;">afran022@ucr.edu</a>
+            </div>
+         </div>
+         <!-- Fundraising Director -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/2017-18/Fernanda_Alonso.jpg"></img> </div>
+            <div class="contact">Fundraising Director <br>
+               Fernanda Alonso<br>
+               Department of Chemical and Enviornmental Engineering <br>
+               <a href="mailto:falon003@ucr.edu" style="color:blue;">falon003@ucr.edu</a> <br>
+            </div>
+         </div>
+     	</div>
+     	<!-- Ciencias Director -->
+     	      <div class="row wow fadeInRight" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/female.jpg"></img></div>
+            <div class="contact"> Ciencias Director <br>
+               Martina Sanchez <br>
+               Department of Bioengineering  <br>
+               <a href="mailto:msale008@ucr.edu" style="color:blue;">msale008@ucr.edu</a>
+            </div>
+         </div>
+         <!-- Jr. Representative Director -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/male.jpg"></img> </div>
+            <div class="contact">Jr. Representative Director <br>
+               Cristian Franco<br>
+               Department of Computer Engineering <br>
+               <a href="mailto:cfran015@ucr.edu" style="color:blue;">cfran015@ucr.edu</a> <br>
+            </div>
+         </div>
+     	</div>
+      <!-- Proposals/Projects Director -->
+      <div class="row wow fadeInLeft" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/eboard/2017-18/Steve_Martinez.jpg"></img></div>
+            <div class="contact"> Proposals/Projects Director <br>
+               Steve Martinez <br>
+               Department of Electrical Engineering <br>
+               <a href="mailto:smart051@ucr.edu" style="color:blue;">smart051@ucr.edu</a>
+            </div>
+         </div>
+         <!-- Alumni Relations Director -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/2017-18/Leslie_de_Jesus.JPG"></img> </div>
+            <div class="contact">Alumni Relations Director<br>
+               Leslie de Jesus<br>
+               Department of Electrical Engineering <br>
+               <a href="mailto:ldej002@ucr.edu" style="color:blue;">ldej002@ucr.edu</a> <br>
+            </div>
+         </div>
+     	</div>
+     	<!-- Industry Relations Director -->
+     	      <div class="row wow fadeInRight" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/male.jpg"></img></div>
+            <div class="contact"> Industry Relations Director <br>
+               Luis Orellana <br>
+               Department of Chemical Engineering <br>
+               <a href="mailto:lorel002@ucr.edu" style="color:blue;">lorel002@ucr.edu</a>
+            </div>
+         </div>
+      <!-- Athletics Director -->
+      <div class="row wow fadeInLeft" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/male.jpg"></img></div>
+            <div class="contact"> Athletics Director <br>
+               Danny Becerra <br>
+               Department of Electrical Engineering <br>
+               <a href="mailto:dbece007@ucr.edu" style="color:blue;">dbece007@ucr.edu</a>
+            </div>
+         </div>
+         <!-- Academic Development Director -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/male.jpg"></img> </div>
+            <div class="contact">Academic Development Director<br>
+               Bryce Dayap<br>
+               Department of Chemical Engineering <br>
+               <a href="mailto:bdaya001@ucr.edu" style="color:blue;">bdaya001@ucr.edu</a> <br>
+            </div>
+         </div>
+     	<!-- MentorSHPE Director -->
+     	      <div class="row wow fadeInRight" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/female.jpg"></img></div>
+            <div class="contact"> MentorSHPE Director <br>
+               Jeasmin Lopez<br>
+               Department of Environmental Science<br>
+               <a href="mailto:jlope078@ucr.edu" style="color:blue;">jlope078@ucr.edu</a>
+            </div>
+         </div>
+     	</div>
+         <!-- Tabling Director -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/female.jpg"></img> </div>
+            <div class="contact">Tabling Director <br>
+               Martha Anguiano<br>
+               Department of Environmental Science<br>
+               <a href="mailto:mangu012@ucr.edu" style="color:blue;">mangu012@ucr.edu</a> <br>
+            </div>
+         </div>
+      <!-- Social Media Director -->
+      <div class="row wow fadeInLeft" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/female.jpg"></img></div>
+            <div class="contact"> Social Media Director <br>
+               Monica Canto <br>
+               Department of Computational Mathematics <br>
+               <a href="mailto:mcant004@ucr.edu" style="color:blue;">mcant004@ucr.edu</a>
+            </div>
+         </div>
+     	</div>
+         <!-- Graphics Design Director -->
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/female.jpg"></img> </div>
+            <div class="contact">Graphics Design Director <br>
+               Paola Mena<br>
+               Department of Computational Mathematics <br>
+               <a href="mailto:pmena001@ucr.edu" style="color:blue;">pmena001@ucr.edu</a> <br>
+            </div>
+         </div>
+     	<!-- Webmaster Director -->
+     	      <div class="row wow fadeInRight" data-wow-delay="900ms">
+         <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/members/male.jpg"></img></div>
+            <div class="contact"> Webmaster <br>
+               Nicholas Perez-Aguilar <br>
+               Department of Computer Engineering <br>
+               <a href="mailto:npere017@ucr.edu" style="color:blue;">npere017@ucr.edu</a>
+            </div>
+         </div>
+     	</div>
+
+   </div>
+</section>
+<!-- Common Footer -->
+<footer id="footer">
+   <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
+            <br>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
+         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
+      </div>
+   </div>
+</footer>
+<!--/#footer-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="scripts/vendor/2f9e67a5.jquery.min.js"><\/script>')</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+        var _gaq=[['_setAccount','UA-39500870-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+</script> -->
+<!-- / common footer -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+</body>
+</html>

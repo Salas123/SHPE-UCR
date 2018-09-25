@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
+
+
+<title>Constitution - Society of Hispanic Professional Engineers @ UCR</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="SHPE @ UCR">
+   <meta name="apple-mobile-web-app-title" content="SHPE @ UCR">
+   <meta name="application-name" content="SHPE @ UCR">
+   <!-- core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/animate.min.css" rel="stylesheet">
+   <link href="css/prettyPhoto.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   	<script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+   <!-- main SHPE JS -->
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.prettyPhoto.js"></script>
+   <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/wow.min.js"></script>
+   <link rel="shortcut icon" href="favicon.ico">
+   <!-- For the three people that still use these
+      	  Default / Android -->
+   <link rel="icon" sizes="192x192" href="icon.png">
+   <!-- Apple iPhone, iOS 8+ -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+   <!-- Apple iPad, 2014 and newer -->
+   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+   <!-- Apple iPhone, iOS 6+ -->
+   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+   <!-- Apple iPhone, iOS 2.1+ -->
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+   <!-- Apple iPhone, legacy -->
+   <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+</head>
+<!--/head-->
+<body class="Const_page">
+<header id="header">
+   <div class="top-bar top-bar-shpe">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-xs-4">
+               <ul class="social-share">
+                  <li class="social-share" id="desktop">Society of Hispanic Professional Engineers</li>
+                  <li class="social-share" id="mobile">SHPE @ UCR</li>
+               </ul>
+               <div class="top-number">
+                  <p><i></i></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+               <div class="social">
+                  <ul class="social-share">
+                     <li title="Connect with us on LinkedIn"><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li title="Follow us on Facebook"><a href="https://www.facebook.com/shpe.ucr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li title="See our story on Instagram"><a href="https://www.instagram.com/shpeucr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li title="Join our mailing list!"><a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                     <li title="Keep up with our Twitter"><a href="https://twitter.com/shpeucr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li title="Check out our YouTube channel"><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                  <!-- TODO: Create Sitemap -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.container-->
+   </div>
+   <!--/.top-bar-->
+   <nav class="navbar navbar-inverse" role="banner">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <div class="navbar-brand"> <a href="index.html" title="Society of Hispanic Professional Engineers @ UCR"><img src="images/logo.png" width="70px" height="auto" alt="SHPE @ UCR"/></a> </div>
+         </div>
+         <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav navbar-nav-shpe">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mission.html">Our Mission</a></li>
+               <li><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <!--<li><a href="graduates.html">Graduates</a></li>-->
+               <li><a href="opportunities.html">Opportunities</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+         </div>
+      </div>
+
+      <!--/.container-->
+   </nav>
+   <!--nav-->
+
+<br><br><br><br>
+
+<div id="Constitution">
+    <h1 style="font-size: 50px; font-color:black; background-color: black;"><center>OUR CONSTITUTION</center></h1>
+
+<br><br><br><br>
+
+    <div id="Download">
+        <a href="SHPE_Constitution.pdf" download>
+            <img border="0" src="download-button-pdf.png" alt="Download button" title="Download our Constitution" width="200" height="150"><b style="color:black;"><b style="font-size: 20px;">Don't forget to grab a copy of our Constitution!</b>
+        </a>
+    </div>
+
+<br><br><br>
+
+    <div>
+        <h1 class="shadow"><center>The Society of Hispanic Professional Engineers</center></h1><br><br>
+        <center><img src="./images/logo.png" alt="Picture not found!" title="Society of Hispanic Professional Engineers" width=250;></center><br>
+        <h1 class="shadow" style="color: yellow;"><center>University of California, Riverside</center></h1>
+
+        <br><br><br>
+        <br><br><br>
+
+        <h2 class="Article"><b>Article 1: Name of the Organization</b></h2>
+        <br><br>
+        <p class="Const_text">
+            The name of the organization is the University of California,<br><br><br> Riverside (UCR) Student Chapter of the Society of Hispanic<br><br><br>
+            Professional Engineers (SHPE). Henceforth, the organization shall<br><br><br> be referred back to as SHPE at UCR.
+        </p>
+
+        <br><br><br><br>
+
+        <h2 class="Article"><b>Article 2: Purpose and Objective</b></h2>
+        <br><br>
+        <p class="Const_text">
+            The purpose and objective of this organization is to promote the<br><br><br> advancement of Hispanic Engineers and Scientists in education
+            and in<br><br><br> future emplyoment. We will accomplish this through: Improving the<br><br><br> retention and enrollment of Hispanic students in
+            Engineering and<br><br><br> Science whom are seeking technical and science degrees, providing a<br><br><br> forum for the exchange of information pertinent
+            to the development of<br><br><br> future Hispanic professionals, and developing opportunities in the local<br><br><br> Hispanic community.
+        </p>
+
+        <br><br><br><br>
+
+        <h2 class="Article"><b>Article 3: Association</b></h2>
+        <br><br>
+        <p class="Const_text">
+            Section 1: Affiliation<br><br><br><br>
+            SHPE at UCR is a non-profit organization affiliated with the<br><br><br> Society of Hispanic Professional Engineers, Inc. (SHPE, Inc.).<br><br><br>
+            SHPE at UCR possesses the right to adopt its own rules and<br><br><br> regulations.<br><br><br>
+
+            <br><br><br>Section 2: Non-Discrimination<br><br><br><br>
+            No person shall be denied membership in SHPE at UCR because of<br><br><br> race, color, sex, disability, nationality, religious affiliation, sexual<br><br><br> orientation, or
+            course of study.
+        </p>
+
+        <br><br><br><br>
+
+        <h2 class="Article"><b>Article 4: Membership</b></h2>
+        <br><br>
+        <p class="Const_text">
+            College students pursuing a degree in any course of study are eligible<br><br><br> for membership in SHPE at UCR. Active members are those that:<br><br>
+            <ol class="li_text">
+                <li>
+                    Attend no less than sixty percent (60%) of the general meetings, from the time they<br><br><br> attend their first meeting.<br><br><br>
+                </li>
+                <li>
+                    Pay the dues, if any, established by SHPE at UCR.<br><br><br>
+                </li>
+                <li>
+                    Take active part in SHPE sponsored activities and committees<br><br><br>
+                </li>
+                <li>
+                    Will be eligible to run and vote for an office position.<br><br><br>
+                </li>
+                <li>
+                    Will be eligible to apply for SHPE Member-only Scholarships.<br><br><br>
+                </li>
+                <li>
+                    Will be considered first for SHPE Event support, i.e. Funding for Conferences.<br><br><br>
+                </li>
+            </ol>
+        </p>
+
+            <br><br>
+            <p class="Const_text">
+                Associate Members are those that:<br><br>
+                <ol class="li_text">
+                    <li>
+                        Attend less than sixty percent (60%) of the general meetings, form the time they<br><br><br> attend their first meeting.<br><br><br>
+                    </li>
+                    <li>
+                        Pay the dues, if any, established by SHPE at UCR.<br><br><br>
+                    </li>
+                    <li>
+                        Will not be eligible to run for an officer position.<br><br><br>
+                    </li>
+                </ol>
+            </p>
+
+        <h2 class="Article"><b>Article 5: Committees</b></h2>
+        <br><br><br>
+        <p class="Const_text">
+            The affairs of SHPE at UCR shall be dealt with by three<br><br><br> committees, the Leadership Committee, the Student Affair<br><br><br> Committee, and the External Affair Committee. The latter two<br><br><br> committees will report to the Leadership Committee.
+
+            <br><br><br><br><br>
+
+             Section I: The Leadership Committee<br><br><br><br>
+
+             The Leadership Committee is responsible for overseeing all the<br><br><br> activities and proceedings of SHPE at UCR. Each position will<br><br><br> consist only one member unless stated otherwise.
+             The Leadership<br><br><br> Committee shall consist of the following student members: Committee<br><br><br> Chairperson(s) [President(s)]:  Maximum of two members for the<br><br><br> Committee Chairperson position shall be allowed and be referred
+             to as<br><br><br> Co-Presidents. The Committee Chairperson shall represent SHPE<br><br><br> at UCR as the chapter’s official spokesperson, and shall oversee all<br><br><br> of SHPE at UCR’s functions and activities. The Committee<br><br><br> Chairperson(s)
+             shall also oversee the Leadership Committee. The<br><br><br> Chairperson(s) will be the liaison for the College of Engineering<br><br><br> Leadership Council (CELC), and will oversee the compilation of<br><br><br> meeting agendas.
+             The Chairperson(s) will assume the title of<br><br><br> President(s) when representing SHPE at UCR on campus, in<br><br><br> regional and national activities, and when maintaining contact with<br><br><br> Professional Chapters in the area.
+             The Chairperson(s) shall be<br><br><br> responsible for the Mid-Year-Report and the  End-of-the-Year-<br><br><br>Report that are submitted to the National office and to the Office of<br><br><br> special  Programs.
+             Committee Vice-Chairperson [Vice-President]:<br><br><br> The Committee Vice-Chairperson shall assist the Chairperson(s) in<br><br><br> all of SHPE at UCR business in the above mentioned duties, and<br><br><br> shall act as Chairperson Pro
+             Tempore in the latter’s absence. It will<br><br><br> be the responsibility of the  Committee Vice-Chairperson to oversee the<br><br><br> registration of SHPE at UCR members for their chapter and<br><br><br> national memberships and for regional
+             and national conferences.<br><br><br> It will also be the  responsibility of the Committee Vice-Chairperson to<br><br><br> keep an updated list of member emails and compose emails to members<br><br><br> regarding SHPE matters.
+             Committee Financial Chairperson<br><br><br> [Treasurer]:  The Financial Chairperson shall maintain books<br><br><br> and record of all monies received or disbursed by SHPE at UCR.<br><br><br> The Financial Chairperson shall keep records of
+             members who have<br><br><br> paid their dues, if any. The Financial Chairperson shall make<br><br><br> quarterly reports listing all SHPE at UCR transactions, liabilities<br><br><br> and assets to the Board.
+             The Financial Chairperson will also request<br><br><br> funding from ACE funding from the SHPE National Office every<br><br><br> year. The Financial Chairperson shall see that reimbursements<br><br><br> and  refunds to those members that
+             have contributed to SHPE at UCR<br><br><br> be handed out. The Financial Chairperson, with the help of the<br><br><br> External Affairs Committee, and with the help of other committees<br><br><br> as warranted, shall request funding from
+             surrounding companies, and<br><br><br> from ASUCR. Committee Secretary: The Secretary shall scribe the<br><br><br> minutes of each SHPE at UCR meeting and provide them to<br><br><br> the chapter’s Webmaster(s) for public posting within
+             one week of each<br><br><br> meeting. The Committee Secretary shall be responsible for recording<br><br><br> the attendance at each SHPE at UCR meeting, keeping a record of<br><br><br> all of SHPE at UCR’s documents, including and not
+             limited to:<br><br><br> SHPE at UCR’s Constitution, minutes, agendas, membership<br><br><br> applications,  registration forms , Continuous Feedback Forms and<br><br><br> shall be responsible for tallying votes for any elections held by SHPE<br><br><br> at UCR.
+
+             <br><br><br><br><br>
+
+             Section II: The Student Affairs Committee<br><br><br>
+
+             The Student Affairs Committee will be responsible for handling<br><br><br> student services and social activities for SHPE at UCR. It will<br><br><br> consist of three elected positions:<br><br><br>
+             <ol class="li_text">
+                 <li>
+                     Internal Affairs<br><br><br>
+                 </li>
+                 <li>
+                     Student  Representatives<br><br><br>
+                 </li>
+                 <li>
+                     The Webmaster(s)<br><br><br>
+                 </li>
+             </ol>
+
+             <p class="Const_text">
+             Unless stated otherwise each position will consist of only one elected<br><br><br> official Internal Affairs:<br><br><br> The Internal Affairs responsibilities
+             include and are not limited to<br><br><br> organizing  and running activities that serve the student members,<br><br><br> organize a social to be taken place at the end of each quarter,<br><br><br> submit Club Registration forms to Student
+             Life and Leadership<br><br><br> (SLL) and  attend Club Orientation, and collect information in<br><br><br> SHPE at UCR mailboxes in SLL and in  Chicano Student<br><br><br> Programs (CSP). The Internal Affairs will serve as the liaison for<br><br><br>
+             other clubs on campus and will work with the Student Representatives<br><br><br> in order to maintain club relationships and organize activities.  Student<br><br><br> Representative(s):  Maximum of three members for the Student<br><br><br>
+             Representative position  shall be allowed. The Student<br><br><br> Representative(s) will assist the Internal Affairs Chair in the<br><br><br> organizing and running of activities. The responsibilities of the<br><br><br> Student Representative(s)
+             include, and are not limited to attending<br><br><br> recruiting events, i.e. Bear Facts, Bienvenida; Club  exposure and<br><br><br> promotion, i.e. fliers, Highlander ads, ASUCR event booths.<br><br><br> Maintaining the club poster board
+             and to organize a social activity to<br><br><br> be taken place at the beginning of each quarter.  Webmaster(s):<br><br><br>  Maximum of three members for the Webmaster position shall be<br><br><br> allowed. The Webmaster(s) shall be responsible
+             for providing,<br><br><br> updating and maintaining a SHPE at UCR’s  website that is<br><br><br> interactive, user friendly and informative. Updates and maintenance<br><br><br> should be on  a weekly basis, check SHPE at UCR email, search and
+             <br><br><br>post online scholarships. Also, posting  any documentation handed in by<br><br><br> an officer upon approval of the Leadership Committee and posting any<br><br><br> announcements regarding SHPE at UCR matters.<br><br><br> Historian:
+             The Historian shall work along with the Leadership<br><br><br> Committee Secretary to keep an accurate account of SHPE activities.<br><br><br> The Historian shall also be responsible for taking photographs at<br><br><br> meetings, conferences
+             and other SHPE activities, therefore the<br><br><br> Historian’s attendance is necessary at most events. The Historian<br><br><br> should also work with the Student Representative(s) in order to work<br><br><br> on projects such as the poster
+             board, and club exposure and the End of<br><br><br> The Year Presentation, i.e. slide show.<br><br><br><br><br>
+
+             Section III: The External Affairs Committee<br><br><br>
+
+             The External Affairs Committee will be responsible for dealing with<br><br><br> affairs that deal with sources, organizations, and contacts outside of<br><br><br> SHPE at UCR.
+             Its members shall consist of two elected positions:<br><br><br> the External Affairs Chair, and Fundraising Chair<br><br><br>
+             <ol class="li_text">
+                 <li>
+                     Fundraising Chair: The Fundraising Chair will be responsible for organizing and<br><br><br> running activities
+                     that raise funds for SHPE at UCR. These activities include,<br><br><br> but are not limited to written proposals, food sales and competitions. The<br><br><br> Fundraiser Chair shall work together with the External Affairs Chair
+                     and Treasurer<br><br><br> when working on proposals.<br><br><br><br><br>
+                 </li>
+                 <li>
+                     External Affairs Chair: The External Affair Chair will be responsible for<br><br><br> maintaining records of industry contacts, including company names, contact person’s,<br><br><br> and
+                     their specific contributions to the organization. The External Affair Chair will<br><br><br> also be responsible for maintaining these industry contacts and establishing new<br><br><br> contacts. They will, with the Leadership Committee,
+                     form relationships with industry,<br><br><br> with the goal of benefiting all involved.<br><br><br>
+                 </li>
+             </ol>
+
+             <p class="Const_text">
+                 The External Affair Committee will be responsible for organizing<br><br><br> activities that benefit the local community, inspiring young people
+                 to<br><br><br> succeed in their education. Activities the Committee will organize<br><br><br> include, but are not limited to, tutoring, homework assistance,<br><br><br> mentoring, presentations, and field trips.
+             </p>
+
+             <br><br><br><br><br>
+
+             <p class="Const_text">
+             Section IV: The Advisor<br><br><br><br>
+
+             The Director of Special Programs will serve as the advisor. The<br><br><br> advisor is to advise the committees on SHPE at UCR matters. The<br><br><br> advisor will also arbitrate any unresolved issues between or within<br><br><br> committees.
+             The Advisor will also serve as a liaison between SHPE<br><br><br> at UCR and college faculty leadership.
+             </p>
+             </p>
+        </p>
+
+        <br><br><br>
+
+        <h2 class="Article"><b>Article 6: Meetings</b></h2>
+
+        <br><br><br><br><br>
+
+        <p class="Const_text">
+              Section I: Quorum<br><br><br><br>
+              A quorum in any affairs where it will be needed shall consist of two-<br><br><br>thirds of the Board and two-thirds of the active membership.<br><br><br><br><br>
+
+              Section II: Committee Meetings [Board Meetings]<br><br><br><br>
+              SHPE at UCR active members may attend the Committee meeting.<br><br><br> Time and location of these meetings shall be announced to the general<br><br><br> membership. Attendance is mandatory for all committee members.
+              <br><br><br>A committee member should advise the Leadership Committee Chair if<br><br><br> he/she will not be able to attend a meeting well in advance, at least<br><br><br> 24hrs, unless it is an emergency. If a committee member does not
+              <br><br><br>attend a meeting without notice, he/she will provide a reason to the<br><br><br> Committees at the next available meeting. If absences and inactivity<br><br><br> become a problem the Leadership Committee has the right to begin the<br><br><br> Impeachment process.
+
+              <br><br><br><br>
+
+              Section III: General Meetings<br><br><br><br>
+              General membership meetings shall be held at least four times a<br><br><br> quarter. A quarterly calendar will list the scheduled general meetings.<br><br><br> Attendance is mandatory for all committee members;<br><br><br>
+              SHPE at UCR understands that academics comes first, therefore it<br><br><br> is also understood that class comes before meetings. The organizing<br><br><br> and running of the meetings shall be planned by committee members
+              <br><br><br>for the benefit of themselves and the general membership.
+        </p>
+
+        <br><br><br><br><br>
+
+        <h2 class="Article"><b>Article 7: Elections</b></h2>
+
+        <br><br><br>
+
+        <p class="Const_text">
+             Section I: Nominations<br><br><br><br>
+             Elected positions include Leadership Committee, Student Affairs<br><br><br> Committee, and External Affairs Committee members. Active members<br><br><br> in good academic standing (cumulative GPA:  2.0) are eligible to be<br><br><br> nominated for committee membership.
+             Nominees need not be present to<br><br><br> accept the nomination. Nominations must be made by paid members<br><br><br> and nominees must be paid active members. Members may nominate<br><br><br> themselves. In order to be considered, nominations
+             must be seconded.<br><br><br> The order of nomination shall be the same as the order of the committee<br><br><br> members on this constitution.<br><br><br><br>
+
+
+             Section II: Voting<br><br><br><br>
+             Election of officers shall be held during the second to last meeting in<br><br><br> Winter Quarter. Only active members are eligible to vote. An absentee<br><br><br> vote shall be accepted if submitted in a sealed envelope to the SHPE<br><br><br> at UCR advisor
+             prior to the elections. Voting shall be by secret ballot<br><br><br> and a majority votes shall constitute a vote.<br><br><br><br>
+
+             Section III: Declaring a Winner<br><br><br><br>
+             To be declared a winner of an election, an officer must receive a<br><br><br> majority of the votes cast. A majority shall be defined as one more<br><br><br> than fifty percent of the total votes cast. In the event that no one<br><br><br> candidate receives a majority
+             of the votes cast, a run-off election will<br><br><br> be held between the top two nominees, and the winner shall be the<br><br><br> candidate that receives a majority of the votes cast.<br><br><br><br>
+
+             Section IV: Installation of Officers<br><br><br><br>
+             Newly elected officers shall assume office at the end of the Spring<br><br><br> Quarter. Officers shall be installed no later than the end of June<br><br><br> (at the May banquet?). Newly elected officer are to be briefed on<br><br><br> their duties and responsibilities,
+             and given materials and documents<br><br><br> relevant to their office before installation. The outgoing Committee<br><br><br> members shall install the newly elected chairs.
+        </p>
+
+        <br><br><br><br><br>
+
+        <h2 class="Article"><b>Article 8: Resignation and Impeachement</b></h2>
+
+        <br><br><br>
+
+        <p class="Const_text">
+            Section I: Resignation<br><br><br>
+            An officer wishing to resign shall submit a letter of resignation to the<br><br><br> Leadership Committee at least two weeks prior to the date of<br><br><br> intended resignation. The vacancy shall be filled by any other member<br><br><br> of the Leadership Committee.
+            The general membership shall be notified<br><br><br> of the resignation; from thence the nomination process shall commence to<br><br><br> fill the open position.<br><br><br><br><br>
+
+            Section II: Impeachment<br><br><br><br>
+            When any general member or committee member feels that another<br><br><br> committee member is not fulfilling their duty, the following steps will be<br><br><br> taken:<br><br><br><br> The committee member in question shall meet with the member bringing<br><br><br> the grievance within
+            seven days after the member contacts the officer.<br><br><br> At the meeting, a sincere effort will be taken by both parties to<br><br><br> resolve the issue in private. If the private meeting does not resolve the<br><br><br> issue, the issue will be brought
+            before the Leadership Committee. The<br><br><br> Leadership Committee shall meet with the conflicting parties to try to<br><br><br> resolve the issue. If the issue cannot be resolved, and it is an issue<br><br><br> of sufficient gravity, the member in question
+            can be removed by a<br><br><br> unanimous vote by the Committees. Only a unanimous vote will<br><br><br> remove an officer or a member. If the issue is still not resolved, the<br><br><br> issue shall be brought to the general membership. After both sides of<br><br><br> the
+            issue are presented to the general assembly, and the issue is<br><br><br> completely explained and discussed, a vote will be taken. Two-thirds<br><br><br> of the vote is necessary to remove the officer. If the officer is not<br><br><br> removed, the issue shall go to arbitration.
+            The arbitrators shall be the<br><br><br> SHPE advisor and a faculty member. They will decide on the issue<br><br><br> ten days prior to the impeachment general meeting. Their decision is<br><br><br> final.<br><br><br><br>
+
+            If a position is left unfilled due to the impeachment process the<br><br><br> nomination process shall commence at the next general meeting following<br><br><br> the removal of the officer.
+        </p>
+
+        <br><br><br><br><br>
+
+        <h2 class="Article"><b>Article 9: Money Requests</b></h2>
+
+        <br><br><br>
+
+        <p class="Const_text">
+             Section I: Petty Cash Expenditures<br><br><br>
+             Petty cash is defined as any expenditure below ten dollars. These<br><br><br> expenditures need not be pre approved.<br><br><br><br>
+
+             Section II: Regular Expenditures<br><br><br>
+             Regular expenditures are those defined as greater than ten dollars.<br><br><br> The leadership committee must approve these expenditures if any<br><br><br> reimbursement is to be given. Approval of the expenditure requires the<br><br><br> agreement of at least three of the
+             Leadership Committee members. No<br><br><br> abstentions shall be allowed on money matters.<br><br><br><br>
+
+             Section III: Check Requests<br><br><br>
+             A member can fill out a check request only after the expenditure has<br><br><br> been approved. The form will be filled-out by the Leadership<br><br><br> Committee Chair and Treasurer. Upon completion of the<br><br><br> request,
+             the appropriate money will be issued to the requesting member<br><br><br> by the treasurer.
+        </p>
+
+        <br><br><br><br><br>
+
+        <h2 class="Article"><b>Article 10: Amendments to the Constitution</b></h2>
+
+        <br><br><br>
+
+        <p class="Const_text">
+             Proposed amendments must be submitted in writing to the Leadership<br><br><br> Committee. To be considered by the general membership, the<br><br><br> amendment must be passed by the Committees and endorsed by at least<br><br><br> twenty
+             five percent of the general membership. The amendment will then<br><br><br> be presented at the following general meeting, where a two-thirds<br><br><br> majority can approve the amendment after it is presented and<br><br><br> discussed.
+
+             <br><br><br><br>
+
+             The SHPE at UCR Chapter agrees to abide by the rules and<br><br><br> regulations of the Office of Student Life and Leadership. This<br><br><br> constitution, amendments, and by-laws of this organization<br><br><br> shall be subject to
+             review by the Office of Student Life<br><br><br> and Leadership to ensure that they are in accordance with the<br><br><br> aforementioned rules and regulations
+        </p>
+
+        <br><br><br><br><br>
+
+        <h2 class="Article"><b>Article 11: Ratification</b></h2>
+
+        <br><br><br>
+
+        <p class="Const_text">
+             This constitution will be officially ratified by a majority of the active<br><br><br> membership present at a designated Constitutional general meeting.
+        </p>
+        <br><br><br><br><br><br>
+    </div>
+</div>
+
+<!-- Space -->
+<br><br>
+
+<!--/#content-->
+<!--henlo lizer-->
+<!-- Common Footer -->
+<footer id="footer">
+   <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
+            <br>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
+         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
+      </div>
+   </div>
+</footer>
+<!--/#footer-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="scripts/vendor/2f9e67a5.jquery.min.js"><\/script>')</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+        var _gaq=[['_setAccount','UA-39500870-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+</script> -->
+<!-- / common footer -->
+</body>
+</html>

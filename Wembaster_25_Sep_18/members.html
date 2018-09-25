@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
+   <title>Members - Society of Hispanic Professional Engineers @ UCR</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="SHPE @ UCR">
+   <meta name="apple-mobile-web-app-title" content="SHPE @ UCR">
+   <meta name="application-name" content="SHPE @ UCR">
+   <!-- core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/animate.min.css" rel="stylesheet">
+   <link href="css/prettyPhoto.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+   <script src="js/respond.min.js"></script>
+   <![endif]-->
+   <!-- main SHPE JS -->
+   <script src="js/main.js"></script>
+
+   <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.prettyPhoto.js"></script>
+   <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/wow.min.js"></script>
+   <link rel="shortcut icon" href="favicon.ico">
+   <!-- For the three people that still use these
+   	  Default / Android -->
+   <link rel="icon" sizes="192x192" href="icon.png">
+   <!-- Apple iPhone, iOS 8+ -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+   <!-- Apple iPad, 2014 and newer -->
+   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+   <!-- Apple iPhone, iOS 6+ -->
+   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+   <!-- Apple iPhone, iOS 2.1+ -->
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+   <!-- Apple iPhone, legacy -->
+   <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+   <div class="top-bar top-bar-shpe">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-xs-4">
+               <ul class="social-share">
+                  <li class="social-share" id="desktop">Society of Hispanic Professional Engineers</li>
+                  <li class="social-share" id="mobile">SHPE @ UCR</li>
+               </ul>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+               <div class="social">
+                  <ul class="social-share">
+                     <li title="Connect with us on LinkedIn"><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li title="Follow us on Facebook"><a href="https://www.facebook.com/shpe.ucr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li title="See our story on Instagram"><a href="https://www.instagram.com/shpeucr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li title="Join our mailing list!"><a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                     <li title="Keep up with our Twitter"><a href="https://twitter.com/shpeucr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li title="Check out our YouTube channel"><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                  <!-- TODO: Create Sitemap -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.container-->
+   </div>
+   <!--/.top-bar-->
+   <nav class="navbar navbar-inverse" role="banner">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	<span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span><span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+            	<a href="index.html" title="Society of Hispanic Professional Engineers @ UCR"><img src="images/logo.png" width="70px" height="auto" alt="SHPE @ UCR"/></a>
+            </div>
+         </div>
+         <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav navbar-nav-shpe">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mission.html">Our Mission</a></li>
+               <li class="active"><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
+               <!--<li><a href="#">Graduates</a></li>-->
+               <li><a href="opportunities.html">Opportunities</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+         </div>
+      </div>
+      <!--/.container-->
+   </nav>
+   <!--/nav-->
+</header>
+<!--/header-->
+<div class="container-fluid">
+	<div id="top" class="row center">
+	   <!-- REGISTRATION BUTTON -->
+      <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-2 wow fadeInLeft button" id="top">
+      <!-- icons provided free by http://glyphicons.com/, thanks! -->
+         <a onclick="Javascript:window.open('http://shpe.org/index.php/join-shpe');" target="_blank" title="Click here to register or renew!">
+            <div class="btn btn-primary btn-md" role="button" data-toggle="modal" data-placement="right" data-target="#thanks" id="#National_Member">Become a SHPE National Member!</div>
+         </a>
+         <a style="vertical-align: super !important;" href="#join" data-toggle ="popover" class="bookmark"><span class="fa fa-info-circle"></span>Why?</a>
+      </div>
+	   <!-- END REGISTRATION BUTTON -->
+
+      <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInRight button" id="top">
+         <a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" class="btn btn-primary btn-md" target="_blank" data-toggle="tooltip"
+         data-trigger="hover" data-placement="left" title="Click here to subscribe">Join our Mailing List!</a>
+      </div>
+   </div>
+   <!-- REGISTRATION MODAL -->
+   <div class="modal fade" id="thanks" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h1 class="modal-title text-center" style="color: black;">Thank you!</h1>
+            </div>
+            <div class="modal-body"><h4>Thank you for considering a SHPE National Membership!</h4></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- END REGISTRATION MODAL -->
+   <nav class="col-sm-2 hidden-xs">
+      <ul class="nav nav-pills nav-stacked" id="nav" data-spy="affix" data-offset-top="165">
+         <li id="member"><a href="#board">LeaderSHPE</a></li>
+         <li id="member"><a href="#members">Members</a></li>
+         <li id="member"><a href="#alumni">SHPE Alumni</a></li>
+      </ul>
+   </nav>
+   <!-- ##################### Board ##################### -->
+   <!-- #####################|Row 1|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="board">
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/graduates/Christian_Alcaraz.jpg"  class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Christian Alcaraz</p><br>
+         <p class="details media-body" id="major">Chemical and Environmental Engineering</p><br>
+         <p class="details media-body"><a href="mailto:calca005@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>calca005@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Graduate Representative Co-Chair</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+      	<img src="images/members/2017-18/Fernanda_Alonso.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Fernanda Alonso</p><br>
+         <p class="details media-body" id="major">Environmental Engineering</p><br>
+         <p class="details media-body"><a href="mailto:falon003@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>falon003@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Fundraising Director</p> -->
+    	</div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Crysthal_Alvarez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Crysthal Alvaraz</p><br>
+         <p class="details media-body" id="major">Mechanical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:calva021@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>calva021@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Internal VP</p><br> -->
+  		</div>
+  		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Martha Anguiano</p><br>
+         <p class="details media-body" id="major">Environmental Science</p><br>
+         <p class="details media-body"><a href="mailto:mangu012@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>mangu012@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">External VP</p> -->
+      </div>
+	</div>
+   <!-- #####################|Row 2|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="board">
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg"  class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Daniel Becerra</p><br>
+         <p class="details media-body" id="major">Electrical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:dbece007@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>dbece007@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">President</p><br>
+         <p class="details media-body" id="position">Tabling Director</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg"  class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Monica Canto</p><br>
+         <p class="details media-body" id="major">Computational Mathematics</p><br>
+         <p class="details media-body"><a href="mailto:mcant004@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>mcant004@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Professional Dev. Director</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/graduates/Jeanette_Cobian.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Jeanette Cobian</p><br>
+         <p class="details media-body" id="major">Mechanical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:jcobi002@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jcobi002@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Webmaster Director</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Bryce Dayap</p><br>
+         <p class="details media-body" id="major">Chemical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:bdaya001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>bdaya001@ucr.edu</a><br></p>
+         <p class="details media-body" id="position">Secretary</p><br>
+         <!-- <p class="details media-body" id="position">Social Media Director</p> -->
+      </div>
+	</div>
+   <!-- #####################|Row 3|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="board">
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Leslie_de_Jesus.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Leslie de Jesus</p><br>
+         <p class="details media-body" id="major">Electrical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:ldej002@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>ldej002@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Social Director</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/2017-18/Albert_Fernandez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Albert Fernandez</p><br>
+         <p class="details media-body" id="major">Chemical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:afern017@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>afern017@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">MentorSHPE Director</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Angelica_Franco.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Angelica Franco</p><br>
+         <p class="details media-body" id="major">Chemical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:afran022@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>afran022@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Chapter Representative</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Cristian Franco</p><br>
+         <p class="details media-body" id="major">Computer Engineering</p><br>
+         <p class="details media-body"><a href="mailto:cfran015@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>cfran015@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Treasurer</p><br>
+         <p class="details media-body" id="position">Proposals Director</p> -->
+      </div>
+  	</div>
+   <!-- #####################|Row 4|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="board">
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Reyna_Gaytan.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Reyna Gaytan</p><br>
+         <p class="details media-body" id="major">Biochemistry</p><br>
+         <p class="details media-body"><a href="mailto:rgayt001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>rgayt001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Graphic Design Director</p> -->
+      </div>
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Brian Guadarrama</p><br>
+         <p class="details media-body" id="major">Mechanical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:bguad001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>bguad001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Academic Development</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Jose_B_Gutierrez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Jose Gutierrez</p><br>
+         <p class="details media-body" id="major">Computer Engineering</p><br>
+         <p class="details media-body"><a href="mailto:guti046@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>guti046@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Industry Relations</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/2017-18/Evelyn_Hernandez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Evelyn Hernandez</p><br>
+         <p class="details media-body" id="major">Environmental Engineering</p><br>
+         <p class="details media-body"><a href="mailto:ehern048@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>ehern048@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Industry Relations</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 5|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="board">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Jessica_Leon.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Jessica Leon</p><br>
+         <p class="details media-body" id="major">Bioengineering</p><br>
+         <p class="details media-body"><a href="mailto:jleon015@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jleon015@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Industry Relations</p> -->
+      </div>
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Jeasmin Lopez</p><br>
+         <p class="details media-body" id="major">Environmental Engineering</p><br>
+         <p class="details media-body"><a href="mailto:jlope078@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jlope078@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Graphic Design Director</p> -->
+      </div>
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/2017-18/Steve_Martinez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Steve Martinez</p><br>
+         <p class="details media-body" id="major">Electrical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:smart051@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>smart051@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Academic Development</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Paola Mena</p><br>
+         <p class="details media-body" id="major">Computational Mathematics</p><br>
+         <p class="details media-body"><a href="mailto:pmena001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>pmena001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Industry Relations</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 6|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="board">
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Luis Orellana</p><br>
+         <p class="details media-body" id="major">Chemical Engineering</p><br>
+         <p class="details media-body"><a href="mailto:lorel002@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>lorel002@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Graphic Design Director</p> -->
+      </div>
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Nicholas Perez-Aguilar</p><br>
+         <p class="details media-body" id="major">Computer Engineering</p><br>
+         <p class="details media-body"><a href="mailto:npere017@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>npere017@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Academic Development</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span>Martina Sanchez</p><br>
+         <p class="details media-body" id="major">Computer Engineering</p><br>
+         <p class="details media-body"><a href="mailto:msale008@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>msale008@ucr.edus</a><br></p>
+         <!-- <p class="details media-body" id="position">Industry Relations</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Miguel_Villegas.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-star" id="member" title="Executive Board"></span><span class="fa fa-globe" id="member" title="National Member"></span>Miguel Villegas</p><br>
+         <p class="details media-body" id="major">Electrical Enginering</p><br>
+         <p class="details media-body"><a href="mailto:mvill044@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>mvill044@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">Industry Relations</p> -->
+      </div>
+	</div>
+	<!-- ################# Current Members ############### -->
+   <!-- #####################|Row 7|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Jose Agyuilar</p><br>
+         <p class="details media-body" id="major">Electrical Engineer</p><br>
+         <br>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+		<div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>James Alcala</p><br>
+         <p class="details media-body" id="major">Applied Math</p><br>
+         <p class="details media-body"><a href="mailto:jalca014@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jalca014@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Frank Angeles</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:fange001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>fange001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Salvador Antunez</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:santu001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>santu001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body"><a href="#" title="Graduates">Graduate Student</a></p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 8|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Luisangel Araujo</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:lange001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>lange001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Zuleth_Araujo.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Zuleth Araujo</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:zarau001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>zarau001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Erik Arriaga</p><br>
+         <p class="details media-body" id="major">Computer Science</p><br>
+         <p class="details media-body"><a href="mailto:earri003@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>earri003@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Anthony Castellanos</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:acast049@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>acast049@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 9|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Mario Cazares</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:mcaza003@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>mcaza003@ucr.edu</a><br></p>
+         <!-- <p class="details media-body"><a href="#" title="Graduates">Graduate Student</a></p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Andrew Cortez</p><br>
+         <p class="details media-body" id="major">Electrical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:acort022@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>acort022@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Hernan Diaz</p><br>
+         <p class="details media-body" id="major">Electrical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:hdiaz005@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>hdiaz005@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Robert Espinoza</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:respi009@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>respi009@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 10|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Sebastian Gomez</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:sgome012@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>sgome012@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Joseph Gonzalez</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:jgonz146@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jgonz146@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Luis Gutierrez</p><br>
+         <p class="details media-body" id="major">Bioengineer</p><br>
+         <p class="details media-body"><a href="mailto:lguti010@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>lguti010@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Sami A Khan</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:jgonz146@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jgonz146@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 11|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Griffin Haz</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:skhan031@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>skhan031@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/2016-17/Edward_Hernandez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Edward Hernandez</p><br>
+         <p class="details media-body" id="major">Electrical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:ehern044@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>ehern044@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">National Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Kenia Hernandez</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:khern018@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>khern018@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Stephanie Hernandez</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:shern042@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>shern042@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 12|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/2015-16/Ivan_Lopez.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Ivan Lopez</p><br>
+         <p class="details media-body" id="major">Applied Math</p><br>
+         <p class="details media-body"><a href="mailto:ilop013@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>ilop013@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Gian Ocampo</p><br>
+         <p class="details media-body" id="major">Computer Engineer</p><br>
+         <p class="details media-body"><a href="mailto:gocam001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>gocam0001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Gabriel_Orduna.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Gabriel Orduna</p><br>
+         <p class="details media-body" id="major"></p><br>
+         <p class="details media-body"><a href="mailto:gordu002@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>gordu002@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Jessica Ortiz</p><br>
+         <p class="details media-body" id="major">Bioengineer</p><br>
+         <p class="details media-body"><a href="mailto:jorti027@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jorti027@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 13|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Masha Petrowizky</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:mpetr008@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>mpetr008@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Alejandro Pina</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:apina005@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>apina005@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Brandon_Rivera.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Brandon Rivera</p><br>
+         <p class="details media-body" id="major">Electrical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:brive005@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>brive005@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/2016-17/Nataly_Rosales.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Nataly Rosales</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:mrosa007@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>mrosa007@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 14|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Jesus Salas</p><br>
+         <p class="details media-body" id="major">Computer Science</p><br>
+         <p class="details media-body"><a href="mailto:jsala054@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jsala054@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Webmaster</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Gustavo Salazar</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:gsala007@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>gsala007@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Andres Sanchez</p><br>
+         <p class="details media-body" id="major">Electrical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:asanc069@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>asanc069@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Joel_Sanchez.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Joel Sanchez</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:jsanc128@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jsanc128@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 15|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/graduates/Yair_Sanchez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Yair Sanchez</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:ysanc012@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>ysanc012@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Eddie Simas</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:esima000@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>esima000@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Nick Urzua</p><br>
+         <p class="details media-body" id="major">Computer Science</p><br>
+         <p class="details media-body"><a href="mailto:nurzu001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>nurzu001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/female.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Pamela Ycu</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:pycu001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>pycu001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Current Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 18|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="members">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Albertina Zuniga.JPG" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Albertina Zuniga</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:azuni005@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>azuni005@ucr.edu</a><br></p>
+         <!-- <p class="details media-body" id="position">National Member</p> -->
+      </div>
+   </div>
+   <!-- #####################|Row 19|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="alumni">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/alumni/2017/Glenda_Castro.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Glenda Castro</p><br>
+         <p class="details media-body" id="major">Env. Engineer</p><br>
+         <p class="details media-body"><a href="mailto:gcast016@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>gcast016@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Class of 2017</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/alumni/2017/Marlen_Castro.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Marlen Castro</p><br>
+         <p class="details media-body" id="major">Bioengineer</p><br>
+         <p class="details media-body"><a href="mailto:mcast046@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>mcast046@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Class of 2017</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/2017-18/Erika_Delos_Santos.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Erika Delos Santos</p><br>
+         <p class="details media-body" id="major">Psychology</p><br>
+         <p class="details media-body"><a href="mailto:edelo004@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>edelo004@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/members/male.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name">Jose Dircio</p><br>
+         <p class="details media-body" id="major">Mechanical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:jdirc001@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>jdirc001@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">National Member</p> -->
+      </div>
+   </div>
+      <!-- #####################|Row 20|##################### -->
+   <div class="row media col-md-offset-2 col-sm-offset-2" id="alumni">
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/alumni/2017/Pablo_Hernandez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Pablo Hernandez</p><br>
+         <p class="details media-body" id="major">Env. Engineer</p><br>
+         <p class="details media-body"><a href="mailto:pherfn015@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>phern015@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Class of 2017</p> -->
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-10 media-top member">
+         <img src="images/eboard/2016-17/Andrew_Sanchez.jpg" class="media-object media_image img-rounded"></a>
+         <p class="details media-body" id="name"><span class="fa fa-globe" id="member" title="National Member"></span>Andrew Sanchez</p><br>
+         <p class="details media-body" id="major">Chemical Engineer</p><br>
+         <p class="details media-body"><a href="mailto:asanc054@ucr.edu"><span class="glyphicon glyphicon-envelope" id="member"></span>asanc054@ucr.edu</a><br></p>
+         <!-- <p class="details media-body">Class of 2017</p> -->
+      </div>
+   </div>
+<!-- ############################ End of list ################################### -->
+   <div class="row">
+      <div class="col-md-8 col-md-offset-2 well">
+         <p id="join"></p>
+         <ol id="join">
+            <li>National Membership allows you to attend SHPE National Conference and access to exclusive scholarships.</li>
+            <li>SHPE Familia provides a close group of friends that extends beyond college years.</li>
+            <li>Professional experience is pivotal for beginning and continuing a successful career path.</li>
+            <li>Leadership experience is necessary for upward mobility in any industry.</li>
+            <li>Network provides opportunities that propagate your academic & professional path.</li>
+         </ol>
+      </div>
+  	</div>
+</div>
+<!--/.container -->
+
+
+<!-- Common Footer -->
+<footer id="footer">
+   <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
+            <br>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
+         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
+      </div>
+   </div>
+</footer>
+<!--/#footer-->
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="scripts/vendor/2f9e67a5.jquery.min.js"><\/script>')</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+        var _gaq=[['_setAccount','UA-39500870-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+</script> -->
+<!-- / common footer -->
+</body>
+</html>

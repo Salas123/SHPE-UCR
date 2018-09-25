@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
+   <title>History - Society of Hispanic Professional Engineers @ UCR</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="SHPE @ UCR">
+   <meta name="apple-mobile-web-app-title" content="SHPE @ UCR">
+   <meta name="application-name" content="SHPE @ UCR">
+   <!-- core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/animate.min.css" rel="stylesheet">
+   <link href="css/prettyPhoto.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+   <script src="js/respond.min.js"></script>
+   <![endif]-->
+   <!-- main SHPE JS -->
+   <script src="js/main.js"></script>
+   <link rel="shortcut icon" href="favicon.ico">
+   <link rel="icon" sizes="192x192" href="icon.png">
+   <!-- Apple iPhone, iOS 8+ -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+   <!-- Apple iPad, 2014 and newer -->
+   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+   <!-- Apple iPhone, iOS 6+ -->
+   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+   <!-- Apple iPhone, iOS 2.1+ -->
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+   <!-- Apple iPhone, legacy -->
+   <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+   <div class="top-bar top-bar-shpe">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-xs-4">
+               <ul class="social-share">
+                  <li class="social-share" id="desktop">Society of Hispanic Professional Engineers</li>
+                  <li class="social-share" id="mobile">SHPE @ UCR</li>
+               </ul>
+               <div class="top-number">
+               	<p><i></i></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+               <div class="social">
+                  <ul class="social-share">
+                     <li title="Connect with us on LinkedIn"><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li title="Follow us on Facebook"><a href="https://www.facebook.com/shpe.ucr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li title="See our story on Instagram"><a href="https://www.instagram.com/shpeucr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li title="Join our mailing list!"><a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                     <li title="Keep up with our Twitter"><a href="https://twitter.com/shpeucr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li title="Check out our YouTube channel"><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                  <!-- TODO: Create Sitemap -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.container-->
+   </div>
+   <!--/.top-bar-->
+   <nav class="navbar navbar-inverse" role="banner">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	<span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span><span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+            	<a href="index.html" title="Society of Hispanic Professional Engineers @ UCR"><img src="images/logo.png" width="70px" height="auto" alt="SHPE @ UCR"/></a>
+            </div>
+         </div>
+         <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav navbar-nav-shpe">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mission.html">Our Mission</a></li>
+               <li><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
+               <!--<li><a href="graduates.html">Graduates</a></li>-->
+               <li><a href="opportunities.html">Opportunities</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+         </div>
+      </div>
+      <!--/.container-->
+   </nav>
+   <!--/nav-->
+</header>
+<!-- header-->
+<!-- Main Content -->
+<!--<div class = "container">-->
+<!--   <div class = "dropdown">-->
+<!--        <button class = "btn btn-primary dropdown-toggle" type ="button" data-toggle = "dropdown">YEARS-->
+<!--        <span class = "caret"></span>-->
+<!--        <ul class ="dropdown-menu">-->
+<!--        <li>1998-1999</li>-->
+<!--        <li>1999-2000</li>-->
+<!--        <li>2000-2001</li>-->
+<!--        <li>2001-2002</li>-->
+<!--        <li>2002-2003</li>-->
+<!--        <li>2003-2004</li>-->
+<!--        <li>2005-2006</li>-->
+<!--        <li>2007-2008</li>-->
+<!--        <li>2009-2010</li>-->
+<!--        </ul>-->
+<!--        </button>-->
+<!--     </div>-->
+<div class="container">
+   <br>
+   <div class="center wow fadeInDown">
+     <h2>History</h2>
+     <p class="lead">The History of SHPE at UCR</p>
+     <div class="row">
+         <h3>Chapter History and Bylaws</h3><br>
+         <p class="lead"> View the missions and ideas that constitue our organization </p>
+         <div id="constitution">You can view the SHPE Constitution <a href="docs/SHPE_Constitution.pdf">here</a>.</div>
+     </div>
+   </div>
+   <div id="empty" style="padding-bottom:50rem;"></div>
+   <div><p style="font-size:10px; margin-left:37%;">*This page is curently undergoing constructon. Check back on me soon!</p>
+   </div>
+</div>
+</div>
+<!-- Common Footer -->
+<footer id="footer">
+   <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
+            <br>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
+         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
+      </div>
+   </div>
+</footer>
+<!--/#footer-->
+<!-- JS -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+</body>
+</html>

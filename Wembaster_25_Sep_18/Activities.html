@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
+
+
+<title>Past Events - Society of Hispanic Professional Engineers @ UCR</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="SHPE @ UCR">
+   <meta name="apple-mobile-web-app-title" content="SHPE @ UCR">
+   <meta name="application-name" content="SHPE @ UCR">
+   <!-- core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/animate.min.css" rel="stylesheet">
+   <link href="css/prettyPhoto.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   	<script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+   <!-- main SHPE JS -->
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.prettyPhoto.js"></script>
+   <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/wow.min.js"></script>
+   <link rel="shortcut icon" href="favicon.ico">
+   <!-- For the three people that still use these
+      	  Default / Android -->
+   <link rel="icon" sizes="192x192" href="icon.png">
+   <!-- Apple iPhone, iOS 8+ -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+   <!-- Apple iPad, 2014 and newer -->
+   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+   <!-- Apple iPhone, iOS 6+ -->
+   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+   <!-- Apple iPhone, iOS 2.1+ -->
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+   <!-- Apple iPhone, legacy -->
+   <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+</head>
+<!--/head-->
+<body id="Events_Page">
+<header id="header">
+   <div class="top-bar top-bar-shpe">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-xs-4">
+               <ul class="social-share">
+                  <li class="social-share" id="desktop">Society of Hispanic Professional Engineers</li>
+                  <li class="social-share" id="mobile">SHPE @ UCR</li>
+               </ul>
+               <div class="top-number">
+                  <p><i></i></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+               <div class="social">
+                  <ul class="social-share">
+                     <li title="Connect with us on LinkedIn"><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li title="Follow us on Facebook"><a href="https://www.facebook.com/shpe.ucr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li title="See our story on Instagram"><a href="https://www.instagram.com/shpeucr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li title="Join our mailing list!"><a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                     <li title="Keep up with our Twitter"><a href="https://twitter.com/shpeucr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li title="Check out our YouTube channel"><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                  <!-- TODO: Create Sitemap -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.container-->
+   </div>
+   <!--/.top-bar-->
+   <nav class="navbar navbar-inverse" role="banner">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <div class="navbar-brand"> <a href="index.html" title="Society of Hispanic Professional Engineers @ UCR"><img src="images/logo.png" width="70px" height="auto" alt="SHPE @ UCR"/></a> </div>
+         </div>
+         <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav navbar-nav-shpe">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mission.html">Our Mission</a></li>
+               <li><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
+               <!--<li><a href="graduates.html">Graduates</a></li>-->
+               <li><a href="opportunities.html">Opportunities</a></li>
+                <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+         </div>
+      </div>
+
+      <!--/.container-->
+   </nav>
+   <!--nav-->
+
+<br><br><br><br>
+
+<!-- Body -->
+<!--title-->
+
+<h1 id="events_title"><center>PAST EVENTS</center></h1>
+
+
+<!-- Space -->
+<br><br>
+<div id="wrap">
+        <div id="side-left">
+        <!-- 2017-2018 -->
+        <h2 style="color:black;"><u>2018-2019 Academic Year</u></h2>
+            <p><center><b>Nothing has passed for this year yet! Everything is still upcoming!!!</b></center></p>
+            <!-- Break are there for now. They are used for creating a temp -->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <div id="side-right">
+        <!-- 2017-2018 -->
+        <h2 style="color:black;"><u>2017-2018 Academic Year</u></h2>
+            <ol>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Big Bear Leadership Retreat</b> - Jun 15 - 17, 2018</h2>
+                    <p>
+                        This event is to allow the future board of SHPE to come together
+                        in a transition process and learn more about their roles in their
+                        respective positions and to allow them to learn more about the
+                        opportunities that are available. This is also a bonding moment
+                        so that everyone may have a chance to get used to who they will
+                        be working with in the upcoming academic school year.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 3: Reverse career Fair</b> - April 30, 2018</h2>
+                    <p>
+                        This was a general meeting based around the idea of a Reverse Career Fair in which
+                        members were able to engage with the board to practice selling themselves in preparation
+                        of doing so to future employeers.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Professional Development Fair</b> - April 2, 2018</h2>
+                    <p>
+                        This was an event where members were able to spend a whole day learning from professionals
+                        about industries, as well as, learning new professional skills to help them stand out amongst
+                        their competition.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Hangers Social & In-N-Out</b> - April 19, 2018</h2>
+                    <p>
+                        An event to help members destress and unwind for a while, all while engaging with
+                        other SHPE members over some food.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Boba Tea House Fundraiser</b> - April 23, 2018</h2>
+                    <p>
+                        This was a time for members to come together for some Boba and socialize with eachother.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Poker Night</b> - Apr 20, 2018</h2>
+                    <p>
+                        SHPE members enjoyed a night of no-stakes poker and other card games.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">GM 2: Unround Table</b> - April 16, 2018</h2>
+                    <p>
+                        This general meeting was a time to motivate our SHPE members by featuring guest
+                        professionals and graduate students.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPEtina: Charla</b> - April 13, 2018</h2>
+                    <p>
+                        This was the beginning of a new program to empower our Latina girls.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Spring LeaderSHPE Day</b> - April 8, 2018</h2>
+                    <p>
+                        This was an event to start the transition of the newly elected board through
+                        fun and engaging activities and planning.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Highlander Day Tabling Session</b> - April 7, 2018</h2>
+                    <p>
+                        This event was an informational and educational opportunity to explain to
+                        upcoming freshman all about SHPE, what our mission is, and our opportunities.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Carl's Jr. Fundraiser</b> - April 6, 2018</h2>
+                    <p>
+                        This event was a fundraiser that was also a joint social event.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 1: SHPE Director Elections</b> - April 2, 2018</h2>
+                    <p>
+                        This general meeting was election day, to vote for the new year's upcoming directors.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">RLDC</b> - Mar 29 - Apr 1, 2018</h2>
+                    <p>
+                        Members participated in a three-day event and were given the opportunities to
+                        learn about and obtain numerous professional skills.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Yogurtland Fundraiser</b> - Mar 7, 2018</h2>
+                    <p>
+                        This was an event were we invited members and professionals together for a joint
+                        social-fundraiser.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">GM 5: SHPE Elections, Awards, and Potluck</b> - March 3, 2018</h2>
+                    <p>
+                        In this general meeting, a portion of the winners, for the board of the upcoming year,
+                         were announced. There was also a small social in which there were board games and activities
+                         for the members to play.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Winter Alumni Mixer</b> - March 3, 2018</h2>
+                    <p>
+                        This was an opportunity for us to reconnect with Alumni.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">BCOE Bowling Tournament</b> - Tue, February 27, 2018</h2>
+                    <p>
+                        We hosted a college-wide bowling tournament for student organizations and other competitve teams.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 4: SHPE Elections Round 1</b> - February 26, 2018</h2>
+                    <p>
+                        During this general meeting, members had the opportunity to vote on the future board
+                        for the upcoming year.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Mock Elections</b> - February 22, 2018</h2>
+                    <p>
+                        This mock election session was to help members with practice for the upcoming board
+                        elections in the fourth general meeting, Winter 2018.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">EGT: Auditions Round 2</b> - February 20, 2018</h2>
+                    <p>
+                        This was the second round of auditions for the Engineers Got Talent competition.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Nooners</b> - February 14, 2018</h2>
+                    <p>
+                        Raised funds by selling ice cream and churros.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">How to Pass Abstract Reasoning Tests for Industry Workshop</b> - February 12, 2018</h2>
+                    <p>
+                        This workshop was to expose SHPE members to the types of abstract reasoning tests that
+                        companies sometimes impose on their potential clients. Typically, students do not know
+                        about these tests and/or what these tests consist of and we tried to expose them to both.
+                        Members were given a lesson on what these tests were about, in which styles they come
+                        in, and even were given a practice test that was composed from a combination of other
+                        online tests.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Karaoke</b> - February 9, 2018</h2>
+                    <p>
+                        This was an event that had SHPE members come together for a night of singing and fun.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Blaze Fundraiser</b> - February 7, 2018</h2>
+                    <p>
+                        We hosted a social at Blaze Pizza while raising funds.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Nooners</b> - February 7, 2018</h2>
+                    <p>
+                        Raised funds by selling ice cream and churros.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 3: Resumes and Cover Letters</b> - February 5, 2018</h2>
+                    <p>
+                        This general meeting was to provide members with an opportunity to develop their resumes
+                        and cover letters by asking members to talk about their experiences and how they should
+                        implement those experiences into the next edition of their resumes/cover letters.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Panda Express Fundraiser</b> - February 1, 2018</h2>
+                    <p>
+                        This was a fundraiser event to help raise funds for SHPE, at the Panda Express location
+                        on campus at HUB.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">What the Physics Workshop</b> - January 29, 2018</h2>
+                    <p>
+                        In this workshop, methods of studying were discussed for general educational courses, such
+                        as Physics, Mathematics, and Chemistry.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPE Region 2 Hike</b> - January 27, 2018</h2>
+                    <p>
+                        This was an event were SHPE at UCR invited other SHPE chapters for a day of regional
+                        bonding and networking.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 2: How to manage failure and how to learn from it</b> - January 21, 2018</h2>
+                    <p>
+                        This general meeting was to provide members with a lesson in developing personal
+                        resilience, how to pick up after failure, and learn from past failures so they don't
+                        repeat them.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Dia de Ciencias</b> - January 20, 2018</h2>
+                    <p>
+                        At this event, it was a fun-filled day in which we hosted over 300 students, ranging
+                        from K-12 for a day of STEM and exploration and activities.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Substation Fundraiser</b> - January 19, 2018</h2>
+                    <p>
+                        At this fundraising event, we invited SHPE members to come out for a night of
+                        conversation at the UCR Substation.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">LeaderSHPE Day</b> - January 13, 2018</h2>
+                    <p>
+                        This was a day to allow SHPE board members to organize the entire quarter together, develop
+                        a basic general plan, gain some experience with case studies, and to take professional
+                        pictures.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 1: Summer Opportunities</b> - January 8, 2018</h2>
+                    <p>
+                        This general meeting provides members with tips and insight in finding, organizing, and
+                        applying to summer 2018 opportunities: Internships, Job, and REUs.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPE UCR Alumni Mixer</b> - December 2, 2017</h2>
+                    <p>
+                        During this event, we wanted to create an enviornment for SHPE alumni members to
+                        reconnect with each other and for current SHPE members to meet their extended familia.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Ice Skating Social</b> - December 1, 2017</h2>
+                    <p>
+                        This was an event for members to skate together on solid dihydrogen monoxide and to
+                        build bonds amongst everyone, then enjoy dinner together after at Canes.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 5: White Elephant Awards and Potluck</b> - November 27, 2017</h2>
+                    <p>
+                        During this general meeting, members were recongnized for their performances, during
+                        the Fall Quarter, through awards.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Big Bear Retreat</b> - Nov 17 - 19, 2017</h2>
+                    <p>
+                        This was an event held at Big Bear to provide a way for members to become better friends
+                        and relax before their upcoming finals.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">How to Research a Company and to Prepare for a Career Fair</b> - November 14, 2017</h2>
+                    <p>
+                        This was an event to give members an opportunity to gain knowledge and insight about
+                        career fairs and allowed them the opportunity to stand out amongst their peers.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 4: LA Sanitation</b> - November 13, 2018</h2>
+                    <p>
+                        This general meeting was an opportunity for members to network and learn about what it is
+                        like to work at LA Sanitation.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Salsa Fundraiser and Social</b> - November 9, 2018</h2>
+                    <p>
+                        This was a fundraiser event to raise money for Puerto Rico.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Engineers Got Talent Auditions: Round 1</b> - November 6-8, 2017</h2>
+                    <p>
+                        This was the first round of auditons for the upcoming Engineers Got Talent competition.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPE National Conference 2017</b> - Nov 1 - 5, 2017</h2>
+                    <p>
+                        This was an opportunity to network, interact with SHPE Region 2 and National familia, and
+                        assisted in gaining necessary professional skills through the workshops that were provided.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 3: Sorenson Engineering</b> - October 30, 2017</h2>
+                    <p>
+                        This general meeting was an opportunity for members to network and learn about what it is like to work
+                        at Sorenson Engineering, local to Riverside.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Science Fair Judges</b> - October 28, 2017</h2>
+                    <p>
+                        Volunteers were sent to judge the regional Science Fair winners with MVUSD.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPE Meets Google</b> - October 24, 2017</h2>
+                    <p>
+                        Google came to UCR to meet SHPE and other engineers. This was an opportunity to network
+                        with Googlers.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 2: SHPE Alumni Panel</b> - October 16, 2017</h2>
+                    <p>
+                        This general meeting was an opportunity for SHPE Alumni to come and share their college
+                        experience with current SHPE members.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Speed Mentoring</b> - October 11, 2017</h2>
+                    <p>
+                        This was an event that allowed students with similar majors and interests to interact with
+                        eachother and identify possible mentorship pairing possibiilities.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">How-to College Workshop: Series with Tara Brown</b> - October 9, 2017</h2>
+                    <p>
+                        This series was to motivate and educate students on advices of the logistics of preparing,
+                        studying, and going through college as an engineering undergraduate student.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">STEP conference</b> - Oct 4 - 5, 2017</h2>
+                    <p>
+                        This conference was used to spread awarness about STEM through participation of
+                        fun activites.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Engineering Recruitment Night</b> - October 4, 2017</h2>
+                    <p>
+                        This was a tabling event at Enginuity Hall to encourage freshman to join SHPE.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Fall Involvment Fair</b> - October 4, 2017</h2>
+                    <p>
+                        This was a tabling event at the UCR Bell Tower to encourage all types of engineers
+                        and scientists to join SHPE.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">General Meeting 1: Introduction to SHPE UCR</b> - October 2, 2017</h2>
+                    <p>
+                        This general meeting was to introduce the core of SHPE familia and how members can get
+                        involved through the newly implemented commitees.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">MentorSHPE Mixer</b> - September 29, 2017</h2>
+                    <p>
+                        This event allowed students to meet and interact with eachother. New students got the
+                        opportunity to understand what type of mentors will be available.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Coffee Bean</b> - September 28, 2017</h2>
+                    <p>
+                        This event was part of Welcome Week.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Slickables Ice-Cream</b> - September 27, 2017</h2>
+                    <p>
+                        This event was part of Welcome Week.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Scavenger Hunt</b> - September 26, 2017</h2>
+                    <p>
+                        This event was part of Welcome Week.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Boba Tea House</b> - September 25, 2017</h2>
+                    <p>
+                        This event was part of Welcome Week.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">E-board Escape Room</b> - September 24, 2017</h2>
+                    <p>
+                        This event was part of Welcome Week.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">E-board Professional Pictures</b> - September 23, 2017</h2>
+                    <p>
+                        Professional pictures were taken of the E-board to be put up on the website and to
+                        have as a representation of SHPE UCR.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Raytheon Open House</b> - September 22, 2017</h2>
+                    <p>
+                        This was an event with Raytheon to network and interview.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Hiking with SHPE</b> - September 16, 2017</h2>
+                    <p>
+                        This event was part of the Summer Series Events.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPE Region 2 Student Leadership Retreat</b> - September 8 - 10, 2017</h2>
+                    <p>
+                        This was a bonding event between Region 2 Chapters. There was also leadership lessons.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">Mini Golf with SHPE</b> - September 1, 2017</h2>
+                    <p>
+                        This event was part of the Summer Series Events.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPE Region 2 Bonfire</b> - August 26, 2017</h2>
+                    <p>
+                        This event was part of the Summer Series Events with bonding between Chapters.
+                    </p>
+                </li>
+                <li>
+                    <h2 style="color:black; font-size:20px;"><b style="color:blue; font-size: 30px;">SHPE Sports Night</b> - August 17, 2017</h2>
+                    <p>
+                        This event was part of the Summer Series Events.
+                    </p>
+                </li>
+            </ol>
+    </div>
+</div>
+        <!-- 2016-2017 -->
+        <!-- 2015-2016 -->
+        <!-- 2014-2015 -->
+
+<!-- Space -->
+<br><br>
+
+<!--/#content-->
+<!--henlo lizer-->
+<!-- Common Footer -->
+<footer id="footer">
+   <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
+            <br>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
+         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
+      </div>
+   </div>
+</footer>
+<!--/#footer-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="scripts/vendor/2f9e67a5.jquery.min.js"><\/script>')</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+        var _gaq=[['_setAccount','UA-39500870-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+</script> -->
+<!-- / common footer -->
+</body>
+</html>

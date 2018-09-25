@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+
+<title>Society of Hispanic Professional Engineers @ UCR</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="SHPE @ UCR">
+   <meta name="apple-mobile-web-app-title" content="SHPE @ UCR">
+   <meta name="application-name" content="SHPE @ UCR">
+   <!-- core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/animate.min.css" rel="stylesheet">
+   <link href="css/prettyPhoto.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   	<script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+   <!-- main SHPE JS -->
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.prettyPhoto.js"></script>
+   <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/wow.min.js"></script>
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- For the three people that still use these
+      	  Default / Android -->
+   <link rel="icon" sizes="192x192" href="icon.png">
+   <!-- Apple iPhone, iOS 8+ -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+   <!-- Apple iPad, 2014 and newer -->
+   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+   <!-- Apple iPhone, iOS 6+ -->
+   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+   <!-- Apple iPhone, iOS 2.1+ -->
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+   <!-- Apple iPhone, legacy -->
+   <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+   <div class="top-bar top-bar-shpe">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-xs-4">
+               <ul class="social-share">
+                  <li class="social-share" id="desktop">Society of Hispanic Professional Engineers</li>
+                  <li class="social-share" id="mobile">SHPE @ UCR</li>
+               </ul>
+               <div class="top-number">
+                  <p><i></i></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+               <div class="social">
+                  <ul class="social-share">
+                     <li title="Connect with us on LinkedIn"><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li title="Follow us on Facebook"><a href="https://www.facebook.com/shpe.ucr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li title="See our story on Instagram"><a href="https://www.instagram.com/shpeucr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li title="Join our mailing list!"><a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                     <li title="Keep up with our Twitter"><a href="https://twitter.com/shpeucr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li title="Check out our YouTube channel"><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                  <!-- TODO: Create Sitemap -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.container-->
+   </div>
+   <!--/.top-bar-->
+   <nav class="navbar navbar-inverse" role="banner">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <div class="navbar-brand"> <a href="index.html" title="Society of Hispanic Professional Engineers @ UCR"><img src="images/logo.png" width="70px" height="auto" alt="SHPE @ UCR"/></a> </div>
+         </div>
+         <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav navbar-nav-shpe">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mission.html">Our Mission</a></li>
+               <li><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
+               <!--<li><a href="#">Graduates</a></li>-->
+               <li><a href="opportunities.html">Opportunities</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li><a href="contact.html">Contact Us</a></li>
+               <li class="active"><a href="FAQ.html">FAQ</a></li>
+            </ul>
+         </div>
+      </div>
+      <!--/.container-->
+   </nav>
+   <!--nav-->
+   <!--/.container-->
+</div>
+<!--/#content-->
+
+   <!-- Title -->
+   <br><br><br>
+   <center><p style="font-size: 40px; color: blue;"><b>Frequently Asked Questions</b></p></center>
+   <br><br><br><br><br>
+
+<!-- Div that will hold all of the questions and answers - FAQ -->
+<div id=FAQ class="homepage">
+   <!-- ---------------------- Update variable names for all questions, otherwise it gets overwritten ------------------------------ -->
+
+   <!-- -------------------------- Question 1 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction1()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   What is SHPE?</b></p>
+
+   <div id="myDIV1"> </div>
+
+   <script>
+   var1="SHPE is an organization that stands for ‘Society of Hispanic Professional Engineers’. As stated on the SHPE Nationals website, “The Society of Hispanic Professional Engineers (SHPE) was founded in Los Angeles, California, in 1974 by a group of engineers employed by the city of Los Angeles. Their objective was to form a national organization of professional engineers to serve as role models in the Hispanic community. The concept of Networking was the key basis for the organization. SHPE quickly established two student chapters to begin the network that would grow to encompass the nation as well as reach countries outside the United States. Today, SHPE enjoys a strong but independent network of professional and student chapters throughout the nation.</br>";
+   var2= "Visit our ";
+   var3= " to see how we at UCR are attempting to keep up with this definition.";
+
+   var text = "Mission Page";
+
+   function myFunction1() {
+       var x = document.getElementById("myDIV1");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var1 + "</br>" + var2 + text.link("mission.html") + var3);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 2 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction2()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   What does SHPE @ UCR do?</b></p>
+
+   <div id="myDIV2"> </div>
+
+   <script>
+   var4 ="We do many different things here at SHPE @ UCR.";
+   var5 = "We have events that span from tabling to get to know people and them us, all the way to fundraising with different companies to help us, help you. We, also, have different committees that you can be a part of from showing off your skills, such as Athletics, to learning more and trying to outsmart other organizations with Academics. ";
+   var6 = "For those who are more on the extrovert/introvert side, we have opportunities for you, too. For extroverts, you could become part of our MentorSHPE program to share your knowledge with other, newer members or participate in events that help upcoming youth at their school and other Outreach events. For introverts, you could participate in Webmaster or Social Media committees, where there is not much social interaction, but a lot more programming and designing our platforms and organization for others to view";
+   var7 = "Visit our ";
+   var8 = " page to learn who to talk to, so you can get started today!";
+
+   var text2 = "Contact Us";
+
+   function myFunction2() {
+       var x = document.getElementById("myDIV2");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var4 + "</br></br>" + var5 + "</br></br>" + var6 + "</br></br>" + var7 + text2.link("contact.html") + var8);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 3 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction3()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Is there a fee to join SHPE @ UCR?</b></p>
+
+   <div id="myDIV3"> </div>
+
+   <script>
+   var9 = "There is no fee to join our organization at SHPE @ UCR. There may be a fee for certain events (i.e. fundraising get-togethers), but no purchase is necessary for most events.";
+
+   function myFunction3() {
+       var x = document.getElementById("myDIV3");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var9;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 4 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction4()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Do I have to be part of BCOE to join SHPE @ UCR?</b></p>
+
+   <div id="myDIV4"> </div>
+
+   <script>
+   var10 = "You do not need to be part of BCOE (Bourns College of Engineering) in order to join SHPE. We welcome anyone, of any major, who is wanting to join and become part of our SHPE familia.";
+
+   function myFunction4() {
+       var x = document.getElementById("myDIV4");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var10;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 5 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction5()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Can SHPE @ UCR help me with Academics?</b></p>
+
+   <div id="myDIV5"> </div>
+
+   <script>
+   var11 = "We here at SHPE @ UCR will do what we can to help anyone who wants help. Through the organization, those who join Academics may recieve help from each other through study groups. Another option is to ask around and see if anyone else in the organization is willing to help or become study partners/groups. Academics are always number one (1) priority as that is why we are all coming to school, but we can help/recommend where to go.";
+
+   function myFunction5() {
+       var x = document.getElementById("myDIV5");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var11;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 6 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction6()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Can SHPE @ UCR help me with professional sills?</b></p>
+
+   <div id="myDIV6"> </div>
+
+   <script>
+   var12 = "As it is part of our organization name, we do try and help our members a lot with the professional aspect. Whether it being with resumes, mock interviews, meeting with professionals, or even practicing elevator talks, there are many opportunities to learn and expand on your professional skills.";
+
+   function myFunction6() {
+       var x = document.getElementById("myDIV6");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var12;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 7 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction7()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Does SHPE @ UCR offer stoles for members when they graduate?</b></p>
+
+   <div id="myDIV7"> </div>
+
+   <script>
+   var13 = "SHPE @ UCR does offer stoles for members to purchase, if they wish to do so, when they graduate.However, there are requirements to do so before purchasing one. Talk to our leadership staff today if you are interested in your options for this year’s graduation.";
+
+   function myFunction7() {
+       var x = document.getElementById("myDIV7");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var13;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 8 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction8()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Can I join more than one organization, concurrently, if I join SHPE @ UCR?</b></p>
+
+   <div id="myDIV8"> </div>
+
+   <script>
+   var14 = "Yes, any member may join more than one organization at once if they wish to do so. It is recommended that you only take on what you can handle in a year. This is to avoid ‘burnouts’ and other negative consequences to your physical and mental health, and even to help preserve your grades, as that is the number one (1) priority, expected of all of our members.";
+
+   function myFunction8() {
+       var x = document.getElementById("myDIV8");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var14;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 9 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction9()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Do I have to be of Hispanic descent in order to join SHPE @ UCR?</b></p>
+
+   <div id="myDIV9"> </div>
+
+   <script>
+   var15 = "No. You do not have to be of Hispanic descent in order to join SHPE @ UCR. We welcome anybody, of any nationality, to join our organization.";
+
+   function myFunction9() {
+       var x = document.getElementById("myDIV9");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var15;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 10 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction10()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   What are the qualifications to run for a position in SHPE?</b></p>
+
+   <div id="myDIV10"> </div>
+
+   <script>
+   var16 = "The qualifications to run for a position in SHPE is to be an active member for at least a quarter and go through the application process to run for up to 3 positions.";
+
+   function myFunction10() {
+       var x = document.getElementById("myDIV10");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var16;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 11 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction11()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Do I have to be a part of SHPE in order to help out/participate in events?</b></p>
+
+   <div id="myDIV11"> </div>
+
+   <script>
+   var17 = "No. You do not have to be an active member in SHPE in order to participate in SHPE related activities. However, we recommend that you become an active member in SHPE this way we can learn about and acknowledge you.";
+
+   function myFunction11() {
+       var x = document.getElementById("myDIV11");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var17;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 12 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction12()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   How do I become a member of SHPE @ UCR?</b></p>
+
+   <div id="myDIV12"> </div>
+
+   <script>
+   var18 = "There are a couple of ways to become active members of SHPE @ UCR. We offer a sticker card approach, in which you get enough stickers to fill up our card and you will be considered an active member or to join a committee and be an active participant in there. These two methods will allow you to have the title of ";
+   var19= " in our SHPE chapter.";
+
+   var text3 = "active member";
+
+   function myFunction12() {
+       var x = document.getElementById("myDIV12");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var18 + text3.link("members.html#members") + var19);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 13 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction13()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   How do I become a national member?</b></p>
+
+   <div id="myDIV13"> </div>
+
+   <script>
+   var20 = "If you are interested in becoming a SHPE National member, please visit our ";
+   var21 = " page and follow the instructions to become a National member. After you have completed the process and purchased the National Membership, please send us a copy of the receipt and we will add you to our National member list. You will be acknowledged on our site as being a National member.";
+
+   var text4 = "Members";
+
+   function myFunction13() {
+       var x = document.getElementById("myDIV13");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var20 + text4.link("members.html#top") + var21);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 14 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction144()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Who is the leadership and how may I contact them?</b></p>
+
+   <div id="myDIV144"> </div>
+
+   <script>
+   var22 = "Our leadership team for this year can be found on our ";
+   var23 = " page, here!";
+
+   var text5 = "Contact Us";
+
+   function myFunction144() {
+       var x = document.getElementById("myDIV144");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var22 + text5.link("contact.html") + var23);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 15 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction15()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   How do I get my information placed on the website?</b></p>
+
+   <div id="myDIV15"> </div>
+
+   <script>
+   var24 = "If you become an active member, we will put you on our website as a ";
+
+   var text6 = "current member.";
+
+   function myFunction15() {
+       var x = document.getElementById("myDIV15");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var24 + text6.link("members.html#members"));
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 16 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction16()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    If I wanted to make a contribution to help the organization, how can I?</b></p>
+
+   <div id="myDIV16"> </div>
+
+   <script>
+   var25 = "At this current moment in time, you may make a contribution to SHPE @ UCR by talking to our ";
+   var26 = "</br>In the near future, we anticipate having a donation method/payment tab to allow for accepting of donations to our organization and to allow for you, the visitors, to make purchases from our custom made merchandise.";
+
+   text7 = "leadership.";
+   function myFunction16() {
+       var x = document.getElementById("myDIV16");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var25 + text7.link("contact.html") + "</br>" + var26);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 17 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction17()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   What does PDF stand for and what is it?</b></p>
+
+   <div id="myDIV17"> </div>
+
+   <script>
+   var27 = "PDF is an acronym for our Professional Development Fair. Our PDFs’ do have a cost associated with attendance (in order to help alleviate the costs of all that is being provided). At our PDFs’, we have professionals of different industries come visit our campus and interact with our members, share their experiences, provide mock interviews and resume critiques, help with questions that may be tied to their companies, network, and even possibly have job offers.";
+
+   function myFunction17() {
+       var x = document.getElementById("myDIV17");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var27;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 18 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction18()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   What is Noche de Ciencias?</b></p>
+
+   <div id="myDIV18"> </div>
+
+   <script>
+   var28 = "Noche de Ciencias will be a huge opportunity to expose younger students to what STEM is really about.</br>";
+   var29 = "We host multiple hands-on science activities for students, with the mindset that these activities will teach them about certain principles that are studied throughout various STEM fields.";
+   function myFunction18() {
+       var x = document.getElementById("myDIV18");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var28 + "</br>" + var29);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 19 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction19()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   What is Dia de Ciencias?</b></p>
+
+   <div id="myDIV19"> </div>
+
+   <script>
+   var30 = "Dia de Ciencias is an opportunity for high school students and their families from the Inland Empire to gather at the University of California, Riverside for this grand event. Our members can lead a demonstration, show off a project you have been working on, or share your experiences as a college student. This is open to all majors, ethnicities, and ages.";
+
+   function myFunction19() {
+       var x = document.getElementById("myDIV19");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var30;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 20 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction20()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Where can I find information about all the committees and their roles in SHPE @ UCR?</b></p>
+
+   <div id="myDIV20"> </div>
+
+   <script>
+   var31 = "At this current moment in time, you can find out who is in charge of all the committees and their contact information by going to our ";
+   var32= " page. Feel free to message them with any questions you may have.";
+
+   var text8 = "Contact Us";
+
+   function myFunction20() {
+       var x = document.getElementById("myDIV20");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var31 + text8.link("contact.html") + var32);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 21 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction21()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   How can I get more involved with SHPE @ UCR?</b></p>
+
+   <div id="myDIV21"> </div>
+
+   <script>
+   var33 = "The best way to get more involved with SHPE is just by jumping right in and finding something you like to do and doing it. You can start by visiting our ";
+   var34= " page and talking to our current leadership. No skills are required, but recommended for easier transition, to join any committee, as you will learn how to participate while you are there.";
+
+   var text9 = "Contact Us";
+
+   function myFunction21() {
+       var x = document.getElementById("myDIV21");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var33 + text9.link("contact.html") + var34);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 22 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction22()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   What are sticker cards?</b></p>
+
+   <div id="myDIV22"> </div>
+
+   <script>
+   var35 = "Sticker cards are something that you will receive at the first general meeting. These cards are given out as an opportunity to try and allow students to become a current member in our organization. The more events you attend or the more you participate in your committee, the more stickers you earn. Once you complete a sticker card, you will be inducted into SHPE @ UCR as one of our ";
+
+   var text10 = "current members.";
+
+   function myFunction22() {
+       var x = document.getElementById("myDIV22");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var35 + text10.link("members.html#members"));
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 23 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction23()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   How can I get a new sticker card?</b></p>
+
+   <div id="myDIV23"> </div>
+
+   <script>
+   var36 = "If you are need of new sticker card, feel free to ask one of our ";
+   var37 = ", today.";
+
+   var text11 = "leadership members";
+
+   function myFunction23() {
+       var x = document.getElementById("myDIV23");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var36 + text11.link("contact.html") + var37);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 24 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction24()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Will there be a more secure approach to the sticker card method that I can opt for instead?</b></p>
+
+   <div id="myDIV24"> </div>
+
+   <script>
+   var38 = "At this current moment in time, there is no other method aside from the sticker card to keep track of your attendance at all of your participated events, however, in the near future, we plan to incorporate your R’card to keep track of all of that information.";
+   function myFunction24() {
+       var x = document.getElementById("myDIV24");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var38;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 25 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction25()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Do I have to be a certain major in order to join certain things in SHPE @ UCR?</b></p>
+
+   <div id="myDIV25"> </div>
+
+   <script>
+   var39 = "No. As we do not discriminate on which college at UCR you are in or what nationality you are, we also do not turn down potential members who are of various majors. We are happy to welcome anyone to join SHPE @ UCR.";
+   function myFunction25() {
+       var x = document.getElementById("myDIV25");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var39;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 26 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction26()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Do I have to speak Spanish in order to join SHPE @ UCR?</b></p>
+
+   <div id="myDIV26"> </div>
+
+   <script>
+   var40 = "No. You are not required to speak Spanish in order to be a part of SHPE @ UCR.";
+   function myFunction26() {
+       var x = document.getElementById("myDIV26");
+       if (x.innerHTML === " ") {
+           x.innerHTML = var40;
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+   <!-- -------------------------- Question 27 ---------------------------------- -->
+   <p class="Questions"><b><button onclick="myFunction27()">SHPE @ UCR Answer</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Where do I go to purchase gear?</b></p>
+
+   <div id="myDIV27"> </div>
+
+   <script>
+   var41 = "At this current moment in time, please contact ";
+   var42 = " if you are interested in our custom gear. In the near future, we plan on hosting an option to purchase merchandise on our site.";
+   var text12 = "our leadership";
+
+   function myFunction27() {
+       var x = document.getElementById("myDIV27");
+       if (x.innerHTML === " ") {
+           x.innerHTML = (var41 + text12.link("contact.html") + var42);
+
+       } else {
+           x.innerHTML = " ";
+      }
+   }
+   </script>
+   <br>
+
+
+</div><br><br>
+<!-- /Div that will hold all of the questions and answers - FAQ -->
+
+<!--henlo lizer-->
+<!-- Common Footer -->
+<footer id="footer">
+   <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
+            <br>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
+         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
+      </div>
+   </div>
+</footer>
+<!--/#footer-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="scripts/vendor/2f9e67a5.jquery.min.js"><\/script>')</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+        var _gaq=[['_setAccount','UA-39500870-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+</script> -->
+<!-- / common footer -->
+</body>
+</html>
