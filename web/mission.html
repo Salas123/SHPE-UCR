@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+   <!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
    <title>Our Mission - Society of Hispanic Professional Engineers @ UCR</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +74,7 @@
    <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
 </head>
 <!--/head-->
-<body class="homepage">
+<body class="homepage" style="background-color:#dae1ed;">
 <header id="header">
    <div class="top-bar top-bar-shpe">
       <div class="container">
@@ -85,11 +123,29 @@
                <li><a href="index.html">Home</a></li>
                <li class="active"><a href="mission.html">Our Mission</a></li>
                <li><a href="members.html">Members</a></li>
-               <li><a href="calendar.html">Calendar</a></li>
+                              <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
                <!--<li><a href="graduates.html">Graduates</a></li>-->
                <li><a href="opportunities.html">Opportunities</a></li>
-               <li><a href="history.html">History</a></li>
-               <li><a href="contact.html">Contact Us</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li class="dropdown"><a href="contact.html">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="Comittees.html">Committees</a>
+                      </div></li>
+               <li><a href="FAQ.html">FAQ</a></li>
             </ul>
          </div>
       </div>
@@ -103,7 +159,7 @@
       <div class="row">
          <div class="col-md-12">
          <!-- TODO: Update & change format to resemble "testimonials" : text generated at www.lipsum.com -->
-            <h2>A message from SHPE @ UCR President, Angelica Franco</h2>
+            <h2>A message from SHPE @ UCR President</h2>
             <p> As the Society of Hispanic Professional Engineers (SHPE), we strive to empower the Hispanic, ChicanX, & LatinX through Science, Technology, Engineering, and Mathematics (STEM). SHPE is a pipeline of STEM awareness, access, support, and development necessary for the ever-changing Age of Technology.<br>By promoting our five pillars</p>
             <ol>
             	<li>Academic Development</li>
@@ -116,7 +172,7 @@
             <!--<div class="img">
             	<img src="images/signature.png" title="sample" height="50" width="auto"/>
             </div>-->
-            <p> - Angelica Franco,<br><br>SHPE @ UCR President</p>
+            <p> - Albert Fernandez,<br><br>SHPE @ UCR President</p>
          </div>
       </div>
    </div>
@@ -137,7 +193,7 @@
                   <div id="collapseOne1" class="panel-collapse collapse in">
                      <div class="panel-body">
                         <div class="media accordion-inner">
-                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/switch_tabs/shpe_banquet_2015.jpg"> </div>
+                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/Mission_About_Us/shpe_banquet_2015.jpg"> </div>
                            <div class="media-body">
                               <p>SHPE @ UCR is an interdisciplinary engineering organization. We pride ourselves in not only being able to improve ourselves in a professional,
                               academic, and innovatice way, but in our ability to give back to the community through outreach. Overall, we have proved that we can prepare members
@@ -155,7 +211,7 @@
                   <div id="collapseTwo1" class="panel-collapse collapse">
                      <div class="panel-body">
                         <div class="media accordion-inner">
-                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/switch_tabs/ndc_monte_vista_2015.jpg"> </div>
+                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/Mission_About_Us/ndc_monte_vista_2015.jpg"> </div>
                            <div class="media-body">
                               <p>SHPE's mission is to change lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness,
                               access, support and development. </p>
@@ -172,7 +228,7 @@
                   <div id="collapseThree1" class="panel-collapse collapse">
                      <div class="panel-body">
                         <div class="media accordion-inner">
-                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/switch_tabs/mlk_day.jpg"> </div>
+                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/Mission_About_Us/mlk_day.jpg"> </div>
                            <div class="media-body"> SHPE's vision is a world where Hispanics are highly valued and influential as the leading innovators, scientists, mathematicians and engineers.
                            </div>
                         </div>
@@ -186,7 +242,7 @@
                   <div id="collapseFour1" class="panel-collapse collapse">
                      <div class="panel-body">
                         <div class="media accordion-inner">
-                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/switch_tabs/grad_talk.jpg"> </div>
+                           <div class="pull-left"> <img class="img-responsive" width="250px" height="500px" src="images/Mission_About_Us/grad_talk.jpg"> </div>
                            <div class="media-body">
                               <p>SHPE @ UCR strives to serve professional and academic development events through resume workshops, career-building presentations, and guest speakers from the industry, graduate school, and more. We provide resources such as the MentorSHPE program, to not only help improve underclassmen's experience, but to solidify the bond and create a professional network among our members. In addition, we host our very own Noche de Ciencias, or 'Science Night', to provide an opportunity to educate parents of middle and high school students about college education.</p>
                            </div>
@@ -196,6 +252,171 @@
                </div>
             </div>
             <!--/#accordion1-->
+
+
+<!-- ------------------------------ Info about us -------------------- -->
+<!--/#main-slider-->
+<div id="content">
+   <div class="container-fluid">
+      <div class="row">
+
+         <!-- Commentted out until further verification is obtained
+
+         <!-- ##########################|Simple Animated List|##########################-->
+         <div class="col-xs-12 col-sm-offset-2 col-sm-4 wow fadeInLeft">
+            <div class="tab-wrap">
+               <div class="media">
+                  <div class="parrent pull-left">
+                     <ul class="nav nav-tabs nav-stacked">
+                        <!-- TODO: Find something more attractive to new members to put here. Maybe what we do instead of why? -->
+                        <li class="active"><a href="#tab1" data-toggle="tab" class="analistic-01">Our Values</a></li>
+                        <li class=""><a href="#tab2" data-toggle="tab" class="analistic-02">Our Function</a></li>
+                        <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Our Fulfillments</a></li>
+                     </ul>
+                  </div>
+                  <div class="parrent media-body">
+                     <div class="tab-content">
+                        <div class="tab-pane fade active in" id="tab1">
+                           <div class="media">
+                              <div class="media-body">
+                                 <h2>Excellence in...</h2>
+                                 <p> We value excellence in education, professional pursuits and leadership.
+                                    We obtain excellence through integrity, empowerment, achievement, diversity and continuous improvement.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+                           <div class="media">
+                              <div class="media-body">
+                                 <h2>We serve to...</h2>
+                                 <p>SHPE serves to lead as a social-technical organization whose primary function is to
+                                    enhance and achieve the potential of Hispanics in engineering, math and science.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3">
+                           <div class="media">
+                              <div class="media-body">
+                                 <h2>We strive to...</h2>
+                                 <p>We strive to fulfill our mission by increasing educational opportunities, promoting professional and personal growth, carry out our social responsibility to be involved in education, business and government issues and enhancing pride within our organization and reinforcing our reputation as a vital Hispanic organization.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--/.tab-content-->
+                  </div>
+                  <!--/.media-body-->
+               </div>
+               <!--/.media-->
+            </div>
+            <!--/.tab-wrap-->
+         </div>
+         <!--/.col-sm-6-->
+
+
+<!-- ------------------------------Testimonials ----------------------------- -->
+         <div class="col-xs-12 col-sm-6 wow fadeInRight">
+            <h2>Testimonials</h2>
+            <ul class="nav nav-tabs tabs-collapse testimonial">
+               <!--<li class="active"><a data-toggle="tab" href="#Pablo">Pablo</a></li>-->
+               <li class="active"><a data-toggle="tab" href="#Glenda">Glenda</a></li>
+               <!--<li><a data-toggle="tab" href="#JoseD">Jose D.</a></li>-->
+               <!--<li><a data-toggle="tab" href="#JoseF">Jose F.</a></li>-->
+               <li><a data-toggle="tab" href="#Marlen">Marlen</a></li>
+               <!--<li><a data-toggle="tab" href="#Jun">Jun</a></li>-->
+               <!--<li><a data-toggle="tab" href="#Alexis">Alexis</a></li>-->
+               <!--<li><a data-toggle="tab" href="#Christian">Christian</a></li>-->
+               <li><a data-toggle="tab" href="#Yair">Yair</a></li>
+            </ul>
+            <div class="tab-content">
+               <!--Pablo Hernandez, Glenda Castro, Yair Sanchez, Jose Dircio, Jose Figue, Marlen Castro, Cristian Alcarez, Alexis Tapia, Jun Wang -->
+               <!--<div id="Pablo" class="tab-pane fade in active testimonial">-->
+               <!--   <div class="media testimonial-inner">-->
+               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
+               <!--      <div class="media-body">-->
+               <!--         <p>"Sample text."</p>-->
+               <!--         <span><strong>- Pablo Henandez</strong> | UCR Alumni, Class of 2017</span></div>-->
+               <!--      </div>-->
+               <!--</div>-->
+               <div id="Glenda" class="tab-pane fade in active testimonial">
+                  <div class="media testimonial-inner">
+                     <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Glenda_Castro.jpg"> </div>
+                     <div class="media-body">
+                        <p><q>SHPE has given me the opportunity to help our Hispanic community, from awareness and being able to provided information how to apply for school and
+                        financial aid. I am very grateful that I have my SHPE family and that I was able to help other Hispanics achieve higher education.</q></p>
+                        <span><strong>&dash; Glenda Castro</strong> | UCR Alumni, Class of 2017</span></div>
+                     </div>
+               </div>
+               <!--<div id="JoseD" class="tab-pane fade testimonial">-->
+               <!--   <div class="media testimonial-inner">-->
+               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
+               <!--      <div class="media-body">-->
+               <!--         <p>"Sample text and more sample text."</p>-->
+               <!--         <span><strong>&dash; Jose Dircio</strong> | UCR Alumni, Class of 2017</span></div>-->
+               <!--      </div>-->
+               <!--</div>-->
+               <!--<div id="JoseF" class="tab-pane fade testimonial">-->
+               <!--   <div class="media testimonial-inner">-->
+               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
+               <!--      <div class="media-body">-->
+               <!--         <p>"Sample text."</p>-->
+               <!--         <span><strong>&dash; Jose Figue</strong> | UCR Alumni, Class of 2017</span></div>-->
+               <!--      </div>-->
+               <!--</div>-->
+               <div id="Marlen" class="tab-pane fade testimonial">
+                  <div class="media testimonial-inner">
+                     <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Marlen_Castro.jpg"> </div>
+                     <div class="media-body">
+                        <p><q>It became my family and my support system. I have found mentors that have pushed me to excel in engineering. To me it is extremely important to
+                        give back to my community and to the next generation of engineers. SHPE has made me a better engineer and a better leader.</q></p>
+                        <span><strong>&dash; Marlen Castro</strong> | UCR Alumni, Class of 2017</span></div>
+                     </div>
+               </div>
+               <!--<div id="Jun" class="tab-pane fade testimonial">-->
+               <!--   <div class="media testimonial-inner">-->
+               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Jun_Wang.jpg"> </div>-->
+               <!--      <div class="media-body">-->
+               <!--         <p>"Sample text."</p>-->
+               <!--         <span><strong>&dash; Jun Wang</strong> | UCR Alumni, Class of 2017</span></div>-->
+               <!--      </div>-->
+               <!--</div>-->
+               <!--<div id="Alexis" class="tab-pane fade testimonial">-->
+               <!--   <div class="media testimonial-inner">-->
+               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
+               <!--      <div class="media-body">-->
+               <!--         <p>"Sample text."</p>-->
+               <!--         <span><strong>&dash; Alexis Tapia</strong> | UCR Alumni, Class of 2017</span></div>-->
+               <!--      </div>-->
+               <!--</div>-->
+               <!--<div id="Christian" class="tab-pane fade testimonial">-->
+               <!--   <div class="media testimonial-inner">-->
+               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
+               <!--      <div class="media-body">-->
+               <!--         <p>"Sample text."</p>-->
+               <!--         <span><strong>&dash; Cristian Alcarez</strong> | UCR Alumni, Class of 2017</span></div>-->
+               <!--      </div>-->
+               <!--</div>-->
+               <div id="Yair" class="tab-pane fade testimonial">
+                  <div class="media testimonial-inner">
+                     <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/eboard/graduates/Yair_Sanchez.jpg"> </div>
+                     <div class="media-body">
+                        <p><q>SHPE is family, and with everyone constantly supporting me I have been able to achieve better grades and have been taking action in helping out
+                        my community with volunteering events.</q></p>
+                        <span><strong>&dash; Yair Sanchez</strong> | UCR Alumni, Class of 2017</span></div>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.row-->
+   </div>
+   <!--/.container-->
+</div>
+
+<!-- !Commentted out until further verification is obtained -->
+
+
+
          </div>
       </div>
    </div>
@@ -227,20 +448,15 @@
 <footer id="footer">
    <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="row">
-         <div class="col-sm-8" style="color:white">&copy; 2017-2018 Society of Hispanic Professional Engineers at the University of California, Riverside.
-         	<br>
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
             <br>
-            <div class="footer-image">
-               <a href="http://www.ucr.edu/" title="University of California, Riverside"><img src="images/white_ucr_logo.png"/></a>
-            </div>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
          </div>
-         <div class="col-md-4">
-            Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a>
-            <br>
-            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization
-            <br><br><br>
-            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a>
-         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
       </div>
    </div>
 </footer>

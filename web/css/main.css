@@ -325,6 +325,7 @@ input.search-form:hover {
 **************************/
 #main-slider {
 	position: relative;
+	z-index: 0;
 }
 
 .no-margin {
@@ -345,7 +346,7 @@ input.search-form:hover {
 #main-slider .carousel .btn-slide {
 	padding: 8px 20px;
 	background: #026BB5;
-	color: #fff;
+	color: #046BB5;
 	border-radius: 4px;
 	margin-top: 25px;
 	display: inline-block;
@@ -1214,17 +1215,21 @@ thanks to Thomas Vanhoutte for the CSS
 	width: 100%;
 	padding-bottom: 75%;
 	overflow: auto;
-	margin-left: 2%;
+	margin-left: 0%;
 	margin-right: 2%;
+	border-color: transparent transparent #DDD transparent;
 }
 
 .google-cal iframe {
 	position: absolute;
 	top: 20px;
-	left: 0;
+	left: 0px;
 	width: 100%;
-	height: 600px;
+	height: 700px;
+	padding: 20px, 20px, 20px, 20px;
+	color: grey;
 }
+
 /*************************
 ********* Members CSS ******
 **************************/
@@ -2128,4 +2133,187 @@ shortcodes page css
 #footer ul > li {
 	display: inline-block;
 	margin-left: 15px;
+}
+
+/* ------------------------
+		 Events Page
+   ------------------------ */
+
+#side-left
+{
+	position: relative;
+	border: double;
+	border-width: 15px;
+	border-color: black;
+	/* ****************************************
+	Readjust as time goes on. This is a place
+	holder for the border. This is so that
+	they aline properly.
+	******************************************/
+	padding: 51px 50px 60px 50px;
+	background-color: lightgrey;
+}
+
+#side-right
+{
+	position: relative;
+	border: double;
+	border-color: black;
+	border-width: 15px;
+	/* ****************************************
+	Readjust as time goes on. This is a place
+	holder for the border. This is so that
+	they aline properly.
+	******************************************/
+	padding: 50px 51px 50px 50px;
+	display: inline-block;
+	background-color: lightgrey;
+}
+
+#wrap
+{
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
+/* --------------------------------
+		 Constitution Page
+   -------------------------------- */
+.Article
+{
+	font-size: 70px;
+	color: black;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	position: relative;
+	left: 35px;
+}
+
+.Const_text
+{
+	font-size: 60px;
+	color: black;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	padding: 50px 50px 50px 60px;
+}
+
+.li_text
+{
+	font-size: 50px;
+	color: black;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	position: relative;
+	left: 50px;
+}
+
+.shadow
+{
+	color: blue;
+	font-size: 80px;
+	-webkit-text-stroke: 3px #282828;
+	text-shadow: 15px 20px 20px #282828;
+}
+
+/* -------------------------
+     Carousel Indicators
+   ------------------------- */
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  padding-bottom: 0;
+}
+
+/* The width setting will control how long the blue slider bar is on the home page */
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 14.28%;
+  height: 10px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
+
+ol.carousel-indicators li.active {
+  background: #026BB5;
+}
+
+/* -----------------------
+         FAQ Page
+   ----------------------- */
+#FAQ
+{
+	position: relative;
+	left: 250px;
+	width: 1000px;
+}
+
+.Questions
+{
+	font-size: 20px;
+	width: 1000px;
+}
+
+/* -----------------------
+        Commitee Page
+   ----------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column_comm {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column_comm {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card_comm {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container_comm {
+  padding: 0 16px;
+}
+
+.container_comm::after, .row_comm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title_comm {
+  color: grey;
+}
+
+.button_comm {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_comm:hover {
+  background-color: #555;
 }

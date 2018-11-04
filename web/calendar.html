@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+   <!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
    <title>Calendar - Society of Hispanic Professional Engineers @ UCR</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +74,7 @@
    <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
 </head>
 <!--/head-->
-<body class="homepage">
+<body style="background-color:#dae1ed;">
 <header id="header">
    <div class="top-bar top-bar-shpe">
       <div class="container">
@@ -85,11 +123,29 @@
                <li><a href="index.html">Home</a></li>
                <li><a href="mission.html">Our Mission</a></li>
                <li><a href="members.html">Members</a></li>
-               <li class="active"><a href="calendar.html">Calendar</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
                <!--<li><a href="graduates.html">Graduates</a></li>-->
                <li><a href="opportunities.html">Opportunities</a></li>
-               <li><a href="history.html">History</a></li>
-               <li><a href="contact.html">Contact Us</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li class="dropdown"><a href="contact.html">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="Comittees.html">Committees</a>
+                      </div></li>
+               <li><a href="FAQ.html">FAQ</a></li>
             </ul>
          </div>
       </div>
@@ -98,36 +154,38 @@
    <!--/nav-->
 </header>
 <!--/header-->
+
+<br><br><br><br><br>
+<!-- Start of Google Calendar -->
 <section-about id="content">
    <div class="container">
       <div class="row">
          <div class="col-md-12 google-cal">
          <!-- TODO: Theme the calendar? -->
-            <iframe src="https://www.google.com/calendar/embed?title=Official SHPE Calendar&wkst=1&bgcolor=%23ffffff&src=shpe.ucr%40gmail.com&ctz=America/Los_Angeles"
-            style="border-width:0" width="1200" height="500px" frameborder="0" scrolling="yes"></iframe>
+<iframe src="https://calendar.google.com/calendar/b/2/embed?title=SHPE%20%40%20The%20University%20of%20California%2C%20Riverside&amp;
+      height=700&amp;wkst=1&amp;bgcolor=%23ccffff&amp;src=shpe.ucr%40gmail.com&amp;color=%231B887A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;
+      color=%232952A3&amp;src=v3eqpiigrd77882c19cs5btmc0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:20px;
+      border-color:darkgray" width="1000" height="700" frameborder="0" scrolling="no"></iframe>
           	</div>
          </div>
       </div>
-   </div>
 </section-about>
+
+<!-- End of Google Calendar -->
+<!-- /This will be the seciton under the calendar that will be for all upcoming/future events -->
 <!-- Common Footer -->
 <footer id="footer">
    <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="row">
-         <div class="col-sm-8" style="color:white">&copy; 2017-2018 Society of Hispanic Professional Engineers at the University of California, Riverside.
-         <br>
-        	<br>
-            <div class="footer-image">
-               <a href="http://www.ucr.edu/" title="University of California, Riverside"><img src="images/white_ucr_logo.png"/></a>
-            </div>
-         </div>
-         <div class="col-md-4">
-            Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a>
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
             <br>
-            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization
-            <br><br><br>
-            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
          </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
       </div>
    </div>
 </footer>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <!-- This is for the drop down menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    color: white;
+    background-color: #151515;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #026bb5;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<!-- /This is for the drop down menu -->
+
+   <title>Contact Us - Society of Hispanic Professional Engineers @ UCR</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="SHPE @ UCR">
+   <meta name="apple-mobile-web-app-title" content="SHPE @ UCR">
+   <meta name="application-name" content="SHPE @ UCR">
+   <!-- core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/animate.min.css" rel="stylesheet">
+   <link href="css/prettyPhoto.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+   <script src="js/respond.min.js"></script>
+   <![endif]-->
+   <!-- main SHPE JS -->
+   <script src="js/main.js"></script>
+   <link rel="shortcut icon" href="favicon.ico">
+   <!-- For the three people that still use these
+   	  Default / Android -->
+   <link rel="icon" sizes="192x192" href="icon.png">
+   <!-- Apple iPhone, iOS 8+ -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+   <!-- Apple iPad, 2014 and newer -->
+   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+   <!-- Apple iPhone, iOS 6+ -->
+   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+   <!-- Apple iPhone, iOS 2.1+ -->
+   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+   <!-- Apple iPhone, legacy -->
+   <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+</head>
+<!--/head-->
+
+<body class="homepage" style="background-color:#dae1ed;">
+<header id="header">
+   <div class="top-bar top-bar-shpe">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-xs-4">
+               <ul class="social-share">
+                  <li class="social-share" id="desktop">Society of Hispanic Professional Engineers</li>
+                  <li class="social-share" id="mobile">SHPE @ UCR</li>
+               </ul>
+               <div class="top-number">
+               	<p><i></i></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+               <div class="social">
+                  <ul class="social-share">
+                     <li title="Connect with us on LinkedIn"><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li title="Follow us on Facebook"><a href="https://www.facebook.com/shpe.ucr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                     <li title="See our story on Instagram"><a href="https://www.instagram.com/shpeucr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li title="Join our mailing list!"><a href="http://ucr.us10.list-manage.com/subscribe/post?u=729e8ca9e972b71d427638d4e&amp;id=fd61763a3b" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                     <li title="Keep up with our Twitter"><a href="https://twitter.com/shpeucr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li title="Check out our YouTube channel"><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.container-->
+   </div>
+   <!--/.top-bar-->
+   <nav class="navbar navbar-inverse" role="banner">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	<span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span><span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+            	<a href="index.html" title="Society of Hispanic Professional Engineers @ UCR"><img src="images/logo.png" width="70px" height="auto" alt="SHPE @ UCR"/></a>
+            </div>
+         </div>
+         <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav navbar-nav-shpe">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mission.html">Our Mission</a></li>
+               <li><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <li class="dropdown"><a href="calendar.html">Events</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="calendar.html">Calendar</a>
+                        <a href="Activities.html">Past Events</a>
+                      </div></li>
+               <!--<li><a href="graduates.html">Graduates</a></li>-->
+               <li><a href="opportunities.html">Opportunities</a></li>
+                              <!-- Dropdown menu -->
+               <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="Constitution.html">Constitution</a>
+                        <a href="history.html">History</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li class="dropdown"><a href="contact.html">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="Comittees.html">Committees</a>
+                      </div></li>
+                <!-- /Dropdown Menu -->
+               <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+         </div>
+      </div>
+      <!--/.container-->
+   </nav>
+   <!--/nav-->
+</header>
+<!--/header-->
+
+<br><br><br><br>
+<div class="center">
+<h2>Committees</h2></div>
+<br>
+
+<!--    -------------------------- Row 1 -------------------------- -->
+<div class="row_comm">
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/2017-18/Jeasmin_Lopez.jpg" alt="Jeasmin" style="width:100%">
+      <div class="container_comm">
+        <h2>Jeasmin Lopez</h2>
+        <p class="title_comm">MentorSHPE</p>
+        <p>The MentorSHPE program exists to create a friendly environment
+        for participants to share knowledge and learn from one other.
+        Participants get paired with a mentor/ mentee of the same or a similar
+        major in hopes that they can be each other’s support and help each other
+        throughout the year. New to this year’s program: Alumni! You won’t want to
+        miss this opportunity.</p>
+        <p>jlope078@ucr.edu</p>
+        <p><a href="mailto:jlope078@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/Board_pictures_2018-2019/Monica_Canto.jpg" alt="Monica" style="width:100%">
+      <div class="container_comm">
+        <h2>Monica Canto </h2>
+        <p class="title_comm">Social Media</p>
+        <p>The Social Media committee is the medium for the online presentation
+        of SHPE-UCR’s participation in activities which are relevant to the five
+        pillars of the organization. We aim to prevent the fear of missing out
+        (FOMO) on what we are as a chapter overall, as well as our various
+        involvements within our community!</p><br>
+        <p>mcant004@ucr.edu</p>
+        <p><a href="mailto:mcant004@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/2017-18/Angelica_Franco.jpg" alt="Angelica" style="width:100%">
+      <div class="container_comm">
+        <h2>Angelica Franco </h2>
+        <p class="title_comm">Professional Development</p>
+        <p>The Professional Development committee strives to bring our members’
+        career pursuits to fruition. We aim to teach our members how to navigate
+        professional situations and position themselves to be hired by top
+        companies upon graduation by helping them get research and internships.
+        If you're interested in seeing the Latino community at the forefront of
+        STEM industries, join this committee! </p>
+        <p>afran022@ucr.edu</p>
+        <p><a href="mailto:afran022@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--    -------------------------- Row 2 -------------------------- -->
+<div class="row_comm">
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/2017-18/Daniel_Becerra.jpg" alt="Danny" style="width:100%">
+      <div class="container_comm">
+        <h2>Danny Becerra</h2>
+        <p class="title_comm">Athletics</p>
+        <p>As engineers (Stem majors in general), we focus the bulk of our
+        educational careers buried in theory, MatLab, and just trying to pass
+        our classes. This involves staying up late hours, lack of sleep, and
+        unhealthy habits. When us students are so focused on trying to not get
+        behind, we lose sight of the little details in our lives that keep our
+        energy levels high and keep our brains chugging along. The Athletics
+        committee’s main goal is to help SHPE members try and ditch those bad
+        habits and replace them with a healthy lifestyle. This lifestyle can
+        range from eating habits, workout techniques, active activities outside
+        of school, sports, and most importantly help improve your mentality. If
+        you’re a beginner and don’t really know where to start or just don’t
+        like going to the gym or exercising by yourself, this committee is here
+        to help transition you and make you a bit more knowledgeable about your
+        body.</p>
+        <p>dbece007@ucr.edu</p>
+        <p><a href="mailto:dbece007@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/2017-18/Luis_Orellana.jpg" alt="Luis" style="width:100%">
+      <div class="container_comm">
+        <h2>Luis Orellana</h2>
+        <p class="title_comm">Industry Relations</p>
+        <p>Career fairs can be an intimidating event to approach. Industry
+        Relations aims to help students approach career fairs & be more
+        proactive in these events.  At the end of the day, recruiters are humans
+        too & they themselves can be nervous too at such events. One strategy to
+        get better at selling yourself is to keep practicing and exposing
+        yourself to said industry professionals at event. This committee has
+        created a list of Southern California Career Fairs for Fall 2018.
+        Another goal of this committee is to find industry tours. So far we are
+        looking at a Chevron El Segundo Community Tour day on Saturday November 3.</p>
+        <br>
+        <a href="https://docs.google.com/spreadsheets/d/1MkyXFPwbYBkqSVOKJyTdmRIL9U0ExuXTY9LTEW0UhPc/edit?usp=sharing" target="_blank">Click here for the career fairs</a><br><br>
+        <br>
+        <p>lorel002@ucr.edu</p>
+        <p><a href="mailto:lorel002@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/Board_pictures_2018-2019/Martha_Anguiano.jpg" alt="Martha" style="width:100%">
+      <div class="container_comm">
+        <h2>Martha Anguiano</h2>
+        <p class="title_comm">Tabling</p>
+        <p>The tabling committee serves to grow the SHPE Familia and maintain the
+        Familia Culture that makes everyone feel welcomed in this organization.
+        Not only that, but members who join this committee will also be able to
+        improve their presentation and communication skills. This year we will
+        also encourage youth to pursue careers in STEM due to the new
+        collaboration with the outreach committee.</p><br><br><br><br><br><br><br><br>
+        <p>mangu012@ucr.edu</p>
+        <p><a href="mailto:mangu012@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--    -------------------------- Row 3 -------------------------- -->
+<div class="row_comm">
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/2017-18/Leslie_de_Jesus.JPG" alt="Leslie" style="width:100%">
+      <div class="container_comm">
+        <h2>Leslie de Jesus</h2>
+        <p class="title_comm">Alumni Relations</p>
+        <p>The Alumni Relations Committee builds a relationship between students
+        and SHPE alumni. Life after graduation can seem intimidating and you may
+        want some advice, who better to advise you than our own alumni? Our
+        committee plans and coordinates events so that students can mingle with
+        alumni and build friendships. When you hear about our event make sure to
+        stop by! </p><br>
+        <p>ldej002@ucr.edu</p>
+        <p><a href="mailto:ldej002@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/eboard/2017-18/Steve_Martinez.jpg" alt="Steve" style="width:100%">
+      <div class="container_comm">
+        <h2>Steve Martinez</h2>
+        <p class="title_comm">Projects</p>
+        <p>The projects committee works on a project year round from start to
+        finish. That includes being able to learn new skills through the
+        workshops provided in order to accurately understand the task at hand
+        and complete it. The project gives an opportunity to see real world
+        applications for your work and studies and the impact it can make.
+        Along with being exposed to the inner workings of a project and managing
+        a deadline outside of the classroom. </p>
+        <p>smart051@ucr.edu</p>
+        <p><a href="mailto:smart051@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/eboard/2017-18/Steve_Martinez.jpg" alt="Steve" style="width:100%">
+      <div class="container_comm">
+        <h2>Steve Martinez</h2>
+        <p class="title_comm">Proposals</p>
+        <p>All of the amazing events put on by SHPE require a lot of support,
+        both in finance and in labor. The proposals committee aims at being able
+        to put together a sponsorship package in order for companies to send
+        donations and fund these events. There are different components that go
+        into creating a proposal which we aim to complete in a timely manner. </p><br>
+        <p>smart051@ucr.edu</p>
+        <p><a href="mailto:smart051@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--    -------------------------- Row 4 -------------------------- -->
+<div class="row_comm">
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/Board_pictures_2018-2019/Nicholas_Perez-Aguilar.jpg" alt="Nicholas" style="width:100%">
+      <div class="container_comm">
+        <h2>Nicholas Perez-Aguilar</h2>
+        <p class="title_comm">Webmaster</p>
+        <p>The Webmaster committee is in charge of adding, updating, and
+        maintaining of the SHPE @ UCR website. In this committee, we will be
+        learning together how to program in HTML and CSS. We will learn together
+        how to use online resources and our programming foundations in order to
+        customize pages to our liking. If you are interested or even like what
+        you are looking at, as you are on our site already, we will help you gain
+        the necessary skills you need to keep the SHPE website up and running
+        and teach you the fundamental and foundational skills in order to go off
+        and create your own website. <br><br>Here is a place to start your journey, it
+        is what we use:
+        <a href="https://www.w3schools.com" target="_blank">W3Schools</a></p><br>
+        <p>npere017@ucr.edu</p>
+        <p><a href="mailto:npere017@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+<!-- Commented out until further info is obtained --
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/male.jpg" alt="Mike" style="width:100%">
+      <div class="container_comm">
+        <h2>Mike Ross</h2>
+        <p class="title_comm">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><a href="mailto:jlope078@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column_comm">
+    <div class="card_comm">
+      <img src="images/members/male.jpg" alt="John" style="width:100%">
+      <div class="container_comm">
+        <h2>John Doe</h2>
+        <p class="title_comm">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><a href="mailto:jlope078@ucr.edu" target="_blank"><button class="button_comm" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  <!-- End commenting -->
+</div>
+<!-- End of committees -->
+
+<footer id="footer">
+   <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="row">
+         <div class="col-sm-8" style="color:white">&copy; 2018 - 2019 Society of Hispanic Professional Engineers at the University of California, Riverside.
+        		<br>
+            <br>
+            <div class="footer-image"> <a href="http://www.ucr.edu/" title="A proud org in the University of California, Riverside"><img src="images/white_ucr_logo.png"/></a> </div>
+         </div>
+         <br>
+         <div class="col-md-4"> Visit <a href="http://shpe.org/" style="color:gold">SHPE National</a> <br>
+            A <a href="http://www.engr.ucr.edu/" style="color:gold">Bourns College of Engineering</a> organization <br>
+            Contact us: <a href="mailto:shpe.ucr@gmail.com" style="color:gold">shpe.ucr@gmail.com</a> </div>
+      </div>
+   </div>
+</footer>
+</body>
+</html>
