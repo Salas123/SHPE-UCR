@@ -20,6 +20,7 @@
 
   }
 
+
 /* CAROUSEL CONTROLS */
 
 .carousel-controls {
@@ -201,7 +202,6 @@ background-color: rgba(255, 255, 255, 0.9);
                         <a href="calendar.html">Calendar</a>
                         <a href="Activities.html">Past Events</a>
                       </div></li>
-
                <!--<li><a href="graduates.html">Graduates</a></li>-->
                <li><a href="opportunities.html">Opportunities</a></li>
                <!-- Dropdown menu -->
@@ -218,6 +218,15 @@ background-color: rgba(255, 255, 255, 0.9);
                         <a href="Comittees.html">Committees</a>
                       </div></li>
                <li><a href="FAQ.html">FAQ</a></li>
+               <!-- Paypal button -->
+               <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="YQ7LVTMMQJQEC" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>               
+                <!-- /Paypal button -->
+               </li>
             </ul>
          </div>
       </div>
@@ -226,102 +235,11 @@ background-color: rgba(255, 255, 255, 0.9);
    <!--/nav-->
 </header>
 
-<!-- Take out for now --
-    <div>
-        <h1 class="shadow"><center>The Society of Hispanic Professional Engineers</center></h1><br><br>
-        <center><img src="./big_logo.png" alt="Picture not found!" title="Society of Hispanic Professional Engineers" width=250;></center><br>
-        <h1 class="shadow" style="color: yellow;"><center>University of California, Riverside</center></h1>
-
-        <br><br><br>
-<!-- /Take out for now -->
-
-
-<!--/header-->
-   <!-- ################################### Taking a break until fixed #####################
-<!-- ##########################|Main Slider|##########################--
-<section id="main-slider" class="container-fluid no-margin" data-interval="5000" wrap="false">
-   <div class="carousel slide" data-interval="5000" wrap="false">
-
-<-- ##########################|Carousel Slider Buttons|##########################--
-      <ol class="carousel-indicators">
-         <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-         <li data-target="#main-slider" data-slide-to="1"></li>
-         <li data-target="#main-slider" data-slide-to="2"></li>
-         <li data-target="#main-slider" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-<!-- ##########################|First Image|##########################--
-         <div class="item active" content="width=device-width, initial-scale=1" style="background-image: url(./images/slider/slide0.jpg)">
-            <div class="container-fluid">
-               <div class="row slide-margin">
-                  <div class="col-sm-6">
-                     <div class="carousel-content">
-                        <h1 class="animation animated-item-1">Society of Hispanic Professional Engineers @ University of California, Riverside</h1>
-                        <h2 class="animation animated-item-2">Brought together by heritage, social responsibility and desire to improve the equality of all people through the use of science and technology</h2>
-                        <a class="btn btn-slide animation animated-item-3" href="mission.html">Read More</a>
-                     </div>
-                  </div>
-                  <div class="col-sm-6 hidden-xs animation animated-item-4">
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!--/.item--
-         <div class="item" style="background-image: url(./images/slider/slide1.jpg)">
-            <div class="container-fluid">
-               <div class="row slide-margin">
-                  <div class="col-sm-6">
-                     <div class="carousel-content">
-                        <h1>Society of Hispanic Professional Engineers @ University of California, Riverside</h1>
-                        <h2>Brought together by heritage, social responsibility and desire to improve the equality of all people through the use of science and technology</h2>
-                        <a class="btn btn-slide " href="mission.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!--/.item--
-         <div class="item" style="background-image: url(images/slider/slide2.jpg)">
-            <div class="container-fluid">
-               <div class="row slide-margin">
-                  <div class="col-sm-6">
-                     <div class="carousel-content">
-                        <h1>Society of Hispanic Professional Engineers @ University of California, Riverside</h1>
-                        <h2>Brought together by heritage, social responsibility and desire to improve the equality of all people through the use of science and technology</h2>
-                        <a class="btn btn-slide" href="mission.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!--/.item--
-         <div class="item" style="background-image: url(images/slider/slide3.jpg)">
-            <div class="container-fluid">
-               <div class="row slide-margin">
-                  <div class="col-sm-6">
-                     <div class="carousel-content">
-                        <h1>Society of Hispanic Professional Engineers @ University of California, Riverside</h1>
-                        <h2>Brought together by heritage, social responsibility and desire to improve the equality of all people through the use of science and technology</h2>
-                        <a class="btn btn-slide" href="mission.html">Read More</a> </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!--/.item--
-      </div>
-      <!--/.carousel-inner--
-   </div>
-   <!--/.carousel--
-   <a class="prev visible-md visible-lg" href="#main-slider" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
-   <a class="next visible-md visible-lg" href="#main-slider" data-slide="next"><span class="fa fa-chevron-right"></span></a>
-</section>
-
 <!-- Modal for signing up for email -->
 <script>
 setTimeout(function() {
     $('#Mailing_Modal').modal();
-}, 5000);
+}, 10000);
 </script>
 
 <!-- Modal -->
@@ -502,174 +420,8 @@ setTimeout(function() {
 
     </div>
 
-
-
   </div>
-
 </div>
-
-
-
-<!-- ------------------------------ Info about us -------------------- -->
-<!--/#main-slider--
-<div id="content">
-   <div class="container-fluid">
-      <div class="row">
-
-         <!-- Commentted out until further verification is obtained
-
-         <!-- ##########################|Simple Animated List|##########################--
-         <div class="col-xs-12 col-sm-offset-2 col-sm-4 wow fadeInLeft">
-            <div class="tab-wrap">
-               <div class="media">
-                  <div class="parrent pull-left">
-                     <ul class="nav nav-tabs nav-stacked">
-                        <!-- TODO: Find something more attractive to new members to put here. Maybe what we do instead of why? --
-                        <li class="active"><a href="#tab1" data-toggle="tab" class="analistic-01">Our Values</a></li>
-                        <li class=""><a href="#tab2" data-toggle="tab" class="analistic-02">Our Function</a></li>
-                        <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Our Fulfillments</a></li>
-                     </ul>
-                  </div>
-                  <div class="parrent media-body">
-                     <div class="tab-content">
-                        <div class="tab-pane fade active in" id="tab1">
-                           <div class="media">
-                              <div class="media-body">
-                                 <h2>Excellence in...</h2>
-                                 <p> We value excellence in education, professional pursuits and leadership.
-                                    We obtain excellence through integrity, empowerment, achievement, diversity and continuous improvement.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab2">
-                           <div class="media">
-                              <div class="media-body">
-                                 <h2>We serve to...</h2>
-                                 <p>SHPE serves to lead as a social-technical organization whose primary function is to
-                                    enhance and achieve the potential of Hispanics in engineering, math and science.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab3">
-                           <div class="media">
-                              <div class="media-body">
-                                 <h2>We strive to...</h2>
-                                 <p>We strive to fulfill our mission by increasing educational opportunities, promoting professional and personal growth, carry out our social responsibility to be involved in education, business and government issues and enhancing pride within our organization and reinforcing our reputation as a vital Hispanic organization.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!--/.tab-content--
-                  </div>
-                  <!--/.media-body--
-               </div>
-               <!--/.media--
-            </div>
-            <!--/.tab-wrap--
-         </div>
-         <!--/.col-sm-6--
-
-
-<!-- ------------------------------Testimonials ----------------------------- --
-         <div class="col-xs-12 col-sm-6 wow fadeInRight">
-            <h2>Testimonials</h2>
-            <ul class="nav nav-tabs tabs-collapse testimonial">
-               <!--<li class="active"><a data-toggle="tab" href="#Pablo">Pablo</a></li>--
-               <li class="active"><a data-toggle="tab" href="#Glenda">Glenda</a></li>
-               <!--<li><a data-toggle="tab" href="#JoseD">Jose D.</a></li>-->
-               <!--<li><a data-toggle="tab" href="#JoseF">Jose F.</a></li>--
-               <li><a data-toggle="tab" href="#Marlen">Marlen</a></li>
-               <!--<li><a data-toggle="tab" href="#Jun">Jun</a></li>-->
-               <!--<li><a data-toggle="tab" href="#Alexis">Alexis</a></li>-->
-               <!--<li><a data-toggle="tab" href="#Christian">Christian</a></li>--
-               <li><a data-toggle="tab" href="#Yair">Yair</a></li>
-            </ul>
-            <div class="tab-content">
-               <!--Pablo Hernandez, Glenda Castro, Yair Sanchez, Jose Dircio, Jose Figue, Marlen Castro, Cristian Alcarez, Alexis Tapia, Jun Wang -->
-               <!--<div id="Pablo" class="tab-pane fade in active testimonial">-->
-               <!--   <div class="media testimonial-inner">-->
-               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
-               <!--      <div class="media-body">-->
-               <!--         <p>"Sample text."</p>-->
-               <!--         <span><strong>- Pablo Henandez</strong> | UCR Alumni, Class of 2017</span></div>-->
-               <!--      </div>-->
-               <!--</div>--
-               <div id="Glenda" class="tab-pane fade in active testimonial">
-                  <div class="media testimonial-inner">
-                     <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Glenda_Castro.jpg"> </div>
-                     <div class="media-body">
-                        <p><q>SHPE has given me the opportunity to help our Hispanic community, from awareness and being able to provided information how to apply for school and
-                        financial aid. I am very grateful that I have my SHPE family and that I was able to help other Hispanics achieve higher education.</q></p>
-                        <span><strong>&dash; Glenda Castro</strong> | UCR Alumni, Class of 2017</span></div>
-                     </div>
-               </div>
-               <!--<div id="JoseD" class="tab-pane fade testimonial">-->
-               <!--   <div class="media testimonial-inner">-->
-               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
-               <!--      <div class="media-body">-->
-               <!--         <p>"Sample text and more sample text."</p>-->
-               <!--         <span><strong>&dash; Jose Dircio</strong> | UCR Alumni, Class of 2017</span></div>-->
-               <!--      </div>-->
-               <!--</div>-->
-               <!--<div id="JoseF" class="tab-pane fade testimonial">-->
-               <!--   <div class="media testimonial-inner">-->
-               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
-               <!--      <div class="media-body">-->
-               <!--         <p>"Sample text."</p>-->
-               <!--         <span><strong>&dash; Jose Figue</strong> | UCR Alumni, Class of 2017</span></div>-->
-               <!--      </div>-->
-               <!--</div>--
-               <div id="Marlen" class="tab-pane fade testimonial">
-                  <div class="media testimonial-inner">
-                     <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Marlen_Castro.jpg"> </div>
-                     <div class="media-body">
-                        <p><q>It became my family and my support system. I have found mentors that have pushed me to excel in engineering. To me it is extremely important to
-                        give back to my community and to the next generation of engineers. SHPE has made me a better engineer and a better leader.</q></p>
-                        <span><strong>&dash; Marlen Castro</strong> | UCR Alumni, Class of 2017</span></div>
-                     </div>
-               </div>
-               <!--<div id="Jun" class="tab-pane fade testimonial">-->
-               <!--   <div class="media testimonial-inner">-->
-               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Jun_Wang.jpg"> </div>-->
-               <!--      <div class="media-body">-->
-               <!--         <p>"Sample text."</p>-->
-               <!--         <span><strong>&dash; Jun Wang</strong> | UCR Alumni, Class of 2017</span></div>-->
-               <!--      </div>-->
-               <!--</div>-->
-               <!--<div id="Alexis" class="tab-pane fade testimonial">-->
-               <!--   <div class="media testimonial-inner">-->
-               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
-               <!--      <div class="media-body">-->
-               <!--         <p>"Sample text."</p>-->
-               <!--         <span><strong>&dash; Alexis Tapia</strong> | UCR Alumni, Class of 2017</span></div>-->
-               <!--      </div>-->
-               <!--</div>-->
-               <!--<div id="Christian" class="tab-pane fade testimonial">-->
-               <!--   <div class="media testimonial-inner">-->
-               <!--      <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/alumni/2017/Pablo_Hernandez.jpg"> </div>-->
-               <!--      <div class="media-body">-->
-               <!--         <p>"Sample text."</p>-->
-               <!--         <span><strong>&dash; Cristian Alcarez</strong> | UCR Alumni, Class of 2017</span></div>-->
-               <!--      </div>-->
-               <!--</div>--
-               <div id="Yair" class="tab-pane fade testimonial">
-                  <div class="media testimonial-inner">
-                     <div class="pull-left"> <img class="img-responsive img-circle" width="100px" height="100px" src="images/eboard/graduates/Yair_Sanchez.jpg"> </div>
-                     <div class="media-body">
-                        <p><q>SHPE is family, and with everyone constantly supporting me I have been able to achieve better grades and have been taking action in helping out
-                        my community with volunteering events.</q></p>
-                        <span><strong>&dash; Yair Sanchez</strong> | UCR Alumni, Class of 2017</span></div>
-                     </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--/.row--
-   </div>
-   <!--/.container--
-</div>
-
-<!-- !Commentted out until further verification is obtained -->
 
 <!-- Start Facebook feed -- >
 <br><br><br>

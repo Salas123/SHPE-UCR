@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- This is for the drop down menu -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -147,6 +153,15 @@
                         <a href="Comittees.html">Committees</a>
                       </div></li>
                 <li><a href="FAQ.html">FAQ</a></li>
+                <!-- Paypal button -->
+               <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="YQ7LVTMMQJQEC" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>               
+                <!-- /Paypal button -->
+               </li>
             </ul>
          </div>
       </div>
@@ -167,6 +182,88 @@
 
 <!-- Space -->
 <br><br>
+<!-- /get rid of and create single list --
+
+
+
+
+
+
+
+<div>
+<select id="list" onchange="test();">
+  <option value="select">Select your choice</option>
+  <option value="17-18">2017-2018</option>
+  <option value="18-19">2018-2019</option>
+</select>
+
+<select id="list2" onchange="test2();">
+  <option value="select">Select your choice</option>
+  <option value="L">LeaderSHPE</option>
+  <option value="P">Professional</option>
+  <option value="A">Academic</option>
+  <option value="C">Chapter Development</option>
+  <option value="O">Outreach</option>
+</select>
+  
+  
+  <script>
+      	function test2()
+        {
+            var selectedval = document.getElementById("list").value;
+        	var selectedval2 = document.getElementById("list2").value;
+            
+            if(selectedval == "17-18" && selectedval2 == "L")
+            {
+  var x = document.createElement("IMG");
+  x.setAttribute("src", "big_logo.png");
+  x.setAttribute("alt", "The Pulpit Rock");
+  document.body.appendChild(x);
+            }
+            else if(selectedval == "17-18" && selectedval2 == "P")
+            {
+                alert("2");
+            }
+            else if(selectedval == "17-18" && selectedval2 == "A")
+            {
+                alert("3");
+            }
+            else if(selectedval == "17-18" && selectedval2 == "C")
+            {
+                alert("4");
+            }
+            else if(selectedval == "17-18" && selectedval2 == "O")
+            {
+                alert("5");
+            }
+            else if(selectedval == "18-19" && selectedval2 == "L")
+            {
+                alert("6");
+            }
+            else if(selectedval == "18-19" && selectedval2 == "P")
+            {
+                alert("7");
+            }
+            else if(selectedval == "18-19" && selectedval2 == "A")
+            {
+                alert("8");
+            }
+            else if(selectedval == "18-19" && selectedval2 == "C")
+            {
+                alert("9");
+            }
+            else if(selectedval == "18-19" && selectedval2 == "O")
+            {
+                alert("10");
+            }
+        }
+  </script>
+</div>
+<!-- /get rid of and create single list -->
+
+
+
+<!-- Put back for now --> 
 <div id="wrap">
         <div id="side-left">
         <!-- 2017-2018 -->
@@ -637,9 +734,25 @@
         <!-- 2015-2016 -->
         <!-- 2014-2015 -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Space -->
 <br><br>
-
 <!--/#content-->
 <!--henlo lizer-->
 <!-- Common Footer -->

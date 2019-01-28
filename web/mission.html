@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <!-- This is for the drop down menu -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -58,6 +64,12 @@
    <![endif]-->
    <!-- main SHPE JS -->
    <script src="js/main.js"></script>
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.prettyPhoto.js"></script>
+   <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/wow.min.js"></script>
    <link rel="shortcut icon" href="favicon.ico">
    <!-- For the three people that still use these
    	  Default / Android -->
@@ -74,7 +86,6 @@
    <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
 </head>
 <!--/head-->
-<body class="homepage" style="background-color:#dae1ed;">
 <header id="header">
    <div class="top-bar top-bar-shpe">
       <div class="container">
@@ -146,6 +157,15 @@
                         <a href="Comittees.html">Committees</a>
                       </div></li>
                <li><a href="FAQ.html">FAQ</a></li>
+               <!-- Paypal button -->
+               <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="YQ7LVTMMQJQEC" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>               
+                <!-- /Paypal button -->
+               </li>
             </ul>
          </div>
       </div>
@@ -160,7 +180,7 @@
          <div class="col-md-12">
          <!-- TODO: Update & change format to resemble "testimonials" : text generated at www.lipsum.com -->
             <h2>A message from SHPE @ UCR President</h2>
-            <p> As the Society of Hispanic Professional Engineers (SHPE), we strive to empower the Hispanic, ChicanX, & LatinX through Science, Technology, Engineering, and Mathematics (STEM). SHPE is a pipeline of STEM awareness, access, support, and development necessary for the ever-changing Age of Technology.<br>By promoting our five pillars</p>
+            <p> As the Society of Hispanic Professional Engineers (SHPE), we strive to empower the Hispanic, ChicanX, & LatinX students through Science, Technology, Engineering, and Mathematics (STEM). SHPE is a pipeline of STEM awareness, access, support, and development necessary for the ever-changing Age of Technology.<br>By promoting our five pillars</p>
             <ol>
             	<li>Academic Development</li>
     				<li>Leadership Development</li>
@@ -470,11 +490,5 @@
                        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
                 s.parentNode.insertBefore(g,s)}(document,'script'));
     </script> -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/wow.min.js"></script>
 </body>
 </html>

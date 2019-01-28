@@ -229,7 +229,7 @@ input.search-form:hover {
 .navbar-brand {
 	display: inline-block;
 	padding: 0;
-	margin-left: 80px;
+	margin-left: 50px;
 	margin-top: 5px;
 	text-align: right;
 }
@@ -2316,4 +2316,20 @@ html {
 
 .button_comm:hover {
   background-color: #555;
+}
+
+/* -----------------------
+         Thank Donors
+   ----------------------- */
+#Donations
+{
+	position: relative;
+	left: 220px;
+	width: 1000px;
+}
+
+#wrap-donate
+{
+	width: 1000px;
+	margin: 0 auto 0 auto;
 }

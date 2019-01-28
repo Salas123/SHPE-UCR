@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- This is for the drop down menu -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -147,6 +153,15 @@
                         <a href="Comittees.html">Committees</a>
                       </div></li>
                <li class="active"><a href="FAQ.html">FAQ</a></li>
+               <!-- Paypal button -->
+               <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="YQ7LVTMMQJQEC" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>               
+                <!-- /Paypal button -->
+               </li>
             </ul>
          </div>
       </div>
@@ -164,17 +179,17 @@
    </div>
 
 <!-- Div that will hold all of the questions and answers - FAQ -->
-<div id="wrap" id=FAQ><center>
+<div id="wrap" id=FAQ>
    <!-- ---------------------- Update variable names for all questions, otherwise it gets overwritten ------------------------------ -->
 
    <!-- -------------------------- Question 1 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction1()" style="width: 1000px;">What is SHPE?</button>
+   <p class="Questions"><b><button onclick="myFunction1()" style="width: 1000px;" class="primary-btn col-xs-11 text-left">What is SHPE?</button>
    </b></p>
 
    <div id="myDIV1"> </div>
 
    <script>
-   var1="SHPE is an organization that stands for ‘Society of Hispanic Professional Engineers’. As stated on the SHPE Nationals website, “The Society of Hispanic Professional Engineers (SHPE) was founded in Los Angeles, California, in 1974 by a group of engineers employed by the city of Los Angeles. Their objective was to form a national organization of professional engineers to serve as role models in the Hispanic community. The concept of Networking was the key basis for the organization. SHPE quickly established two student chapters to begin the network that would grow to encompass the nation as well as reach countries outside the United States. Today, SHPE enjoys a strong but independent network of professional and student chapters throughout the nation.</br>";
+   var1="The Society of Hispanic Professional Engineers (SHPE) was founded in Los Angeles, California, in 1974 by a group of engineers employed by the city of Los Angeles. Their objective was to form a national organization of professional engineers to serve as role models in the Hispanic community. The concept of Networking was the key basis for the organization. SHPE quickly established two student chapters to begin the network that would grow to encompass the nation as well as reach countries outside the United States. Today, SHPE enjoys a strong but independent network of professional and student chapters throughout the nation.</br>";
    var2= "Visit our ";
    var3= " to see how we at UCR are attempting to keep up with this definition.";
 
@@ -190,43 +205,43 @@
       }
    }
    </script>
-   <br>
+   <br><br><br>
 
    <!-- -------------------------- Question 2 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction2()" style="width: 1000px">What does SHPE @ UCR do?</button>
+   <p class="Questions"><b><button onclick="myFunction2()" style="width: 1000px" class="primary-btn col-xs-11 text-left">What does SHPE @ UCR do?</button>
    </b></p>
 
    <div id="myDIV2"> </div>
 
    <script>
    var4 ="We do many different things here at SHPE @ UCR.";
-   var5 = "We have events that span from tabling to get to know people and them us, all the way to fundraising with different companies to help us, help you. We, also, have different committees that you can be a part of from showing off your skills, such as Athletics, to learning more and trying to outsmart other organizations with Academics. ";
-   var6 = "For those who are more on the extrovert/introvert side, we have opportunities for you, too. For extroverts, you could become part of our MentorSHPE program to share your knowledge with other, newer members or participate in events that help upcoming youth at their school and other Outreach events. For introverts, you could participate in Webmaster or Social Media committees, where there is not much social interaction, but a lot more programming and designing our platforms and organization for others to view";
+   var5 = "SHPE at UCR functions based on 5 core pillars: Leadership development, Professional development, Academic development, Chapter development, and Community outreach. We have committees under each pillar that you can get involved in. Involvement will teach you about leadership and how to manage yourself and others. SHPE also hosts professional events and workshops which bring industry professionals for you to network with and learn from. We host social events to get to know your SHPE familia and destress. We have a big emphasis on outreach where you get to teach kids about STEM and plan fun activities for them to learn and get excited from.";
+   var6 = "Whether you are an extrovert or an introvert, we have opportunities for you. For extroverts, you could become part of our MentorSHPE program to share your knowledge with other, newer members or participate in events that help upcoming youth at their school and other Outreach events. For introverts, you could participate in Webmaster or Social Media committees, where there is not nearly as much social interaction, but a lot more programming and designing of our platforms and organization for others to view.";
    var7 = "Visit our ";
    var8 = " page to learn who to talk to, so you can get started today!";
 
-   var text2 = "Contact Us";
+   var text2 = "Committees";
 
    function myFunction2() {
        var x = document.getElementById("myDIV2");
        if (x.innerHTML === " ") {
-           x.innerHTML = (var4 + "</br></br>" + var5 + "</br></br>" + var6 + "</br></br>" + var7 + text2.link("contact.html") + var8);
+           x.innerHTML = (var4 + "</br></br>" + var5 + "</br></br>" + var6 + "</br></br>" + var7 + text2.link("Comittees.html") + var8);
 
        } else {
            x.innerHTML = " ";
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 3 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction3()" style="width: 1000px">Is there a fee to join SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction3()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Is there a fee to join SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV3"> </div>
 
    <script>
-   var9 = "There is no fee to join our organization at SHPE @ UCR. There may be a fee for certain events (i.e. fundraising get-togethers), but no purchase is necessary for most events.";
+   var9 = "There is no fee to join SHPE @ UCR. There may be a fee for participating in certain events (i.e. fundraising get-togethers), but no purchase is necessary for most events. You can opt to become a national member for $10 which is necessary if you are interested in attending conferences. Visit the members page for how to become a national member.";
 
    function myFunction3() {
        var x = document.getElementById("myDIV3");
@@ -238,10 +253,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 4 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction4()" style="width: 1000px">Do I have to be part of BCOE to join SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction4()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Do I have to be part of BCOE to join SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV4"> </div>
@@ -259,16 +274,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 5 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction5()" style="width: 1000px">Can SHPE @ UCR help me with Academics?</button>
+   <p class="Questions"><b><button onclick="myFunction5()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Can SHPE @ UCR help me with Academics?</button>
    </b></p>
 
    <div id="myDIV5"> </div>
 
    <script>
-   var11 = "We here at SHPE @ UCR will do what we can to help anyone who wants help. Through the organization, those who join Academics may recieve help from each other through study groups. Another option is to ask around and see if anyone else in the organization is willing to help or become study partners/groups. Academics are always number one (1) priority as that is why we are all coming to school, but we can help/recommend where to go.";
+   var11 = "We here at SHPE @ UCR will do what we can to help anyone who wants help. Through the organization, those who join Academics may receive help from each other through study groups. Another option is to ask around and see if anyone else in the organization is willing to help or become study partners/groups. Academics are always number one (1) priority as that is why we are all coming to school, and we can help/recommend where to go.";
 
    function myFunction5() {
        var x = document.getElementById("myDIV5");
@@ -280,10 +295,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 6 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction6()" style="width: 1000px">Can SHPE @ UCR help me with professional sills?</button>
+   <p class="Questions"><b><button onclick="myFunction6()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Can SHPE @ UCR help me with professional sills?</button>
    </b></p>
 
    <div id="myDIV6"> </div>
@@ -301,16 +316,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 7 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction7()" style="width: 1000px">Does SHPE @ UCR offer stoles for members when they graduate?</button>
+   <p class="Questions"><b><button onclick="myFunction7()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Does SHPE @ UCR offer stoles for members when they graduate?</button>
    </b></p>
 
    <div id="myDIV7"> </div>
 
    <script>
-   var13 = "SHPE @ UCR does offer stoles for members to purchase, if they wish to do so, when they graduate.However, there are requirements to do so before purchasing one. Talk to our leadership staff today if you are interested in your options for this year’s graduation.";
+   var13 = "SHPE @ UCR does offer stoles for members to purchase, if they wish to do so, when they graduate. However, there are requirements to do so before purchasing one. Talk to our leadership staff today if you are interested in your options for this year’s graduation.";
 
    function myFunction7() {
        var x = document.getElementById("myDIV7");
@@ -322,16 +337,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 8 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction8()" style="width: 1000px">Can I join more than one organization, concurrently, if I join SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction8()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Can I join more than one organization, concurrently, if I join SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV8"> </div>
 
    <script>
-   var14 = "Yes, any member may join more than one organization at once if they wish to do so. It is recommended that you only take on what you can handle in a year. This is to avoid ‘burnouts’ and other negative consequences to your physical and mental health, and even to help preserve your grades, as that is the number one (1) priority, expected of all of our members.";
+   var14 = "Yes, any member may join more than one organization at once if they wish to do so. It is recommended that you only take on what you can handle in a year. This is to avoid \‘burnouts\’ and other negative consequences to your physical and mental health, and even to help preserve your grades, as that is the number one (1) priority expected of all of our members.";
 
    function myFunction8() {
        var x = document.getElementById("myDIV8");
@@ -343,16 +358,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 9 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction9()" style="width: 1000px">Do I have to be of Hispanic descent in order to join SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction9()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Do I have to be of Hispanic descent in order to join SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV9"> </div>
 
    <script>
-   var15 = "No. You do not have to be of Hispanic descent in order to join SHPE @ UCR. We welcome anybody, of any nationality, to join our organization.";
+   var15 = "No. You do not have to be of Hispanic descent in order to join SHPE @ UCR. We welcome everybody to join our organization.";
 
    function myFunction9() {
        var x = document.getElementById("myDIV9");
@@ -364,16 +379,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 10 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction10()" style="width: 1000px">What are the qualifications to run for a position in SHPE?</button>
+   <p class="Questions"><b><button onclick="myFunction10()" style="width: 1000px" class="primary-btn col-xs-11 text-left">What are the qualifications to run for a position in SHPE?</button>
    </b></p>
 
    <div id="myDIV10"> </div>
 
    <script>
-   var16 = "The qualifications to run for a position in SHPE is to be an active member for at least a quarter and go through the application process to run for up to 3 positions.";
+   var16 = "The qualifications to run for a position in SHPE is to be an active member for at least a quarter. You must then go through the application process to run for up to 3 positions.";
 
    function myFunction10() {
        var x = document.getElementById("myDIV10");
@@ -385,10 +400,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 11 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction11()" style="width: 1000px">Do I have to be a part of SHPE in order to help out/participate in events?</button>
+   <p class="Questions"><b><button onclick="myFunction11()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Do I have to be a part of SHPE in order to help out/participate in events?</button>
    </b></p>
 
    <div id="myDIV11"> </div>
@@ -406,16 +421,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 12 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction12()" style="width: 1000px">How do I become a member of SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction12()" style="width: 1000px" class="primary-btn col-xs-11 text-left">How do I become a member of SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV12"> </div>
 
    <script>
-   var18 = "There are a couple of ways to become active members of SHPE @ UCR. We offer a sticker card approach, in which you get enough stickers to fill up our card and you will be considered an active member or to join a committee and be an active participant in there. These two methods will allow you to have the title of ";
+   var18 = "There are a couple of ways to become active members of SHPE @ UCR. We offer a participation approach, in which you attend 10 qualifying events in order to be considered an active member in the SHPE @ UCR chapter. Another option is to join a committee and be an active participant in there. These two methods will allow you to have the title of ";
    var19= " in our SHPE chapter.";
 
    var text3 = "active member";
@@ -430,10 +445,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 13 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction13()" style="width: 1000px">How do I become a national member?</button>
+   <p class="Questions"><b><button onclick="myFunction13()" style="width: 1000px" class="primary-btn col-xs-11 text-left">How do I become a national member?</button>
    </b></p>
 
    <div id="myDIV13"> </div>
@@ -454,10 +469,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 14 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction144()" style="width: 1000px">Who is the leadership and how may I contact them?</button>
+   <p class="Questions"><b><button onclick="myFunction144()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Who is the leadership and how may I contact them?</button>
    </b></p>
 
    <div id="myDIV144"> </div>
@@ -478,16 +493,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 15 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction15()" style="width: 1000px">How do I get my information placed on the website?</button>
+   <p class="Questions"><b><button onclick="myFunction15()" style="width: 1000px" class="primary-btn col-xs-11 text-left">How do I get my information placed on the website?</button>
    </b></p>
 
    <div id="myDIV15"> </div>
 
    <script>
-   var24 = "If you become an active member, we will put you on our website as a ";
+   var24 = "If you become an active member and achieve current member status, we will put you on our website as a";
 
    var text6 = "current member.";
 
@@ -501,19 +516,19 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 16 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction16()" style="width: 1000px">If I wanted to make a contribution to help the organization, how can I?</button>
+   <p class="Questions"><b><button onclick="myFunction16()" style="width: 1000px" class="primary-btn col-xs-11 text-left">If I wanted to make a contribution to help the organization, how can I?</button>
     </b></p>
 
    <div id="myDIV16"> </div>
 
    <script>
    var25 = "At this current moment in time, you may make a contribution to SHPE @ UCR by talking to our ";
-   var26 = "</br>In the near future, we anticipate having a donation method/payment tab to allow for accepting of donations to our organization and to allow for you, the visitors, to make purchases from our custom made merchandise.";
+   var26 = "</br>Also, if it is more convenient, you can donate to us through Paypal as well. We appreciate any and all assistance.";
 
-   text7 = "leadership.";
+   text7 = "leadership. ";
    function myFunction16() {
        var x = document.getElementById("myDIV16");
        if (x.innerHTML === " ") {
@@ -524,16 +539,16 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 17 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction17()" style="width: 1000px">What does PDF stand for and what is it?</button>
+   <p class="Questions"><b><button onclick="myFunction17()" style="width: 1000px" class="primary-btn col-xs-11 text-left">What does PDF stand for and what is it?</button>
    </b></p>
 
    <div id="myDIV17"> </div>
 
    <script>
-   var27 = "PDF is an acronym for our Professional Development Fair. Our PDFs’ do have a cost associated with attendance (in order to help alleviate the costs of all that is being provided). At our PDFs’, we have professionals of different industries come visit our campus and interact with our members, share their experiences, provide mock interviews and resume critiques, help with questions that may be tied to their companies, network, and even possibly have job offers.";
+   var27 = "PDF is an acronym for our Professional Development Fair. Our PDFs\’ do have a cost associated with attendance (in order to help alleviate the costs of all that is being provided). At our PDFs\’, we have professionals of different industries come visit our campus and interact with our members, share their experiences, provide mock interviews and resume critiques, help with questions that may be tied to their companies, network, and even possibly have job offers.";
 
    function myFunction17() {
        var x = document.getElementById("myDIV17");
@@ -545,10 +560,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 18 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction18()" style="width: 1000px">What is Noche de Ciencias?</button>
+   <p class="Questions"><b><button onclick="myFunction18()" style="width: 1000px" class="primary-btn col-xs-11 text-left">What is Noche de Ciencias?</button>
    </b></p>
 
    <div id="myDIV18"> </div>
@@ -566,10 +581,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 19 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction19()" style="width: 1000px">What is Dia de Ciencias?</button>
+   <p class="Questions"><b><button onclick="myFunction19()" style="width: 1000px" class="primary-btn col-xs-11 text-left">What is Dia de Ciencias?</button>
    </b></p>
 
    <div id="myDIV19"> </div>
@@ -587,34 +602,34 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 20 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction20()" style="width: 1000px">Where can I find information about all the committees and their roles in SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction20()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Where can I find information about all the committees and their roles in SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV20"> </div>
 
    <script>
-   var31 = "At this current moment in time, you can find out who is in charge of all the committees and their contact information by going to our ";
+   var31 = "You can find out who is in charge of each committee and their respective contact information by going to our ";
    var32= " page. Feel free to message them with any questions you may have.";
 
-   var text8 = "Contact Us";
+   var text8 = "Committees";
 
    function myFunction20() {
        var x = document.getElementById("myDIV20");
        if (x.innerHTML === " ") {
-           x.innerHTML = (var31 + text8.link("contact.html") + var32);
+           x.innerHTML = (var31 + text8.link("Comittees.html") + var32);
 
        } else {
            x.innerHTML = " ";
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 21 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction21()" style="width: 1000px">How can I get more involved with SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction21()" style="width: 1000px" class="primary-btn col-xs-11 text-left">How can I get more involved with SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV21"> </div>
@@ -635,63 +650,63 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 22 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction22()" style="width: 1000px">What are sticker cards?</button>
+   <p class="Questions"><b><button onclick="myFunction22()" style="width: 1000px" class="primary-btn col-xs-11 text-left">What are sticker cards?</button>
    </b></p>
 
    <div id="myDIV22"> </div>
 
    <script>
-   var35 = "Sticker cards are something that you will receive at the first general meeting. These cards are given out as an opportunity to try and allow students to become a current member in our organization. The more events you attend or the more you participate in your committee, the more stickers you earn. Once you complete a sticker card, you will be inducted into SHPE @ UCR as one of our ";
+   var35 = "Sticker cards are something that you used to receive at the first general meeting. These cards were given out as an opportunity to try and allow students to become current members in our organization. The more events you attended or the more you participated in your committee, the more stickers you earned. Once you completed a sticker card, you would have been inducted into SHPE @ UCR as one of our ";
+   var35_point_five = "</br></br>This process to become a member has been removed. There is a system to keep track of your attendance in terms of general meetings (as of now) and that is the card reader system. When you attend a general meeting, please bring your school ID card. If it is your first time attending our general meetings, you will be asked to create an account with us in order to allow your card to be recognized in our system.";
 
    var text10 = "current members.";
 
    function myFunction22() {
        var x = document.getElementById("myDIV22");
        if (x.innerHTML === " ") {
-           x.innerHTML = (var35 + text10.link("members.html#members"));
+           x.innerHTML = (var35 + text10.link("members.html#members") + var35_point_five);
 
        } else {
            x.innerHTML = " ";
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 23 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction23()" style="width: 1000px">How can I get a new sticker card?</button>
+   <p class="Questions"><b><button onclick="myFunction23()" style="width: 1000px" class="primary-btn col-xs-11 text-left">How can I get a new sticker card?</button>
    </b></p>
 
    <div id="myDIV23"> </div>
 
    <script>
-   var36 = "If you are need of new sticker card, feel free to ask one of our ";
-   var37 = ", today.";
+   var36 = "The sticker card program has been discontinued. Please, attend the general meetings and bring your ID card to have the system keep track of meeting attendance.";
 
    var text11 = "leadership members";
 
    function myFunction23() {
        var x = document.getElementById("myDIV23");
        if (x.innerHTML === " ") {
-           x.innerHTML = (var36 + text11.link("contact.html") + var37);
+           x.innerHTML = (var36);
 
        } else {
            x.innerHTML = " ";
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 24 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction24()" style="width: 1000px">Will there be a more secure approach to the sticker card method that I can opt for instead?</button>
+   <p class="Questions"><b><button onclick="myFunction24()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Will there be a more secure approach to the sticker card method that I can opt for instead?</button>
    </b></p>
 
    <div id="myDIV24"> </div>
 
    <script>
-   var38 = "At this current moment in time, there is no other method aside from the sticker card to keep track of your attendance at all of your participated events, however, in the near future, we plan to incorporate your R’card to keep track of all of that information.";
+   var38 = "We have converted our regular General Meeting sign in with that of the card reader program. This program will require that each student bring their school issued student ID card. The student will have to provide information to create a database entry for them and then they will be able to use the card reader program to keep track of their general meeting attendance (counts towards current member membership) and allows for a much quicker method of signing into the General Meetings (GM).";
    function myFunction24() {
        var x = document.getElementById("myDIV24");
        if (x.innerHTML === " ") {
@@ -702,10 +717,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 25 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction25()" style="width: 1000px">Do I have to be a certain major in order to join certain things in SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction25()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Do I have to be a certain major in order to join certain things in SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV25"> </div>
@@ -722,10 +737,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 26 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction26()" style="width: 1000px">Do I have to speak Spanish in order to join SHPE @ UCR?</button>
+   <p class="Questions"><b><button onclick="myFunction26()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Do I have to speak Spanish in order to join SHPE @ UCR?</button>
    </b></p>
 
    <div id="myDIV26"> </div>
@@ -742,10 +757,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
    <!-- -------------------------- Question 27 ---------------------------------- -->
-   <p class="Questions"><b><button onclick="myFunction27()" style="width: 1000px">Where do I go to purchase gear?</button>
+   <p class="Questions"><b><button onclick="myFunction27()" style="width: 1000px" class="primary-btn col-xs-11 text-left">Where do I go to purchase gear?</button>
    </b></p>
 
    <div id="myDIV27"> </div>
@@ -765,10 +780,10 @@
       }
    }
    </script>
-   <br>
+   <br><br>
 
 
-</div></center><br><br>
+</div><br><br>
 <!-- /Div that will hold all of the questions and answers - FAQ -->
 
 
