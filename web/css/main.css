@@ -602,7 +602,7 @@ input.search-form:hover {
 	margin-right: 20px;
 }
 #middle {
-	background: #f2f2f2;
+	background: #dae1ed;;
 }
 .skill h2 {
 	margin-bottom: 25px;
@@ -1303,7 +1303,7 @@ thanks to Thomas Vanhoutte for the CSS
 	color: #FFF;
 	display: inline;
 	margin-left: 15%;
-	font-size: 12px;
+	font-size: 11px;
 	position: inherit;
 	text-align: center;
 	overflow: hidden;
@@ -2172,7 +2172,7 @@ shortcodes page css
 
 #wrap
 {
-	width: 1000px;
+	width: 500px;
 	margin: 0 auto 0 auto;
 }
 
@@ -2259,6 +2259,11 @@ ol.carousel-indicators li.active {
 	width: 1000px;
 }
 
+#FAQ_wrap
+{
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
 /* -----------------------
         Commitee Page
    ----------------------- */
@@ -2328,8 +2333,226 @@ html {
 	width: 1000px;
 }
 
+#Donations-final-message
+{
+	position: relative;
+	left: 200px;
+	width: 1200px;
+}
+
+#wrap-donate-final-message
+{
+	width: 1100px;
+	margin: 0 auto 0 auto;
+}
+
 #wrap-donate
 {
 	width: 1000px;
 	margin: 0 auto 0 auto;
+}
+
+/* -----------------------
+           Pillars
+   ----------------------- */
+
+/* Center website */
+.main_pillar {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row_pillar {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row_pillar,
+.row_pillar > .column_pillar {
+  padding: 8px;
+}
+
+/* Created five equal columns that floats next to each other - LPACO */
+.column_pillar {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after rows */
+.row_pillar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content_pillar {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column_pillar {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column_pillar {
+    width: 100%;
+  }
+}
+
+/* -------------------------------------------------------------
+       Carousel that has 'infinite' floating and repeating
+   ------------------------------------------------------------- */
+
+* {margin: 0; padding: 0;}
+ 
+#container {
+ width: 1440px;
+ overflow: hidden;
+ margin: 50px auto;
+ background: #dbe1ec;
+}
+
+/*keyframe animations*/
+.first {
+ -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+     -ms-animation: bannermove 30s linear infinite;
+      -o-animation: bannermove 30s linear infinite;
+         animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+/*photobanner*/
+.photobanner {
+ height: 300px;
+ width: 3550px;
+ margin-bottom: 80px;
+}
+ 
+.photobanner img {
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ -ms-transform: scale(1.1);
+ transform: scale(1.1);
+ cursor: pointer;
+ 
+ -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+ -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+ box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/* -----------------------
+    Sticky social buttons
+   ----------------------- */
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:170px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:45px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
 }

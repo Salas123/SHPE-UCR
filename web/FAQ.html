@@ -128,18 +128,31 @@
          <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav navbar-nav-shpe">
                <li><a href="index.html">Home</a></li>
-               <li><a href="mission.html">Our Mission</a></li>
-               <li><a href="members.html">Members</a></li>
+               <!-- <li><a href="mission.html">Our Mission</a></li> -->
+               <li class="dropdown"><a href="mission.html">Our Mission</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="mission.html">Mission Info</a>
+                        <a href="Activities.html">Pillar</a>
+                      </div></li>
+                <li><a href="members.html">Members</a></li>
                <!-- Dropdown menu -->
+               <!-- Calendar dropdown -- >
                <li class="dropdown"><a href="calendar.html">Events</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
                         <a href="calendar.html">Calendar</a>
-                        <a href="Activities.html">Past Events</a>
                       </div></li>
+               <!-- /Calendar dropdown -->                      
+                <li><a href="calendar.html">Calendar</a></li>
                <!--<li><a href="#">Graduates</a></li>-->
-               <li><a href="opportunities.html">Opportunities</a></li>
                <!-- Dropdown menu -->
+               <li class="dropdown"><a href="opportunities.html">Opportunities</a>
+                    <div class="dropdown-content">
+                        <a href="opportunities.html">Scholarships, Conferences, and Internships</a>
+                        <a href="Comittees.html">Committees</a>
+                      </div></li>
+                <!-- Dropdown menu -->
                <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
@@ -147,11 +160,7 @@
                         <a href="history.html">History</a>
                       </div></li>
                 <!-- /Dropdown Menu -->
-               <li class="dropdown"><a href="contact.html">Contact</a>
-                    <div class="dropdown-content">
-                        <a href="contact.html">Contact Us</a>
-                        <a href="Comittees.html">Committees</a>
-                      </div></li>
+               <li><a href="contact.html">Contact</a></li>
                <li class="active"><a href="FAQ.html">FAQ</a></li>
                <!-- Paypal button -->
                <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -179,7 +188,7 @@
    </div>
 
 <!-- Div that will hold all of the questions and answers - FAQ -->
-<div id="wrap" id=FAQ>
+<div id="FAQ_wrap" id=FAQ>
    <!-- ---------------------- Update variable names for all questions, otherwise it gets overwritten ------------------------------ -->
 
    <!-- -------------------------- Question 1 ---------------------------------- -->
@@ -325,7 +334,7 @@
    <div id="myDIV7"> </div>
 
    <script>
-   var13 = "SHPE @ UCR does offer stoles for members to purchase, if they wish to do so, when they graduate. However, there are requirements to do so before purchasing one. Talk to our leadership staff today if you are interested in your options for this year’s graduation.";
+   var13 = "SHPE @ UCR does offer stoles for members to purchase, if they wish to do so, when they graduate. However, there are requirements to do so before purchasing one. Talk to our leadership staff today if you are interested in your options for this years graduation.";
 
    function myFunction7() {
        var x = document.getElementById("myDIV7");
@@ -346,7 +355,7 @@
    <div id="myDIV8"> </div>
 
    <script>
-   var14 = "Yes, any member may join more than one organization at once if they wish to do so. It is recommended that you only take on what you can handle in a year. This is to avoid \‘burnouts\’ and other negative consequences to your physical and mental health, and even to help preserve your grades, as that is the number one (1) priority expected of all of our members.";
+   var14 = "Yes, any member may join more than one organization at once if they wish to do so. It is recommended that you only take on what you can handle in a year. This is to avoid \"burnouts\" and other negative consequences to your physical and mental health, and even to help preserve your grades, as that is the number one (1) priority expected of all of our members.";
 
    function myFunction8() {
        var x = document.getElementById("myDIV8");
@@ -548,7 +557,7 @@
    <div id="myDIV17"> </div>
 
    <script>
-   var27 = "PDF is an acronym for our Professional Development Fair. Our PDFs\’ do have a cost associated with attendance (in order to help alleviate the costs of all that is being provided). At our PDFs\’, we have professionals of different industries come visit our campus and interact with our members, share their experiences, provide mock interviews and resume critiques, help with questions that may be tied to their companies, network, and even possibly have job offers.";
+   var27 = "PDF is an acronym for our Professional Development Fair. Our PDF do have a cost associated with attendance (in order to help alleviate the costs of all that is being provided). At our PDF, we have professionals of different industries come visit our campus and interact with our members, share their experiences, provide mock interviews and resume critiques, help with questions that may be tied to their companies, network, and even possibly have job offers.";
 
    function myFunction17() {
        var x = document.getElementById("myDIV17");
@@ -786,6 +795,15 @@
 </div><br><br>
 <!-- /Div that will hold all of the questions and answers - FAQ -->
 
+
+   <!-- Fastory widget: Use data-offset parameter to change
+the vertical position of the widget -->
+<script
+    id="fastoryWidget"
+    async src="https://yam.li/widget/script/widget.min.js"
+    data-offset="25"
+    data-id="_Cy4fTCQ"></script>
+<!-- /Fastory widget -->
 
 
 <!--henlo lizer-->

@@ -127,18 +127,31 @@
          <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav navbar-nav-shpe">
                <li><a href="index.html">Home</a></li>
-               <li><a href="mission.html">Our Mission</a></li>
-               <li><a href="members.html">Members</a></li>
-                              <!-- Dropdown menu -->
+               <!-- <li><a href="mission.html">Our Mission</a></li> -->
+               <li class="dropdown"><a href="mission.html">Our Mission</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="mission.html">Mission Info</a>
+                        <a href="Activities.html">Pillar</a>
+                      </div></li>
+                <li><a href="members.html">Members</a></li>
+               <!-- Dropdown menu -->
+               <!-- Calendar dropdown -- >
                <li class="dropdown"><a href="calendar.html">Events</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
                         <a href="calendar.html">Calendar</a>
-                        <a href="Activities.html">Past Events</a>
                       </div></li>
+               <!-- /Calendar dropdown -->                      
+                <li><a href="calendar.html">Calendar</a></li>
                <!--<li><a href="graduates.html">Graduates</a></li>-->
-               <li class="active"><a href="opportunities.html">Opportunities</a></li>
                <!-- Dropdown menu -->
+               <li class="dropdown"><a href="opportunities.html">Opportunities</a>
+                    <div class="dropdown-content">
+                        <a href="opportunities.html">Scholarships, Conferences, and Internships</a>
+                        <a href="Comittees.html">Committees</a>
+                      </div></li>
+                <!-- Dropdown menu -->
                <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
@@ -146,11 +159,7 @@
                         <a href="history.html">History</a>
                       </div></li>
                 <!-- /Dropdown Menu -->
-               <li class="dropdown"><a href="contact.html">Contact</a>
-                    <div class="dropdown-content">
-                        <a href="contact.html">Contact Us</a>
-                        <a href="Comittees.html">Committees</a>
-                      </div></li>
+               <li><a href="contact.html">Contact</a></li>
                <li><a href="FAQ.html">FAQ</a></li>
                <!-- Paypal button -->
                <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -174,53 +183,99 @@
    <div class="container center">
       <div class="row center">
          <div class="col-md-6 wow fadeInLeft opportunity">
-         	<h1>Scholarships</h1>
+         	<h1><b>Scholarships</b></h1>
             <br>
             <div class="pull-left">
            		<img class="img-responsive img-rounded opportunity" width="150px" height="150px" src="images/scholarship.jpg"></img>
             </div>
             <div class="media-body">
-           		<li><a href="http://scholarships.shpe.org/students/" target="_blank">SHPE National Scholarships</a> - <br>
+           		<li><a href="http://scholarships.shpe.org/students/" target="_blank" style="color:#026bb5;">SHPE National Scholarships</a> - <br>
                	  Various Engineering majors.<br>
                     Scholarships open February, 2018 and close on June 30, 2018 11:59 PM PST.</li>
-               <li><a href="http://student.engr.ucr.edu/scholarships.html" target="_blank">BCOE Scholarships</a> - <br>
+               <li><a href="http://student.engr.ucr.edu/scholarships.html" target="_blank" style="color:#026bb5;">BCOE Scholarships</a> - <br>
                	  Various Engineering majors. In-house BCOE scholarships;<br>
                     opens March 1 and closes March 31.</li>
-               <li><a href="http://www.alliancescholars.org/scholarships.html" target="_blank">Ciencia Scholars</a> - <br>
+               <li><a href="http://www.alliancescholars.org/scholarships.html" target="_blank" style="color:#026bb5;">Ciencia Scholars</a> - <br>
                	  Various STEM majors.<br>
                     Various application dates, see website for details.</li>
-               <li><a href="https://edu.google.com/scholarships/" target="_blank">Google for Education Scholarships</a> - <br>
+               <li><a href="https://edu.google.com/scholarships/" target="_blank" style="color:#026bb5;">Google for Education Scholarships</a> - <br>
                	  Computer Science, Computer Engineering, and related majors.<br>
                     See website for application periods.
-               <li><a href="https://careers.microsoft.com/students/scholarships" target="_blank">Microsoft Scholarship Program</a> - <br>
+               <li><a href="https://careers.microsoft.com/students/scholarships" target="_blank" style="color:#026bb5;">Microsoft Scholarship Program</a> - <br>
                	  Computer Science, Computer Engineering, and related majors.<br>
                     See website for application period.</li>
             </div>
          </div>
          <div class="col-md-6 wow fadeInRight opportunity">
-         	<h1>SHPE Annual Events</h1>
+         	<h1><b>SHPE Conferences</b></h1>
             <!-- TODO: include more events, and photos at the bottom of page -->
             <br>
-            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/events-icon.jpg"></img> </div>
+            <div class="pull-left"> <img class="img-responsive img-circle" width="150px" height="150px" src="images/conference.jpg"></img> </div>
             <div class="media-body">
-               <li><a href="http://explorestem-ucr.weebly.com/" target="_blank">D&iacutea de Ciencias</a> - <br>
-               	 D&iacutea de Ciencias is an event for high school students and their parents made possible by the Society of Hispanic Professional Engineers
-                   and its sponsors with the intent of increasing the enrollment of underrepresented high school students into higher education.
-                   The Society of Hispanic Professional Engineers will present informational workshops that will familiarize both the students and their parents with college.</li>
+            <h2 align="left">Fall</h2>
+               <li><a href="http://shpe2019.shpe.org" target="_blank" style="color:#026bb5;">National Convention</a> - <br>
+                The annual SHPE National Convention is the largest technical and career conference for Hispanics in STEM the country. 
+                Each year, the SHPE Convention attracts over 6,000 STEM students, professionals and corporate representatives. 
+                The convention is an opportunity for leading corporations, government agencies, and other organizations to recruit top STEM talent. 
+                The convention also provides educational, technical, competitive and other development opportunities for professionals and students in STEM.</li>
                <!--<li><a href="http://explorestem-ucr.weebly.com/">Noche de Ciencias</a> - <br>
                	 </li>-->
-               <li><a href="https://www.facebook.com/EGTUCR" target="_blank">Engineers Got Talent!</a> - <br>
-               	  An annual talent showcase put on by you! Talents can be musical, artistic, performance based... whatever you can do, <b>as long as it's appropriate!</b></li>
-               <li><a href="https://www.facebook.com/events/1105604539478246/" target="_blank">End of the Year Banquet</a> - <br>
-               	 End the school year with a bang! Come join us for our annual themed banquet; one last fiesta with your SHPE familia including food, music, and our traditional pi&ntilde;ata!</li>
+               	 <br>
+            <h2 align="left">Winter</h2>
+               <li><a href="https://rldc1.shpe.org" target="_blank" style="color:#026bb5;">Regional Leadership Development Conference (RLDC)</a> - <br>
+               	  SHPE Regional Leadership Development Conferences (RLDCs) empower undergraduate and graduate students as well as professional members to realize their 
+               	  fullest potential. The four-day training equips them to lead in their chapters and at work. Many RLDCs also engage middle and high school students in 
+               	  hands-on activities to drive their interest in pursuing technical careers. Guided by experienced leaders, RLDC participants are fully inspired to impact 
+               	  the community through STEM.</li>
+               	<br>
+            <h2 align="left">Spring</h2>
+               <li><a href="http://nilaconference.shpe.org/about-nila/" target="_blank" style="color:#026bb5;">National Institute for Leadership Advancement (NILA)</a> - <br>
+                For over 30 years, the National Institute for Leadership Advancement (NILA) has been SHPEâ€™s solution to developing relevant and responsible community leaders 
+                across the nation to ensure that Hispanics are not only represented, but are influential drivers in the future of STEM both in the community and at a national
+                level.<br><br>NILAâ€™s purpose and design is to cultivate and train community leaders to serve in leadership roles within SHPEâ€™s nationwide eco-system and operating
+                structure and, ultimately advance SHPEâ€™s mission and vision. While these individuals serve in specific leadership roles directly related to SHPEâ€™s operational and
+                programmatic success, they also serve their communities on a larger scale. These individuals lead SHPEâ€™s national efforts and provide mission fulfillment through
+                community engagement and social impact by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness,
+                access, support and development.
+               </li>
             </div>
          </div>
       </div>
+      
+      
+      <hr><br><br>
+
+<!-- Imag on bottom of page -->
+<div align="left">
+    <h1 style="color:#4e4e4e;"><img src="images/logo.png"><b>&nbsp;&nbsp;Internships</b></h1>
+    <br>
+        <a href="https://docs.google.com/spreadsheets/d/1NL6m2Uk2v1cYQ5CmV7Xolece5Lpq01QguSR49YP4Xsw/edit#gid=0" target="_blank" style="color:#026bb5;">RocketSHPE</a> - <br>
+        RocketSHPE is an ongoing spreadsheet, compiled with over 25+ opportunities including scholarships, internships, and jobs. 
+        Board members continually add resources such as useful links and job searching websites, as well as job/other opportunities 
+        they come across through SHPE nationals, our engineering college, and their own personal connections. RocketSHPE intends to 
+        display its resources to provide our members with another tool to help them build up their professional profile.
+</div>
+      
+      
    </div>
+   
+
+<!-- /Imag on bottom of page -->
 <!-- TODO: Add photos of past events in a carousel below event listings, no testimonials -->
 <!--/.container-->
 </section>
 <!--/#content-->
+
+<!-- Fastory widget: Use data-offset parameter to change
+the vertical position of the widget -->
+<script
+    id="fastoryWidget"
+    async src="https://yam.li/widget/script/widget.min.js"
+    data-offset="25"
+    data-id="_Cy4fTCQ"></script>
+<!-- /Fastory widget -->
+
+
 <!-- Common Footer -->
 <footer id="footer">
    <div class="container container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">

@@ -133,11 +133,94 @@ background-color: rgba(255, 255, 255, 0.9);
    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
    <!-- Apple iPhone, legacy -->
    <link rel="apple-touch-icon" sizes="76x76"   href="apple-touch-icon-76x76-precomposed.png">
+   
+   
+   
+<!-- This is for the video player -->   
+<style>
+div#video_player_box{ width:1440px; background:#000; margin:0px auto;}
+div#video_controls_bar{ background: #333; padding:10px; color:#CCC;}
+input#seekslider{ width:200px; }
+input#volumeslider{ width: 80px;}
+</style>
+<script>
+var vid, playbtn, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+function intializePlayer(){
+	// Set object references
+	vid = document.getElementById("my_video");
+	playbtn = document.getElementById("playpausebtn");
+	seekslider = document.getElementById("seekslider");
+	curtimetext = document.getElementById("curtimetext");
+	durtimetext = document.getElementById("durtimetext");
+	mutebtn = document.getElementById("mutebtn");
+	volumeslider = document.getElementById("volumeslider");
+	fullscreenbtn = document.getElementById("fullscreenbtn");
+	document.getElementById('my_video').volume = 0.0;
+
+	// Add event listeners
+	playbtn.addEventListener("click",playPause,false);
+	seekslider.addEventListener("change",vidSeek,false);
+	vid.addEventListener("timeupdate",seektimeupdate,false);
+	mutebtn.addEventListener("click",vidmute,false);
+	volumeslider.addEventListener("change",setvolume,false);
+	fullscreenbtn.addEventListener("click",toggleFullScreen,false);
+}
+window.onload = intializePlayer;
+function playPause(){
+	if(vid.paused){
+		vid.play();
+		playbtn.innerHTML = "[ Pause ]";
+	} else {
+		vid.pause();
+		playbtn.innerHTML = "[ Play ]";
+	}
+}
+function vidSeek(){
+	var seekto = vid.duration * (seekslider.value / 100);
+	vid.currentTime = seekto;
+}
+function seektimeupdate(){
+	var nt = vid.currentTime * (100 / vid.duration);
+	seekslider.value = nt;
+	var curmins = Math.floor(vid.currentTime / 60);
+	var cursecs = Math.floor(vid.currentTime - curmins * 60);
+	var durmins = Math.floor(vid.duration / 60);
+	var dursecs = Math.floor(vid.duration - durmins * 60);
+	if(cursecs < 10){ cursecs = "0"+cursecs; }
+	if(dursecs < 10){ dursecs = "0"+dursecs; }
+	if(curmins < 10){ curmins = "0"+curmins; }
+	if(durmins < 10){ durmins = "0"+durmins; }
+	curtimetext.innerHTML = curmins+":"+cursecs;
+	durtimetext.innerHTML = durmins+":"+dursecs;
+}
+function vidmute(){
+	if(vid.muted){
+		vid.muted = false;
+		mutebtn.innerHTML = "Mute";
+		document.getElementById('my_video').volume = 1.0;
+	} else {
+		vid.muted = true;
+		mutebtn.innerHTML = "Unmute";
+	}
+}
+function setvolume(){
+	vid.volume = volumeslider.value / 100;
+}
+function toggleFullScreen(){
+	if(vid.requestFullScreen){
+		vid.requestFullScreen();
+	} else if(vid.webkitRequestFullScreen){
+		vid.webkitRequestFullScreen();
+	} else if(vid.mozRequestFullScreen){
+		vid.mozRequestFullScreen();
+	}
+}
+</script>
+
+<!-- This is for the video player -->   
 </head>
 <!--/head-->
 <body class="homepage" style="background-color:#dae1ed;">
-   
-   
    
    <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -147,11 +230,6 @@ background-color: rgba(255, 255, 255, 0.9);
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-   
-   
-   
-   
-   
    
 <header id="header">
    <div class="top-bar top-bar-shpe">
@@ -193,18 +271,31 @@ background-color: rgba(255, 255, 255, 0.9);
          <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav navbar-nav-shpe">
                <li class="active"><a href="index.html">Home</a></li>
-               <li><a href="mission.html">Our Mission</a></li>
+               <!-- <li><a href="mission.html">Our Mission</a></li> -->
+               <li class="dropdown"><a href="mission.html">Our Mission</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="mission.html">Mission Info</a>
+                        <a href="Activities.html">Pillar</a>
+                      </div></li>
                <li><a href="members.html">Members</a></li>
                <!-- Dropdown menu -->
+               <!-- Calendar dropdown -- >
                <li class="dropdown"><a href="calendar.html">Events</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
                         <a href="calendar.html">Calendar</a>
-                        <a href="Activities.html">Past Events</a>
                       </div></li>
+               <!-- /Calendar dropdown -->                      
+                <li><a href="calendar.html">Calendar</a></li>
                <!--<li><a href="graduates.html">Graduates</a></li>-->
-               <li><a href="opportunities.html">Opportunities</a></li>
                <!-- Dropdown menu -->
+               <li class="dropdown"><a href="opportunities.html">Opportunities</a>
+                    <div class="dropdown-content">
+                        <a href="opportunities.html">Scholarships, Conferences, and Internships</a>
+                        <a href="Comittees.html">Committees</a>
+                      </div></li>
+                <!-- Dropdown menu -->
                <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
@@ -212,11 +303,7 @@ background-color: rgba(255, 255, 255, 0.9);
                         <a href="history.html">History</a>
                       </div></li>
                 <!-- /Dropdown Menu -->
-               <li class="dropdown"><a href="contact.html">Contact</a>
-                    <div class="dropdown-content">
-                        <a href="contact.html">Contact Us</a>
-                        <a href="Comittees.html">Committees</a>
-                      </div></li>
+               <li><a href="contact.html">Contact</a></li>
                <li><a href="FAQ.html">FAQ</a></li>
                <!-- Paypal button -->
                <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -239,7 +326,7 @@ background-color: rgba(255, 255, 255, 0.9);
 <script>
 setTimeout(function() {
     $('#Mailing_Modal').modal();
-}, 10000);
+}, 60000);
 </script>
 
 <!-- Modal -->
@@ -271,10 +358,93 @@ setTimeout(function() {
 </div>
    <!-- /Modal for signing up for email -->
 
-<!-- ############################# End old carousel ######################## -->
+
+<!-- Video Player -->
+<center>
+<div id="video_player_box">
+  <video id="my_video" width="1000" height="500" autoplay>
+    <source src="Society of Hispanic Professional Engineers UCR Familia.mp4">
+  </video>
+  <div id="video_controls_bar">
+    <button id="playpausebtn" style="color:black;">&nbsp;[ &nbsp;Pause&nbsp; ]&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="mutebtn" style="color:black;">&nbsp;[ &nbsp;Mute&nbsp; ]&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="fullscreenbtn" style="color:black;">&nbsp;[ &nbsp;Fullscreen&nbsp; ]&nbsp;</button><br>
+    <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+    <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+    <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+    <p>If you would like to listen to the video with audio, please press the mute button twice - Audio will begin to play after</p>
+  </div>
+</div>
+</center>
+<!-- /Video Player -->
+
+<!-- Clock -->
+<br><br><br>
+
+<!-- /Clock -->
+
+<!-- Quote section -->
+
+<div>
+<!-- <iframe src="https://freesecure.timeanddate.com/clock/i6mm9lvy/n880/fn6/fs20/fc0206e8/tct/pct/ftbi/pa8/tt0/td2/th1/ta1/tb4" frameborder="0" width="334" height="66" allowTransparency="true"></iframe> -->
+<hr style="border-color:red;">
+<h1 align="center" style="color:blue;">Quote of the week</h1><br><br>
+<p style="margin-left: 50px; font-size:20px;">Whether you think you can, or you think you can't - you're right. --- Henry Ford</p>
+<hr style="border-color:red;">
+</div>
+
+<!-- /Quote section -->
+
+<!-- Carousel infinite -->
+
+<div id="container">
+    <!-- Maybe have this here? -- >
+    <header>
+     <h1>Animated Photo Banner</h1>
+     <p>Lorem ipsum dolor...</p>
+    </header>
+    <!-- Maybe have this here? -->
+    
+    <!-- Each image is 350px by 233px -->
+<div id="container">
+
+    
+    <!-- Each image is 350px by 233px -->
+    <div class="photobanner">
+    	<img class="first" src="images/slider/Sugg_1.jpg" height="350" width="350" alt="ef" />
+    	<img src="images/slider/Sugg_2.JPG" height="350" width="350" alt="fe" />
+    	<img src="images/slider/Sugg_3.JPG" height="350" width="350" alt="fsef" />
+    	<img src="images/slider/Sugg_4.JPG" height="350" width="350" alt="fsef" />
+    	<img src="images/slider/Sugg_5.JPG" height="350" width="350" alt="sef" />
+     <img src="images/slider/Sugg_6.JPG" height="350" width="350" alt="sefe" />
+    	<img src="images/slider/Sugg_1.jpg" height="350" width="350" alt="esfes" />
+    	<img src="images/slider/Sugg_2.JPG" height="350" width="350" alt="efse" />
+    	<img src="images/slider/Sugg_3.JPG" height="350" width="350" alt="esfef" />
+    	<img src="images/slider/Sugg_4.JPG" height="350" width="350" alt="fesf" />
+    </div>
+</div>
+</div>
+<!-- /Carousel infinite -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ############################# End old carousel ######################## -- >
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
 
-    <!-- Indicators -->
+    <!-- Indicators -- >
 
     <ol class="carousel-indicators">
 
@@ -294,13 +464,13 @@ setTimeout(function() {
 
     </ol>
 
-  <!-- Wrapper for slides -->
+  <!-- Wrapper for slides -- >
 
 
      <div class="carousel-inner" role="listbox">
 
 
-   <!-- Picture 1 -->
+   <!-- Picture 1 -- >
       <div class="item active">
 
         <img src="images/slider/39203603_506784339770296_4318896268202999808_n.jpg" alt="Chania" width="460" height="345">
@@ -314,7 +484,7 @@ setTimeout(function() {
 
       </div>
 
-   <!-- Picture 2 -->
+   <!-- Picture 2 -- >
       <div class="item">
 
         <img src="images/slider/Sugg_2.JPG" alt="Chania" width="460" height="345">
@@ -329,7 +499,7 @@ setTimeout(function() {
       </div>
 
 
-   <!-- Picture 3 -->
+   <!-- Picture 3 -- >
       <div class="item">
 
         <img src="images/slider/Sugg_3.JPG" alt="Chania" width="460" height="345">
@@ -344,7 +514,7 @@ setTimeout(function() {
       </div>
 
 
-   <!-- Picture 4 -->
+   <!-- Picture 4 -- >
       <div class="item">
 
         <img src="images/slider/slide_10.JPG" alt="Flower" width="460" height="345">
@@ -360,7 +530,7 @@ setTimeout(function() {
       </div>
 
 
-   <!-- Picture 5 -->
+   <!-- Picture 5 -- >
       <div class="item">
 
         <img src="images/slider/slide_16.JPG" alt="Flower" width="460" height="345">
@@ -374,7 +544,7 @@ setTimeout(function() {
 
       </div>
 
-   <!-- Picture 6 -->
+   <!-- Picture 6 -- >
       <div class="item">
 
         <img src="images/slider/Sugg_6.JPG" alt="Flower" width="460" height="345">
@@ -388,7 +558,7 @@ setTimeout(function() {
 
       </div>
 
-   <!-- Picture 7 -->
+   <!-- Picture 7 -- >
       <div class="item">
 
         <img src="images/slider/slide_18.JPG" alt="Flower" width="460" height="345">
@@ -403,7 +573,7 @@ setTimeout(function() {
       </div>
 
 </div>
-  <!-- Controls -->
+  <!-- Controls -- >
     <div class="carousel-controls">
 
     <a href="#myCarousel" data-slide="prev" style="background-color:#026BB5; color:white;">
@@ -423,14 +593,50 @@ setTimeout(function() {
   </div>
 </div>
 
-<!-- Start Facebook feed -- >
-<br><br><br>
+<!-- End new carousel -->
 
-<div class="fb-page" data-href="https://www.facebook.com/shpeucr/" data-tabs="timeline, events, messages" data-width="500" data-height="1500" data-small-header="false" 
+<!-- Start Facebook feed -- >
+<div class="fb-page" data-href="https://www.facebook.com/shpeucr/" data-tabs="timeline, events, messages" data-width="500" data-height="700" data-small-header="false" 
 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/shpeucr/" 
 class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/shpeucr/">SHPE at UCR</a></blockquote></div>
-
 <!-- End Facebook feed -->
+
+<!-- Fastory widget: Use data-offset parameter to change
+the vertical position of the widget -->
+
+
+<!-- Sticky social media links -->
+<div class="sticky-container">
+    <ul class="sticky">
+        <li>
+            <img src="images/social-media-pics/facebook.jpg" width="32" height="32">
+            <p><a href="https://www.facebook.com/shpe.ucr" target="_blank">Like Us on<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="images/social-media-pics/twitter.jpg" width="32" height="32">
+            <p><a href="https://twitter.com/shpeucr" target="_blank">Follow Us on<br>Twitter</a></p>
+        </li>
+        <li>
+            <img src="images/social-media-pics/instagram.jpg" width="32" height="32">
+            <p><a href="https://www.instagram.com/shpeucr/" target="_blank">Follow Us on<br>Instagram</a></p>
+        </li>
+        <li>
+            <img src="images/social-media-pics/linkedin.jpg" width="32" height="32">
+            <p><a href="https://www.linkedin.com/in/shpe-at-ucr-99051a75" target="_blank">Follow Us on<br>LinkedIn</a></p>
+        </li>
+        <li>
+            <img src="images/social-media-pics/youtube.jpg" width="32" height="32">
+            <p><a href="https://www.youtube.com/channel/UC0hkCmKFKnqUpkLwu_9AJvw" target="_blank">Subscribe on<br>YouTube</a></p>
+        </li>
+    </ul>
+</div>
+<!-- /Sticky social media links -->
+<script
+    id="fastoryWidget"
+    async src="https://yam.li/widget/script/widget.min.js"
+    data-offset="25"
+    data-id="_Cy4fTCQ"></script>
+<!-- /Fastory widget -->
 
 <!--/#content-->
 <!--henlo lizer-->

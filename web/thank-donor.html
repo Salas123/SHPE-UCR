@@ -125,18 +125,31 @@
          <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav navbar-nav-shpe">
                <li><a href="index.html">Home</a></li>
-               <li><a href="mission.html">Our Mission</a></li>
-               <li><a href="members.html">Members</a></li>
+               <!-- <li><a href="mission.html">Our Mission</a></li> -->
+               <li class="dropdown"><a href="mission.html">Our Mission</a>
+                   <button class="dropbtn"></button>
+                      <div class="dropdown-content">
+                        <a href="mission.html">Mission Info</a>
+                        <a href="Activities.html">Pillar</a>
+                      </div></li>
+                <li><a href="members.html">Members</a></li>
                <!-- Dropdown menu -->
+               <!-- Calendar dropdown -- >
                <li class="dropdown"><a href="calendar.html">Events</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
                         <a href="calendar.html">Calendar</a>
-                        <a href="Activities.html">Past Events</a>
                       </div></li>
+               <!-- /Calendar dropdown -->                      
+                <li><a href="calendar.html">Calendar</a></li>
                <!--<li><a href="graduates.html">Graduates</a></li>-->
-               <li><a href="opportunities.html">Opportunities</a></li>
                <!-- Dropdown menu -->
+               <li class="dropdown"><a href="opportunities.html">Opportunities</a>
+                    <div class="dropdown-content">
+                        <a href="opportunities.html">Scholarships, Conferences, and Internships</a>
+                        <a href="Comittees.html">Committees</a>
+                      </div></li>
+                <!-- Dropdown menu -->
                <li class="dropdown"><a href="Constitution.html">Our Foundations</a>
                    <button class="dropbtn"></button>
                       <div class="dropdown-content">
@@ -144,11 +157,7 @@
                         <a href="history.html">History</a>
                       </div></li>
                 <!-- /Dropdown Menu -->
-               <li class="dropdown"><a href="contact.html">Contact</a>
-                    <div class="dropdown-content">
-                        <a href="contact.html">Contact Us</a>
-                        <a href="Comittees.html">Committees</a>
-                      </div></li>
+               <li><a href="contact.html">Contact</a></li>
                <li><a href="FAQ.html">FAQ</a></li>
                <!-- Paypal button -->
                <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -172,7 +181,7 @@
     <p style="font-size: 25px;">
         Thank you very much for donating to the Society of Hispanic Professional Engineers at the University of California, Riverside. Your donation will
         assist us greatly in ensuring that our members may recieve the most out of our organization. We appreciate you very much and look forward to maintaining
-        our proffesional relationship in the future.<br><br>
+        our professional relationship in the future.<br><br>
         
         If you have any questions about anything, please don't hesitate to contact our leadership staff on our <a href="contact.html">Contact page</a>. Thank you!
     </p>
@@ -180,7 +189,20 @@
     <center><img src="big_logo.png" alt="SHPE logo" text="Thank you for donating to us! We appreciate you!" width="1000px;" height="1000px;"></center>
 </div>
 
-<h1 style="color:#4e4e4e;"><center>We are humbled by your recent expression of support for our work. Thank you.</center></h1><br><br>
+<h1 id="wrap-donate-final-message" id="Donations-final-message" style="color:#4e4e4e;"><center>We are humbled by your recent expression of support for our work. Thank you.</center></h1><br><br>
+
+
+
+<!-- Fastory widget: Use data-offset parameter to change
+the vertical position of the widget -->
+<script
+    id="fastoryWidget"
+    async src="https://yam.li/widget/script/widget.min.js"
+    data-offset="25"
+    data-id="_Cy4fTCQ"></script>
+<!-- /Fastory widget -->
+
+
 
 <!-- Common Footer -->
 <footer id="footer">
